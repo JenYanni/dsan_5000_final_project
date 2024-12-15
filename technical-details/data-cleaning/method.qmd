@@ -7,4 +7,3 @@ If you are developing a package, include a reference to the relevant documentati
 **Data Collection**: 
     - RSS Feed used wayfinder for historical news 
     - 
-
