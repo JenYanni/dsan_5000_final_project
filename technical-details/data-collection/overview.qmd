@@ -10,3 +10,44 @@ This overview should give technical staff a clear understanding of the context a
 
 
 
+# Overview
+
+- **Goals**: Analyze if the ongoing renovation project improved the reliability and performance of the MBTA system. Are there early indicators of significant improvement to the usage and performance of the MBTA system?
+
+- **Motivation**: 
+    - `Improve system performance`: Transitors rely on consistent service when commuting. 
+    - `Prioritize certain infrastructure`: Historical patterns in alerts can identify the most problematic stations or routes, helping prioritize future investments.
+    - `Pivoting to a user-centric system`: Understand how delays and service changes might impact public perception and impact ridership patterns. 
+
+- **Objectives**: Outline the specific outcomes you aim to achieve, whether it's implementing a solution, analyzing data, or building a model.
+    - `Prioritize certain infrastructure`: 
+    - `Prioritize certain infrastructure`
+    - `Prioritize certain infrastructure`
+
+- **Dataset Info**: 
+    - `Datasource`: MBTA Bluebook Open Data Portal 
+    - `Type`: Tabular (.csv)
+        - [MBTA Service Alerts 2020-2023](https://mbta-massdot.opendata.arcgis.com/datasets/MassDOT::mbta-service-alerts-2020-2023/about)
+        - [MBTA Service Alerts 2024](https://mbta-massdot.opendata.arcgis.com/datasets/f960d5089e164fb8b6c6936c70719d72/about)
+    - `Relevance`:
+        - Understand causes of disruptions with cause and cause_detail fields 
+        - Understand effects of disruptions with effect and effect_detail fields 
+        - Examine severity and frequency of disruptions with severity_level and year field
+        - Find routes or stops prone to alerts with route_id 
+
+    - `Datasource`: RSS Historical Feed
+    - `Type`: Tabular (.json), through API 
+        - [RSS Historical Feed](https://mbta-massdot.opendata.arcgis.com/datasets/MassDOT::mbta-service-alerts-2020-2023/about)
+    - `Relevance`: 
+        - Understand public perception through text analysis 
+        - Use of API 
+
+    - `Datasource`: RSS Historical Feed 
+    - `Type`: Tabular (.json)
+        - [MBTA Service Alerts 2020-2023](https://mbta-massdot.opendata.arcgis.com/datasets/MassDOT::mbta-service-alerts-2020-2023/about)
+    - `Relevance`: 
+
+    - `Datasource`: RSS Historical Feed 
+    - `Type`: Tabular (.json)
+        - [MBTA Service Alerts 2020-2023](https://mbta-massdot.opendata.arcgis.com/datasets/MassDOT::mbta-service-alerts-2020-2023/about)
+    - `Relevance`: 
