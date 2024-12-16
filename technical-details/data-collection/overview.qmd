@@ -26,12 +26,12 @@
         - Identify routes and stations prone to frequent alerts.
         - Measure severity and frequency of alerts over time.
 
-    - `Datasource`: RSS Historical Feed
+    - `Datasource`: Serpapi: Google News Feed 
     - `Type`: Tabular (.json), API 
-    - `Years`: Sporadically 2020-2024
-        - [RSS Historical Feed](https://mbta-massdot.opendata.arcgis.com/datasets/MassDOT::mbta-service-alerts-2020-2023/about)
+    - `Years`: 2024
+        - [Google News Feed](https://serpapi.com/google-news-api)
     - `Purpose`: 
-        - Understand public perception through text analysis 
+        - Understand current public perception through text analysis (sentimen analysis, topic modeling, keyword extraction)
         - Technical use of APIs 
 
     - `Datasource`: MBTA Bluebook Open Data Portal 
@@ -53,8 +53,9 @@
 
     - `Datasource`: Financial Statements
     - `Type`: PDF (.json)
-    - `Years`: 2020-2024
-        - [PLEASE INSERT]()
+    - `Years`: 2019-2024
+        - [Financial Statement FY 2019-2024](https://www.mbta.com/financials/audited-financials)
+
     - `Purpose`:
-        - Understand macro-level trends in system performance
+        - Understand macro-level trends in financial trends and whether it correlates with system performance
 

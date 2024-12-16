@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.5.54">
+<meta name="generator" content="quarto-1.5.57">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -185,26 +185,20 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#instructions" id="toc-instructions" class="nav-link active" data-scroll-target="#instructions">Instructions</a>
-  <ul class="collapse">
-  <li><a href="#suggested-page-structure" id="toc-suggested-page-structure" class="nav-link" data-scroll-target="#suggested-page-structure">Suggested page structure</a></li>
-  <li><a href="#what-to-address" id="toc-what-to-address" class="nav-link" data-scroll-target="#what-to-address">What to address</a></li>
-  <li><a href="#start-collecting-data" id="toc-start-collecting-data" class="nav-link" data-scroll-target="#start-collecting-data">Start collecting data:</a></li>
-  <li><a href="#saving-the-raw-data" id="toc-saving-the-raw-data" class="nav-link" data-scroll-target="#saving-the-raw-data">Saving the raw data</a></li>
-  <li><a href="#requirements" id="toc-requirements" class="nav-link" data-scroll-target="#requirements">Requirements:</a></li>
-  </ul></li>
-  <li><a href="#what-do-include-on-this-page" id="toc-what-do-include-on-this-page" class="nav-link" data-scroll-target="#what-do-include-on-this-page">What do include on this page</a></li>
-  <li><a href="#overview" id="toc-overview" class="nav-link" data-scroll-target="#overview">Overview</a></li>
-  <li><a href="#methods" id="toc-methods" class="nav-link" data-scroll-target="#methods">Methods</a></li>
+  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
   <li><a href="#code" id="toc-code" class="nav-link" data-scroll-target="#code">Code</a>
   <ul class="collapse">
-  <li><a href="#example" id="toc-example" class="nav-link" data-scroll-target="#example">Example</a></li>
+  <li><a href="#alerts" id="toc-alerts" class="nav-link" data-scroll-target="#alerts">Alerts</a></li>
+  <li><a href="#current-news-media" id="toc-current-news-media" class="nav-link" data-scroll-target="#current-news-media">Current News Media</a></li>
+  <li><a href="#reliability" id="toc-reliability" class="nav-link" data-scroll-target="#reliability">Reliability</a></li>
+  <li><a href="#accuracy" id="toc-accuracy" class="nav-link" data-scroll-target="#accuracy">Accuracy</a></li>
+  <li><a href="#financial-statement" id="toc-financial-statement" class="nav-link" data-scroll-target="#financial-statement">Financial Statement</a></li>
   </ul></li>
   <li><a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary">Summary</a>
   <ul class="collapse">
   <li><a href="#challenges" id="toc-challenges" class="nav-link" data-scroll-target="#challenges">Challenges</a></li>
   <li><a href="#benchmarks" id="toc-benchmarks" class="nav-link" data-scroll-target="#benchmarks">Benchmarks</a></li>
-  <li><a href="#conclusion-and-future-steps" id="toc-conclusion-and-future-steps" class="nav-link" data-scroll-target="#conclusion-and-future-steps">Conclusion and Future Steps</a></li>
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion">Conclusion</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -231,102 +225,88 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<section id="instructions" class="level1">
-<h1>Instructions</h1>
-<p><code>Note</code>: You should remove these instruction once you have read and understood them. They should not be included in your final submission.</p>
-<p><code>Remember:</code> Exactly what do you put on this page will be specific you your project and data. Some things might “make more sense” on one page rather than another, depending on your workflow. Organize your project in a logical way that makes the most sense to you.</p>
-<section id="suggested-page-structure" class="level2">
-<h2 class="anchored" data-anchor-id="suggested-page-structure">Suggested page structure</h2>
-<p>Here’s one suggested structure for organizing your technical pages. You can adjust this as needed:</p>
-<p><code>Audience</code>:Remember that these are written for a technical audience. Assume they have completed the DSAN program, but would appreciate refreshers of the important concepts.</p>
-<ul>
-<li><strong>Introduction and Motivation:</strong> Briefly outline your plan. What are you doing on this page, and why? Provide context and explain the goals of your analysis.</li>
-<li><strong>Overview of Methods:</strong> Give a concise explanation of the methods used. For example, if using K-Means clustering, describe what it is, how it works, the inputs and outputs, and key hyperparameters.</li>
-<li><strong>Code:</strong> Include the code you used to implement your workflow.</li>
-<li><strong>Summary and Interpretation of Results:</strong> Summarize your findings, interpret the results, and discuss their technical implications.</li>
-</ul>
-<p>In the provide repo, these subsections have been included in the <code>data-collection</code> file as separate <code>.qmd</code> files that can be embedded using the <code>{{&lt; include  &gt;}}</code> tag.</p>
-</section>
-<section id="what-to-address" class="level2">
-<h2 class="anchored" data-anchor-id="what-to-address">What to address</h2>
-<p>The following is a list of some of the things you should address on this page. This list is not exhaustive, and you should use your judgment to decide what is most relevant to your project.</p>
-<p>On this page, you will focus on <strong>data collection</strong>, which is an essential step for future analysis. You should have already selected a specific data-science question that can be addressed in a data-driven way.</p>
-<p>It is recommended that you focus on one or two of the following data formats, <strong>text</strong>, <strong>tabular</strong>, <strong>image</strong>, <strong>geospatial</strong>, or <strong>network</strong> data.</p>
-<p><strong>Tabular</strong> (e.g.&nbsp;CSV files) and <strong>text</strong> formats are highly recommended, as these are covered most thoroughly in the course. Deviating from these formats may require additional work on your end. Please avoid <strong>timeseries</strong> data formats, as these require special methods not covered in the course. You can include as many additional formats as you want. Your project will revolve around the data you gather and will include data collection, analysis, visualization, and storytelling.</p>
-</section>
-<section id="start-collecting-data" class="level2">
-<h2 class="anchored" data-anchor-id="start-collecting-data">Start collecting data:</h2>
-<p>Begin gathering your data and document the methods and sources on the <strong>Data Collection</strong> page of your project. Include screenshots or example tables to illustrate the data collection process without displaying entire datasets. Ensure <strong>transparency</strong> so anyone can replicate your work.</p>
-</section>
-<section id="saving-the-raw-data" class="level2">
-<h2 class="anchored" data-anchor-id="saving-the-raw-data">Saving the raw data</h2>
-<ul>
-<li>During the collection phase, save the collected data locally to the <code>data/raw-data</code> folder, in the root of the project, for later processing. (Do not sync this folder to GitHub.)</li>
-<li>Remember, the “raw data” should typically be left “pristine”, to ensure replicability.</li>
-<li>Later when you clean the data, you should save the cleaned data to the <code>data/processed-data</code> folder, in the root of the project.</li>
-<li>You should also save files you download manually from online to this folder</li>
-</ul>
-</section>
-<section id="requirements" class="level2">
-<h2 class="anchored" data-anchor-id="requirements">Requirements:</h2>
-<ul>
-<li>Your data must be relevant to the project’s overall goals and help solve your research questions.</li>
-<li>You must use <strong>at least one API</strong> to collect your data.</li>
-<li>Ensure you have at least one <strong>regression target</strong>: a continuous quantity that can be used for regression prediction with other features.</li>
-<li>Ensure you have at least one <strong>binary classification target</strong>: a two-class (A,B) label that can be predicted using other features.</li>
-<li>Ensure you have at least one <strong>multiclass-classification target</strong>: a multi-class (A,B,C …) label that can be predicted using other features.</li>
-<li><strong>Do not use a Kaggle topic</strong>—this project is meant to simulate a real-world project. Kaggle datasets are typically too clean and have already been prepped for analysis, which doesn’t align with the project’s goals.</li>
-</ul>
-<p>Focus on data that tells a compelling story and supports the techniques covered in the class (e.g., clustering, classification, regression).</p>
-</section>
-</section>
-<section id="what-do-include-on-this-page" class="level1">
-<h1>What do include on this page</h1>
-<p>To ensure clarity and transparency throughout your project, your data collection documentation should include the following:</p>
-<ol start="0" type="1">
-<li><p><strong>Include all code used for data collection</strong> in the notebook below</p></li>
-<li><p><strong>Data Source Information</strong></p>
-<ul>
-<li>Specify where the data comes from, whether public datasets, APIs, or original collection.</li>
-<li>Provide links to datasets or API documentation and explain their relevance to the project.</li>
-</ul></li>
-<li><p><strong>Data Collection Methods</strong></p>
-<ul>
-<li>If you used an API or web scraping, explain the tools (e.g., <code>BeautifulSoup</code>, <code>Selenium</code>) and the process.</li>
-<li>Include links to your code for replicating data collection.</li>
-</ul></li>
-<li><p><strong>Data Structure and Format</strong></p>
-<ul>
-<li>Describe the structure of your raw data (e.g., rows, columns, data types) and its format (CSV, JSON, etc.).</li>
-</ul></li>
-<li><p><strong>Linking to Data</strong></p>
-<ul>
-<li>Include links to the <strong>raw dataset</strong>, ensuring transparency and allowing replication.</li>
-</ul></li>
-<li><p><strong>Code and Reproducibility</strong></p>
-<ul>
-<li>Link to all relevant code, including data collection , with clear documentation to enable replication.</li>
-</ul></li>
-<li><p><strong>Transparency and Replicability</strong></p>
-<ul>
-<li>Ensure your entire workflow is transparent and reproducible by linking all data, code, and documentation. This allows others to follow your process from start to finish.</li>
-</ul></li>
-</ol>
-</section>
 <section id="overview" class="level1">
 <h1>Overview</h1>
-<p>In this section, provide a high-level overview for technical staff, summarizing the key tasks and processes carried out here. Include the following elements:</p>
 <ul>
-<li><strong>Goals</strong>: Clearly define the purpose of the tasks or analysis being conducted.</li>
-<li><strong>Motivation</strong>: Explain the reasoning behind the work, such as solving a specific problem, improving a system, or optimizing performance.</li>
-<li><strong>Objectives</strong>: Outline the specific outcomes you aim to achieve, whether it’s implementing a solution, analyzing data, or building a model.</li>
+<li><p><strong>Overarching Research Question</strong>: Analyze if the ongoing renovation project improved the reliability and performance of the MBTA system. Are there early indicators of significant improvement to the usage and performance of the MBTA system?</p></li>
+<li><p><strong>Goal</strong>: Gather and compile datasets relevant to our research question and its sub-questions. We identified reputable data sources and defined our collection methods by choosing an dataset accessed through an API, while finding datasets that have features which fit into requirements of future binary, multivariate, and regression analysis.</p></li>
+<li><p><strong>Motivation</strong>:</p>
+<ul>
+<li><code>Centralize Data Access</code>: This is a huge project and a tough question to answer! Consolidating datasets to one source not only makes our analysis easier, but also helps Jen and I collaborate.</li>
+<li><code>Contextual Insights</code>: We want to collect as much datasets to inform our question. The more, the better. We want to gain a holistic understanding of MBTA from its performance to public perceptions</li>
+</ul></li>
+<li><p><strong>Objectives</strong>: Outline the specific outcomes you aim to achieve, whether it’s implementing a solution, analyzing data, or building a model.</p>
+<ul>
+<li><code>Identify and Gather Relevant and Reliable Datasts</code></li>
+<li><code>Ensure Data Coverage (2020-2024)</code></li>
+<li><code>Document data sources</code></li>
+<li><code>Validate data accessibility so recreation is possible</code></li>
+</ul></li>
+<li><p><strong>Dataset Info</strong>:</p>
+<ul>
+<li><code>Datasource</code>: MBTA Bluebook Open Data Portal</li>
+<li><code>Type</code>: Tabular (.csv)</li>
+<li><code>Years</code>: 2020-2024
+<ul>
+<li><a href="https://mbta-massdot.opendata.arcgis.com/datasets/MassDOT::mbta-service-alerts-2020-2023/about">MBTA Service Alerts 2020-2023</a></li>
+<li><a href="https://mbta-massdot.opendata.arcgis.com/datasets/f960d5089e164fb8b6c6936c70719d72/about">MBTA Service Alerts 2024</a></li>
+</ul></li>
+<li><code>Purpose</code>:
+<ul>
+<li>Analyze causes and effects of service disruptions.</li>
+<li>Identify routes and stations prone to frequent alerts.</li>
+<li>Measure severity and frequency of alerts over time.</li>
+</ul></li>
+<li><code>Datasource</code>: Serpapi: Google News Feed</li>
+<li><code>Type</code>: Tabular (.json), API</li>
+<li><code>Years</code>: 2024
+<ul>
+<li><a href="https://serpapi.com/google-news-api">Google News Feed</a></li>
+</ul></li>
+<li><code>Purpose</code>:
+<ul>
+<li>Understand current public perception through text analysis (sentimen analysis, topic modeling, keyword extraction)</li>
+<li>Technical use of APIs</li>
+</ul></li>
+<li><code>Datasource</code>: MBTA Bluebook Open Data Portal</li>
+<li><code>Type</code>: Tabular (.csv)</li>
+<li><code>Years</code>: 2014-2024
+<ul>
+<li><a href="https://mbta-massdot.opendata.arcgis.com/datasets/cb4f4fb3cdf443e7a9d66c87ab1f5e17_0/explore">MBTA The Ride Reliability</a></li>
+</ul></li>
+<li><code>Purpose</code>:
+<ul>
+<li>Evlauate long-term trends in service reliability</li>
+<li>Identify improvements or challenges in accessibility services.</li>
+</ul></li>
+<li><code>Datasource</code>: MBTA Bluebook Open Data Portal</li>
+<li><code>Type</code>: Tabular (.json)</li>
+<li><code>Years</code>: 2020-2024
+<ul>
+<li><a href="https://mbta-massdot.opendata.arcgis.com/datasets/MassDOT::rapid-transit-and-bus-prediction-accuracy-data/about">Rapid Transit and Bus Prediction Accuracy Data</a></li>
+</ul></li>
+<li><code>Purpose</code>:
+<ul>
+<li>Find differences between predicted and actual service performance</li>
+<li>Evalute prediction accuracy trends</li>
+</ul></li>
+<li><code>Datasource</code>: Financial Statements</li>
+<li><code>Type</code>: PDF (.json)</li>
+<li><code>Years</code>: 2019-2024
+<ul>
+<li><a href="https://www.mbta.com/financials/audited-financials">Financial Statement FY 2019-2024</a></li>
+</ul></li>
+<li><code>Purpose</code>:
+<ul>
+<li>Understand macro-level trends in financial trends and whether it correlates with system performance</li>
+</ul></li>
+</ul></li>
 </ul>
-<p>This overview should give technical staff a clear understanding of the context and importance of the work, while guiding them on what to focus on in the details that follow.</p>
-</section>
-<section id="methods" class="level1">
-<h1>Methods</h1>
-<p>In this section, provide an overview summary of the methods used on this page. This should include a brief description of the key techniques, algorithms, tools, or processes employed in your work. Make sure to outline the approach taken for data collection, processing, analysis, or any specific technical steps relevant to the project.</p>
-<p>If you are developing a package, include a reference to the relevant documentation and provide a link here for easy access. Ensure that the package details are properly documented in its dedicated section, but mentioned and connected here for a complete understanding of the methods used in this project.</p>
+<p><strong>Data Collection Methods</strong>: - <code>Google News Feed</code>: Accessed news feed through the SerpApi Google News API, which tracks real-time and historical collection of news data.</p>
+<ul>
+<li><p><code>MBTA Open Data Portal</code>: Datasets, such as service alerts, prediction accuracy, and reliability metrics, were downloaded in tabular formats (.csv and .json) from the MBTA Bluebook Open Data Portal.</p></li>
+<li><p><code>Financial Data</code>: Key financial performance indicators were collected from MBTA’s audited financial reports. They were originally in .pdf formats. Therefore, we used the <a href="https://camelot-py.readthedocs.io/en/master/">camelot</a> library to extract data automatically from pdfs and exported them into csv format.</p></li>
+</ul>
 </section>
 <section id="code" class="level1">
 <h1>Code</h1>
@@ -334,91 +314,1133 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>If you’re using a package for code organization, you can import it at this point. However, make sure that the <strong>actual workflow steps</strong>—including data processing, analysis, and other key tasks—are conducted and clearly demonstrated on this page. The goal is to show the technical flow of your project, highlighting how the code is executed to achieve your results.</p>
 <p>Ensure that the code is well-commented to enhance readability and understanding for others who may review or use it. If relevant, link to additional documentation or external references that explain any complex components. This section should give readers a clear view of how the project is implemented from a technical perspective.</p>
 <p>This page is a technical narrative, NOT just a notebook with a collection of code cells, include in-line Prose, to describe what is going on.</p>
-<section id="example" class="level2">
-<h2 class="anchored" data-anchor-id="example">Example</h2>
-<p>In the following code, we first utilized the requests library to retrieve the HTML content from the Wikipedia page. Afterward, we employed BeautifulSoup to parse the HTML and locate the specific table of interest by using the find function. Once the table was identified, we extracted the relevant data by iterating through its rows, gathering country names and their respective populations. Finally, we used Pandas to store the collected data in a DataFrame, allowing for easy analysis and visualization. The data could also be optionally saved as a CSV file for further use.</p>
-<div id="cell-6" class="cell" data-execution_count="1">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> requests</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> bs4 <span class="im">import</span> BeautifulSoup</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Step 1: Send a request to Wikipedia page</span></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>url <span class="op">=</span> <span class="st">'https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_population'</span></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>response <span class="op">=</span> requests.get(url)</span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="co"># Step 2: Parse the page content using BeautifulSoup</span></span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>soup <span class="op">=</span> BeautifulSoup(response.content, <span class="st">'html.parser'</span>)</span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="co"># Step 3: Find the table containing the data (usually the first table for such lists)</span></span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>table <span class="op">=</span> soup.find(<span class="st">'table'</span>, {<span class="st">'class'</span>: <span class="st">'wikitable'</span>})</span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="co"># Step 4: Extract data from the table rows</span></span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>countries <span class="op">=</span> []</span>
-<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>populations <span class="op">=</span> []</span>
-<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a><span class="co"># Iterate over the table rows</span></span>
-<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> row <span class="kw">in</span> table.find_all(<span class="st">'tr'</span>)[<span class="dv">1</span>:]:  <span class="co"># Skip the header row</span></span>
-<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>    cells <span class="op">=</span> row.find_all(<span class="st">'td'</span>)</span>
-<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> <span class="bu">len</span>(cells) <span class="op">&gt;</span> <span class="dv">1</span>:</span>
-<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>        country <span class="op">=</span> cells[<span class="dv">1</span>].text.strip()  <span class="co"># The country name is in the second column</span></span>
-<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>        population <span class="op">=</span> cells[<span class="dv">2</span>].text.strip()  <span class="co"># The population is in the third column</span></span>
-<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>        countries.append(country)</span>
-<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>        populations.append(population)</span>
-<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a><span class="co"># Step 5: Create a DataFrame to store the results</span></span>
-<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>data <span class="op">=</span> pd.DataFrame({</span>
-<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a>    <span class="st">'Country'</span>: countries,</span>
-<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a>    <span class="st">'Population'</span>: populations</span>
-<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a>})</span>
-<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a><span class="co"># Display the scraped data</span></span>
-<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(data)</span>
-<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a><span class="co"># Optionally save to CSV</span></span>
-<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a>data.to_csv(<span class="st">'../../data/raw-data/countries_population.csv'</span>, index<span class="op">=</span><span class="va">False</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<section id="alerts" class="level2">
+<h2 class="anchored" data-anchor-id="alerts">Alerts</h2>
+<p>In the following code, we collected csv files from the MBTA open source data portal. From there, we explored the files manually to see if there are inconsistencies with features or formatting. Thankfully, formatting and information was consistent. Then, we merged the files and added a year column for easy reference in analysis and visualizations. Finally, we used pandas to store collected data as a dataframe.</p>
+<p>Why decide to merge all files instead of incrementally cleaning them? I personally found this method to produce less code, which is helpful in large project like this.</p>
+<p>What are the drawbacks of this method? Less familiarization with individual datasets.</p>
+<p><strong>Libraries</strong>:</p>
+<div id="cell-6" class="cell" data-execution_count="14">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np </span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> os </span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> missingno <span class="im">as</span> msno</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> json</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> serpapi <span class="im">import</span> GoogleSearch</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><strong>Before Merging</strong>: Below is one example of the file structure before merging.</p>
+<div id="cell-8" class="cell" data-execution_count="19">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>example_data_2024 <span class="op">=</span> <span class="st">"../../data/raw-data/Alerts_2024/2024-02_ALERTS.csv"</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>df1 <span class="op">=</span> pd.read_csv(example_data_2024)</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>shape <span class="op">=</span> df1.shape</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df1.head(<span class="dv">5</span>))</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(shape) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>                                 Country     Population
-0                                  World  8,119,000,000
-1                                  China  1,409,670,000
-2                          1,404,910,000          17.3%
-3                          United States    335,893,238
-4                              Indonesia    281,603,800
-..                                   ...            ...
-235                   Niue (New Zealand)          1,681
-236                Tokelau (New Zealand)          1,647
-237                         Vatican City            764
-238  Cocos (Keeling) Islands (Australia)            593
-239                Pitcairn Islands (UK)             35
+<pre><code>   alert_id        cause cause_detail  effect effect_detail severity_level  \
+0    483702  MAINTENANCE  MAINTENANCE  DETOUR        DETOUR         SEVERE   
+1    483702  MAINTENANCE  MAINTENANCE  DETOUR        DETOUR         SEVERE   
+2    483702  MAINTENANCE  MAINTENANCE  DETOUR        DETOUR         SEVERE   
+3    483702  MAINTENANCE  MAINTENANCE  DETOUR        DETOUR         SEVERE   
+4    483702  MAINTENANCE  MAINTENANCE  DETOUR        DETOUR         SEVERE   
 
-[240 rows x 2 columns]</code></pre>
+   severity                                             header description  \
+0         7  Route 117 inbound trips all day on Saturdays a...         NaN   
+1         7  Route 117 inbound trips all day on Saturdays a...         NaN   
+2         7  Route 117 inbound trips all day on Saturdays a...         NaN   
+3         7  Route 117 inbound trips all day on Saturdays a...         NaN   
+4         7  Route 117 inbound trips all day on Saturdays a...         NaN   
+
+  alert_lifecycle  ... active_period_start_date active_period_start_dt  \
+0        UPCOMING  ...               2024-02-02   2024-02-02T23:00:00Z   
+1        UPCOMING  ...               2024-02-02   2024-02-02T23:00:00Z   
+2        UPCOMING  ...               2024-02-02   2024-02-02T23:00:00Z   
+3        UPCOMING  ...               2024-02-02   2024-02-02T23:00:00Z   
+4        UPCOMING  ...               2024-02-02   2024-02-02T23:00:00Z   
+
+   active_period_end_dt last_push_notification_dt route_id route_type  \
+0  2024-02-03T02:30:00Z                       NaN      117        3.0   
+1  2024-02-03T02:30:00Z                       NaN      117        3.0   
+2  2024-02-03T02:30:00Z                       NaN      117        3.0   
+3  2024-02-03T02:30:00Z                       NaN      117        3.0   
+4  2024-02-03T02:30:00Z                       NaN      117        3.0   
+
+  direction_id stop_id facility_id  activities  
+0          NaN     NaN         NaN  BOARD|EXIT  
+1          NaN     NaN         NaN  BOARD|EXIT  
+2          NaN     NaN         NaN  BOARD|EXIT  
+3          NaN     NaN         NaN  BOARD|EXIT  
+4          NaN     NaN         NaN  BOARD|EXIT  
+
+[5 rows x 27 columns]
+(63370, 27)</code></pre>
 </div>
 </div>
+<p><strong>Merging all existing alert files</strong>:</p>
+<div id="cell-10" class="cell" data-execution_count="5">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>directory_now <span class="op">=</span> <span class="st">'../../data/raw-data/Alerts_2024'</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(os.path.exists(directory_now))    <span class="co"># debug statements </span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>directory_archive <span class="op">=</span> <span class="st">'../../data/raw-data/Archive_2020-2023'</span></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(os.path.exists(directory_archive))     <span class="co"># debug statements </span></span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>dataframes <span class="op">=</span> [] <span class="co"># list initializaton for dataframes</span></span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a><span class="co"># function: append files in directories, add the year column</span></span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> append_data(directory_path): </span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> foldername, _, filenames <span class="kw">in</span> os.walk(directory_path):</span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>        <span class="cf">for</span> filename <span class="kw">in</span> filenames:</span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a>            <span class="cf">if</span> filename.endswith(<span class="st">'.csv'</span>): </span>
+<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a>                file_path <span class="op">=</span> os.path.join(foldername, filename)</span>
+<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a>                df <span class="op">=</span> pd.read_csv(file_path) <span class="co"># load csv files </span></span>
+<span id="cb4-17"><a href="#cb4-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-18"><a href="#cb4-18" aria-hidden="true" tabindex="-1"></a>                <span class="co"># Extract the year for yr column, add to dataset</span></span>
+<span id="cb4-19"><a href="#cb4-19" aria-hidden="true" tabindex="-1"></a>                <span class="cf">if</span> <span class="st">'-'</span> <span class="kw">in</span> filename:                                 <span class="co"># For 2024 files, due to formatting dif</span></span>
+<span id="cb4-20"><a href="#cb4-20" aria-hidden="true" tabindex="-1"></a>                    year <span class="op">=</span> <span class="bu">int</span>(filename.split(<span class="st">'-'</span>)[<span class="dv">0</span>]) </span>
+<span id="cb4-21"><a href="#cb4-21" aria-hidden="true" tabindex="-1"></a>                <span class="cf">elif</span> <span class="st">'_'</span> <span class="kw">in</span> filename:                               <span class="co"># For 2020-2023 files </span></span>
+<span id="cb4-22"><a href="#cb4-22" aria-hidden="true" tabindex="-1"></a>                    year <span class="op">=</span> <span class="bu">int</span>(filename.split(<span class="st">'_'</span>)[<span class="dv">1</span>]) </span>
+<span id="cb4-23"><a href="#cb4-23" aria-hidden="true" tabindex="-1"></a>                <span class="cf">else</span>:</span>
+<span id="cb4-24"><a href="#cb4-24" aria-hidden="true" tabindex="-1"></a>                    <span class="cf">raise</span> <span class="pp">ValueError</span>(<span class="ss">f"Unexpected filename format: </span><span class="sc">{</span>filename<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb4-25"><a href="#cb4-25" aria-hidden="true" tabindex="-1"></a>               </span>
+<span id="cb4-26"><a href="#cb4-26" aria-hidden="true" tabindex="-1"></a>                df[<span class="st">'year'</span>] <span class="op">=</span> year</span>
+<span id="cb4-27"><a href="#cb4-27" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-28"><a href="#cb4-28" aria-hidden="true" tabindex="-1"></a>                <span class="co"># Append the DataFrames to the list</span></span>
+<span id="cb4-29"><a href="#cb4-29" aria-hidden="true" tabindex="-1"></a>                dataframes.append(df)</span>
+<span id="cb4-30"><a href="#cb4-30" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-31"><a href="#cb4-31" aria-hidden="true" tabindex="-1"></a><span class="co"># Load files from directories</span></span>
+<span id="cb4-32"><a href="#cb4-32" aria-hidden="true" tabindex="-1"></a>append_data(directory_now)</span>
+<span id="cb4-33"><a href="#cb4-33" aria-hidden="true" tabindex="-1"></a>append_data(directory_archive)</span>
+<span id="cb4-34"><a href="#cb4-34" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-35"><a href="#cb4-35" aria-hidden="true" tabindex="-1"></a><span class="co"># Concatenate all DataFrames into a single DataFrame</span></span>
+<span id="cb4-36"><a href="#cb4-36" aria-hidden="true" tabindex="-1"></a>merged_data <span class="op">=</span> pd.concat(dataframes, ignore_index<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb4-37"><a href="#cb4-37" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-38"><a href="#cb4-38" aria-hidden="true" tabindex="-1"></a><span class="co"># Save the merged DataFrame to a new CSV file</span></span>
+<span id="cb4-39"><a href="#cb4-39" aria-hidden="true" tabindex="-1"></a>output_file <span class="op">=</span> <span class="st">'../../data/raw-data/merged_alerts.csv'</span></span>
+<span id="cb4-40"><a href="#cb4-40" aria-hidden="true" tabindex="-1"></a>merged_data.to_csv(output_file, index<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb4-41"><a href="#cb4-41" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-42"><a href="#cb4-42" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Output saved as '</span><span class="sc">{</span>output_file<span class="sc">}</span><span class="ss">'."</span>)</span>
+<span id="cb4-43"><a href="#cb4-43" aria-hidden="true" tabindex="-1"></a></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>True
+True</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>/var/folders/wx/8tzhq3ln59j92r3pl8v47rfw0000gn/T/ipykernel_41971/2374957634.py:16: DtypeWarning: Columns (16,25) have mixed types. Specify dtype option on import or set low_memory=False.
+  df = pd.read_csv(file_path) # load csv files
+/var/folders/wx/8tzhq3ln59j92r3pl8v47rfw0000gn/T/ipykernel_41971/2374957634.py:16: DtypeWarning: Columns (16,25) have mixed types. Specify dtype option on import or set low_memory=False.
+  df = pd.read_csv(file_path) # load csv files
+/var/folders/wx/8tzhq3ln59j92r3pl8v47rfw0000gn/T/ipykernel_41971/2374957634.py:16: DtypeWarning: Columns (13,16,25) have mixed types. Specify dtype option on import or set low_memory=False.
+  df = pd.read_csv(file_path) # load csv files
+/var/folders/wx/8tzhq3ln59j92r3pl8v47rfw0000gn/T/ipykernel_41971/2374957634.py:16: DtypeWarning: Columns (16,25) have mixed types. Specify dtype option on import or set low_memory=False.
+  df = pd.read_csv(file_path) # load csv files
+/var/folders/wx/8tzhq3ln59j92r3pl8v47rfw0000gn/T/ipykernel_41971/2374957634.py:16: DtypeWarning: Columns (16,25) have mixed types. Specify dtype option on import or set low_memory=False.
+  df = pd.read_csv(file_path) # load csv files
+/var/folders/wx/8tzhq3ln59j92r3pl8v47rfw0000gn/T/ipykernel_41971/2374957634.py:16: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
+  df = pd.read_csv(file_path) # load csv files
+/var/folders/wx/8tzhq3ln59j92r3pl8v47rfw0000gn/T/ipykernel_41971/2374957634.py:16: DtypeWarning: Columns (16) have mixed types. Specify dtype option on import or set low_memory=False.
+  df = pd.read_csv(file_path) # load csv files
+/var/folders/wx/8tzhq3ln59j92r3pl8v47rfw0000gn/T/ipykernel_41971/2374957634.py:16: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
+  df = pd.read_csv(file_path) # load csv files
+/var/folders/wx/8tzhq3ln59j92r3pl8v47rfw0000gn/T/ipykernel_41971/2374957634.py:16: DtypeWarning: Columns (16,25) have mixed types. Specify dtype option on import or set low_memory=False.
+  df = pd.read_csv(file_path) # load csv files
+/var/folders/wx/8tzhq3ln59j92r3pl8v47rfw0000gn/T/ipykernel_41971/2374957634.py:16: DtypeWarning: Columns (13,25) have mixed types. Specify dtype option on import or set low_memory=False.
+  df = pd.read_csv(file_path) # load csv files
+/var/folders/wx/8tzhq3ln59j92r3pl8v47rfw0000gn/T/ipykernel_41971/2374957634.py:16: DtypeWarning: Columns (13,25) have mixed types. Specify dtype option on import or set low_memory=False.
+  df = pd.read_csv(file_path) # load csv files
+/var/folders/wx/8tzhq3ln59j92r3pl8v47rfw0000gn/T/ipykernel_41971/2374957634.py:16: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
+  df = pd.read_csv(file_path) # load csv files
+/var/folders/wx/8tzhq3ln59j92r3pl8v47rfw0000gn/T/ipykernel_41971/2374957634.py:16: DtypeWarning: Columns (13) have mixed types. Specify dtype option on import or set low_memory=False.
+  df = pd.read_csv(file_path) # load csv files
+/var/folders/wx/8tzhq3ln59j92r3pl8v47rfw0000gn/T/ipykernel_41971/2374957634.py:16: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
+  df = pd.read_csv(file_path) # load csv files
+/var/folders/wx/8tzhq3ln59j92r3pl8v47rfw0000gn/T/ipykernel_41971/2374957634.py:16: DtypeWarning: Columns (13,25) have mixed types. Specify dtype option on import or set low_memory=False.
+  df = pd.read_csv(file_path) # load csv files
+/var/folders/wx/8tzhq3ln59j92r3pl8v47rfw0000gn/T/ipykernel_41971/2374957634.py:16: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
+  df = pd.read_csv(file_path) # load csv files
+/var/folders/wx/8tzhq3ln59j92r3pl8v47rfw0000gn/T/ipykernel_41971/2374957634.py:16: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
+  df = pd.read_csv(file_path) # load csv files
+/var/folders/wx/8tzhq3ln59j92r3pl8v47rfw0000gn/T/ipykernel_41971/2374957634.py:16: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
+  df = pd.read_csv(file_path) # load csv files
+/var/folders/wx/8tzhq3ln59j92r3pl8v47rfw0000gn/T/ipykernel_41971/2374957634.py:16: DtypeWarning: Columns (16,25) have mixed types. Specify dtype option on import or set low_memory=False.
+  df = pd.read_csv(file_path) # load csv files
+/var/folders/wx/8tzhq3ln59j92r3pl8v47rfw0000gn/T/ipykernel_41971/2374957634.py:16: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
+  df = pd.read_csv(file_path) # load csv files
+/var/folders/wx/8tzhq3ln59j92r3pl8v47rfw0000gn/T/ipykernel_41971/2374957634.py:16: DtypeWarning: Columns (13,25) have mixed types. Specify dtype option on import or set low_memory=False.
+  df = pd.read_csv(file_path) # load csv files
+/var/folders/wx/8tzhq3ln59j92r3pl8v47rfw0000gn/T/ipykernel_41971/2374957634.py:16: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
+  df = pd.read_csv(file_path) # load csv files
+/var/folders/wx/8tzhq3ln59j92r3pl8v47rfw0000gn/T/ipykernel_41971/2374957634.py:16: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
+  df = pd.read_csv(file_path) # load csv files
+/var/folders/wx/8tzhq3ln59j92r3pl8v47rfw0000gn/T/ipykernel_41971/2374957634.py:16: DtypeWarning: Columns (13,25) have mixed types. Specify dtype option on import or set low_memory=False.
+  df = pd.read_csv(file_path) # load csv files
+/var/folders/wx/8tzhq3ln59j92r3pl8v47rfw0000gn/T/ipykernel_41971/2374957634.py:16: DtypeWarning: Columns (13,25) have mixed types. Specify dtype option on import or set low_memory=False.
+  df = pd.read_csv(file_path) # load csv files
+/var/folders/wx/8tzhq3ln59j92r3pl8v47rfw0000gn/T/ipykernel_41971/2374957634.py:16: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
+  df = pd.read_csv(file_path) # load csv files</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Output saved as '../../data/raw-data/merged_alerts.csv'.</code></pre>
+</div>
+</div>
+<p><strong>After Merging</strong>:</p>
+<div id="cell-12" class="cell">
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>file_path <span class="op">=</span> <span class="st">'../../../data/raw-data/merged_alerts.csv'</span> </span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.read_csv(file_path)</span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>shape <span class="op">=</span> df.shape</span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df.head(<span class="dv">5</span>))</span>
+<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(shape) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="current-news-media" class="level2">
+<h2 class="anchored" data-anchor-id="current-news-media">Current News Media</h2>
+<p>This script references starter code from Homework 3 DSAN 5000. * Authored by James Hickman. * Modified and extended by Mandy Sun.</p>
+<div id="cell-14" class="cell">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Load API key from personal JSON file</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="cf">with</span> <span class="bu">open</span>(<span class="st">'/Users/mandy.sun/Desktop/api_keys/.api-keys.json'</span>) <span class="im">as</span> f:</span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>    keys <span class="op">=</span> json.load(f)</span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>API_KEY <span class="op">=</span> keys[<span class="st">'serpapi'</span>]  <span class="co"># Load SerpApi key from your JSON file</span></span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Define output file for combined results</span></span>
+<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a>output_file <span class="op">=</span> <span class="st">'../../data/raw-data/google_news_results.json'</span></span>
+<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a><span class="co"># Define a list of search queries</span></span>
+<span id="cb9-10"><a href="#cb9-10" aria-hidden="true" tabindex="-1"></a>queries <span class="op">=</span> [<span class="st">"MBTA"</span>, <span class="st">"Massachusetts Bay Transportation Authority"</span>]</span>
+<span id="cb9-11"><a href="#cb9-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-12"><a href="#cb9-12" aria-hidden="true" tabindex="-1"></a><span class="co"># Store results from both queries</span></span>
+<span id="cb9-13"><a href="#cb9-13" aria-hidden="true" tabindex="-1"></a>combined_results <span class="op">=</span> []</span>
+<span id="cb9-14"><a href="#cb9-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-15"><a href="#cb9-15" aria-hidden="true" tabindex="-1"></a><span class="co"># Iterate through each query and fetch results from Google News</span></span>
+<span id="cb9-16"><a href="#cb9-16" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> query <span class="kw">in</span> queries:</span>
+<span id="cb9-17"><a href="#cb9-17" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"Performing Google News search for: </span><span class="sc">{</span>query<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb9-18"><a href="#cb9-18" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb9-19"><a href="#cb9-19" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Define search parameters for Google News</span></span>
+<span id="cb9-20"><a href="#cb9-20" aria-hidden="true" tabindex="-1"></a>    params <span class="op">=</span> {</span>
+<span id="cb9-21"><a href="#cb9-21" aria-hidden="true" tabindex="-1"></a>        <span class="st">"engine"</span>: <span class="st">"google_news"</span>,       <span class="co"># Use Google's News search engine</span></span>
+<span id="cb9-22"><a href="#cb9-22" aria-hidden="true" tabindex="-1"></a>        <span class="st">"q"</span>: query,                   <span class="co"># Search query</span></span>
+<span id="cb9-23"><a href="#cb9-23" aria-hidden="true" tabindex="-1"></a>        <span class="st">"hl"</span>: <span class="st">"en"</span>,                   <span class="co"># Language: English</span></span>
+<span id="cb9-24"><a href="#cb9-24" aria-hidden="true" tabindex="-1"></a>        <span class="st">"gl"</span>: <span class="st">"us"</span>,                   <span class="co"># Geolocation: United States</span></span>
+<span id="cb9-25"><a href="#cb9-25" aria-hidden="true" tabindex="-1"></a>        <span class="st">"num"</span>: <span class="dv">20</span>,                    <span class="co"># Number of results per page</span></span>
+<span id="cb9-26"><a href="#cb9-26" aria-hidden="true" tabindex="-1"></a>        <span class="st">"api_key"</span>: API_KEY            <span class="co"># SerpApi Key</span></span>
+<span id="cb9-27"><a href="#cb9-27" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb9-28"><a href="#cb9-28" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb9-29"><a href="#cb9-29" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Fetch search results</span></span>
+<span id="cb9-30"><a href="#cb9-30" aria-hidden="true" tabindex="-1"></a>    search <span class="op">=</span> GoogleSearch(params)</span>
+<span id="cb9-31"><a href="#cb9-31" aria-hidden="true" tabindex="-1"></a>    result_dict <span class="op">=</span> search.get_dict()</span>
+<span id="cb9-32"><a href="#cb9-32" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-33"><a href="#cb9-33" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Append news results to the combined results list</span></span>
+<span id="cb9-34"><a href="#cb9-34" aria-hidden="true" tabindex="-1"></a>    combined_results.extend(result_dict.get(<span class="st">"news_results"</span>, []))</span>
+<span id="cb9-35"><a href="#cb9-35" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-36"><a href="#cb9-36" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Print the news articles to the console</span></span>
+<span id="cb9-37"><a href="#cb9-37" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> result <span class="kw">in</span> result_dict.get(<span class="st">"news_results"</span>, []):</span>
+<span id="cb9-38"><a href="#cb9-38" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="ss">f"Title: </span><span class="sc">{</span>result<span class="sc">.</span>get(<span class="st">'title'</span>)<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb9-39"><a href="#cb9-39" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="ss">f"Link: </span><span class="sc">{</span>result<span class="sc">.</span>get(<span class="st">'link'</span>)<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb9-40"><a href="#cb9-40" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="ss">f"Source: </span><span class="sc">{</span>result<span class="sc">.</span>get(<span class="st">'source'</span>)<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb9-41"><a href="#cb9-41" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="st">"-"</span> <span class="op">*</span> <span class="dv">50</span>)</span>
+<span id="cb9-42"><a href="#cb9-42" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-43"><a href="#cb9-43" aria-hidden="true" tabindex="-1"></a><span class="co"># Save combined results to a JSON file</span></span>
+<span id="cb9-44"><a href="#cb9-44" aria-hidden="true" tabindex="-1"></a><span class="cf">with</span> <span class="bu">open</span>(output_file, <span class="st">"w"</span>) <span class="im">as</span> json_file:</span>
+<span id="cb9-45"><a href="#cb9-45" aria-hidden="true" tabindex="-1"></a>    json.dump(combined_results, json_file, indent<span class="op">=</span><span class="dv">4</span>)</span>
+<span id="cb9-46"><a href="#cb9-46" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-47"><a href="#cb9-47" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Combined news data from both queries saved to </span><span class="sc">{</span>output_file<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb9-48"><a href="#cb9-48" aria-hidden="true" tabindex="-1"></a></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Performing Google News search for: MBTA
+Title: Slow zones to end across all MBTA lines for the first time in 22 years
+Link: https://www.bostonherald.com/2024/12/15/slow-zones-to-end-across-all-mbta-lines-for-the-first-time-in-22-years/
+Source: {'name': 'Boston Herald', 'icon': 'https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.bostonherald.com&amp;client=NEWS_360&amp;size=96&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL', 'authors': ['Grace Zokovitch']}
+--------------------------------------------------
+Title: MBTA launches first phase of '﻿bus network redesign project'
+Link: https://www.wcvb.com/article/mbta-proposes-new-bus-network-redesign-project/63195293
+Source: {'name': 'WCVB Boston', 'icon': 'https://encrypted-tbn0.gstatic.com/faviconV2?url=https://www.wcvb.com&amp;client=NEWS_360&amp;size=96&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL', 'authors': ['Danae Bucci']}
+--------------------------------------------------
+Title: Two more MBTA employees fired amid Cabot Yard investigation
+Link: https://www.bostonglobe.com/2024/12/15/metro/mbta-employees-fired-cabot-yard/
+Source: {'name': 'The Boston Globe', 'icon': 'https://lh3.googleusercontent.com/VojRvMjpootHN8YGYZ7EOZGelMo0fo_uKh61fo-BhjKrUcdlTeaBxU4RsT764Lo7WoxPCSh-uw', 'authors': ['Dan Glaun']}
+--------------------------------------------------
+Title: School bus nearly hit by MBTA train in Canton
+Link: https://www.boston.com/news/local-news/2024/12/13/school-bus-nearly-hit-by-mbta-train-in-canton/
+Source: {'name': 'Boston.com', 'icon': 'https://lh3.googleusercontent.com/x2xbDovBkbHheGxsFJhA6hP0TjBuRQfYfRAt3RoNLhh3reh5PWPJhjMklVXTKYxaS8c1-fLWbw', 'authors': ['Ross Cristantiello']}
+--------------------------------------------------
+Title: ‘Stay ahead': Inside the MBTA's final track improvement project of 2024
+Link: https://www.nbcboston.com/news/local/mbta-train-track-work-interview/3576599/
+Source: {'name': 'NBC Boston', 'icon': 'https://encrypted-tbn0.gstatic.com/faviconV2?url=https://www.nbcboston.com&amp;client=NEWS_360&amp;size=96&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL', 'authors': ['Jeff Saperstone']}
+--------------------------------------------------
+Title: Billerica Town Meeting approves MBTA Communities zoning
+Link: https://www.lowellsun.com/2024/12/14/billerica-town-meeting-approves-mbta-communities-zoning/
+Source: {'name': 'Lowell Sun', 'icon': 'https://encrypted-tbn3.gstatic.com/faviconV2?url=https://www.lowellsun.com&amp;client=NEWS_360&amp;size=96&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL', 'authors': ['Peter Currier']}
+--------------------------------------------------
+Title: Phil Eng goes 'On The Record' about MBTA milestone, workforce, deficit
+Link: https://www.wcvb.com/article/mbta-phil-eng-otr-dec-15-2024/63184917
+Source: {'name': 'WCVB Boston', 'icon': 'https://encrypted-tbn0.gstatic.com/faviconV2?url=https://www.wcvb.com&amp;client=NEWS_360&amp;size=96&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL', 'authors': ['Sharman Sacchetti', 'Ben Simmoneau']}
+--------------------------------------------------
+Title: 2 more employees fired in connection with MBTA Cabot Yard investigation
+Link: https://www.wcvb.com/article/2-more-employees-fired-in-connection-with-mbta-cabot-yard-investigation/63185263
+Source: {'name': 'WCVB Boston', 'icon': 'https://encrypted-tbn0.gstatic.com/faviconV2?url=https://www.wcvb.com&amp;client=NEWS_360&amp;size=96&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL', 'authors': ['Sharman Sacchetti', 'Ben Simmoneau']}
+--------------------------------------------------
+Title: MBTA on brink of eliminating last remaining slow zones, GM Phil Eng tells 'On The Record'
+Link: https://www.wcvb.com/article/mbta-phil-eng-slow-zones-speed-restrictions-otr/63185913
+Source: {'name': 'WCVB Boston', 'icon': 'https://encrypted-tbn0.gstatic.com/faviconV2?url=https://www.wcvb.com&amp;client=NEWS_360&amp;size=96&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL', 'authors': ['Sharman Sacchetti', 'Ben Simmoneau']}
+--------------------------------------------------
+Title: Close call between MBTA train and school bus in Canton prompts concerns at railroad crossing
+Link: https://www.boston25news.com/news/local/close-call-between-mbta-train-school-bus-canton-prompts-concerns-railroad-crossing/5CEJ7NTDYNBYZDFFECZEYRDA2A/
+Source: {'name': 'Boston 25 News', 'icon': 'https://lh3.googleusercontent.com/6v5xsDc3LzgCyOCtQMDOZdnXfV1nM_YPTy52LTFo8phEzSItxGvU6aIMNMCCO4y0rdR10WFCGhA'}
+--------------------------------------------------
+Title: Major MBTA bus route changes begin on Sunday
+Link: https://www.nbcboston.com/news/local/major-mbta-bus-route-changes-begin-on-sunday/3577888/
+Source: {'name': 'NBC Boston', 'icon': 'https://encrypted-tbn0.gstatic.com/faviconV2?url=https://www.nbcboston.com&amp;client=NEWS_360&amp;size=96&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL'}
+--------------------------------------------------
+Title: Map: Deadline looms for 130 MBTA Communities. What’s next for your town.
+Link: https://www.boston.com/news/local-news/2024/10/17/map-mbta-communities-whats-next-for-your-town/
+Source: {'name': 'Boston.com', 'icon': 'https://lh3.googleusercontent.com/x2xbDovBkbHheGxsFJhA6hP0TjBuRQfYfRAt3RoNLhh3reh5PWPJhjMklVXTKYxaS8c1-fLWbw', 'authors': ['Annie Jonas']}
+--------------------------------------------------
+Title: The MBTA Launches Phase 1 Of Their Bus Network Redesign Project
+Link: https://wbznewsradio.iheart.com/content/the-mbta-launches-phase-1-of-their-bus-network-redesign-project/
+Source: {'name': 'iHeart', 'icon': 'https://encrypted-tbn0.gstatic.com/faviconV2?url=https://wbznewsradio.iheart.com&amp;client=NEWS_360&amp;size=96&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL'}
+--------------------------------------------------
+Title: The MBTA bus network is changing. Here's what you need to know.
+Link: https://www.wgbh.org/news/local/2024-12-12/the-mbta-bus-network-is-changing-heres-what-you-need-to-know
+Source: {'name': 'GBH News', 'icon': 'https://lh3.googleusercontent.com/CzS0jxmGqapJHsEU3OmW4zVVLpsiy_OESK_m_EAjJS7xdvsRs55s8rtg_P9McBJBRuc8H6DSsFg', 'authors': ['Tori Bedford']}
+--------------------------------------------------
+Title: North Attleboro reluctantly approves MBTA zoning
+Link: https://www.thesunchronicle.com/news/local_news/north-attleboro-reluctantly-approves-mbta-zoning/article_15c5e622-b737-11ef-9d44-eb9fa7f2dd62.html
+Source: {'name': 'The Sun Chronicle', 'icon': 'https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.thesunchronicle.com&amp;client=NEWS_360&amp;size=96&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL', 'authors': ['Stephen Peterson']}
+--------------------------------------------------
+Title: Families enjoy festive ride on Polar Express at Boston's South Station for holiday season
+Link: https://www.cbsnews.com/boston/news/polar-express-boston-south-station-family-holidays/
+Source: {'name': 'CBS Boston', 'icon': 'https://lh3.googleusercontent.com/3LpP2Sa81UTKAJDV0-G-dh-mL208xNOl3I9c-jzRyqaaX3OPpZRochl8KW9CmTBwOhiKusVL'}
+--------------------------------------------------
+Title: New tech aims to make MBTA more user-friendly
+Link: https://www.nbcboston.com/news/local/mbta-technology-payment-train-times/3577187/
+Source: {'name': 'NBC Boston', 'icon': 'https://encrypted-tbn0.gstatic.com/faviconV2?url=https://www.nbcboston.com&amp;client=NEWS_360&amp;size=96&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL', 'authors': ['Jeff Saperstone']}
+--------------------------------------------------
+Title: The MBTA Launches Phase 1 Of Their Bus Network Redesign Project - WBZ NewsRadio 1030 - News Audio
+Link: https://www.iheart.com/podcast/1002-wbz-newsradio-1030-news-a-28657113/episode/the-mbta-launches-phase-1-of-248600523/
+Source: {'name': 'iHeartRadio', 'icon': 'https://lh3.googleusercontent.com/YDWt3HkCRUP9C0Mg_buGQ5vG08R3iso7zXA1_lfliaTYL24f5D0bNnTtsFu0htKJnswdGVxiPg'}
+--------------------------------------------------
+Title: MBTA fires 2 more employees amid Cabot Yard investigation, agency confirms
+Link: https://www.bostonherald.com/2024/12/14/mbta-fires-two-more-employees-amid-cabot-yard-investigation-agency-confirms/
+Source: {'name': 'Boston Herald', 'icon': 'https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.bostonherald.com&amp;client=NEWS_360&amp;size=96&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL', 'authors': ['Chris Buskirk']}
+--------------------------------------------------
+Title: Dorchester man pleads guilty to carrying a loaded gun at MBTA station
+Link: https://www.boston.com/news/local-news/2024/12/14/dorchester-man-pleads-guilty-to-carrying-a-loaded-gun-at-mbta-station/
+Source: {'name': 'Boston.com', 'icon': 'https://lh3.googleusercontent.com/x2xbDovBkbHheGxsFJhA6hP0TjBuRQfYfRAt3RoNLhh3reh5PWPJhjMklVXTKYxaS8c1-fLWbw', 'authors': ['Morgan Rousseau']}
+--------------------------------------------------
+Title: Wrentham voters to decide on MBTA zoning, $1 million request for well site
+Link: https://www.thesunchronicle.com/news/local_news/wrentham-voters-to-decide-on-mbta-zoning-1-million-request-for-well-site/article_99512836-b9b6-11ef-8463-2bd560020a7f.html
+Source: {'name': 'The Sun Chronicle', 'icon': 'https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.thesunchronicle.com&amp;client=NEWS_360&amp;size=96&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL', 'authors': ['Stephen Peterson']}
+--------------------------------------------------
+Title: More Than 100 MBTA Communities Have Approved Multifamily Districts to Create More Housing, Lower Costs
+Link: https://www.mass.gov/news/more-than-100-mbta-communities-have-approved-multifamily-districts-to-create-more-housing-lower-costs
+Source: {'name': 'Mass.gov', 'icon': 'https://encrypted-tbn0.gstatic.com/faviconV2?url=https://www.mass.gov&amp;client=NEWS_360&amp;size=96&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL'}
+--------------------------------------------------
+Title: Shrewsbury’s MBTA zoning plan to be put to townwide vote
+Link: https://www.communityadvocate.com/2024/12/12/shrewsburys-mbta-zoning-plan-to-be-put-to-townwide-vote/
+Source: {'name': 'Community Advocate', 'icon': 'https://encrypted-tbn1.gstatic.com/faviconV2?url=https://www.communityadvocate.com&amp;client=NEWS_360&amp;size=96&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL', 'authors': ['Evan Walsh']}
+--------------------------------------------------
+Title: Another MBTA shutdown is upon us
+Link: https://www.boston.com/news/local-news/2024/11/17/another-mbta-shutdown-is-upon-us/
+Source: {'name': 'Boston.com', 'icon': 'https://lh3.googleusercontent.com/x2xbDovBkbHheGxsFJhA6hP0TjBuRQfYfRAt3RoNLhh3reh5PWPJhjMklVXTKYxaS8c1-fLWbw', 'authors': ['Gwen Egan']}
+--------------------------------------------------
+Title: 1 hurt after rideshare car drives onto MBTA Green Line tracks
+Link: https://www.masslive.com/news/2024/12/1-hurt-after-rideshare-car-drives-onto-mbta-green-line-tracks.html
+Source: {'name': 'MassLive.com', 'icon': 'https://encrypted-tbn1.gstatic.com/faviconV2?url=https://www.masslive.com&amp;client=NEWS_360&amp;size=96&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL', 'authors': ['Irene Rotondo']}
+--------------------------------------------------
+Title: MBTA rolls out new tech on the T
+Link: https://www.necn.com/news/local/mbta-rolls-out-new-tech-on-the-t/3415401/
+Source: {'name': 'NECN', 'icon': 'https://encrypted-tbn0.gstatic.com/faviconV2?url=https://www.necn.com&amp;client=NEWS_360&amp;size=96&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL'}
+--------------------------------------------------
+Title: MBTA commuter train collides with minivan in Abington
+Link: https://www.nbcboston.com/news/local/abington-mbta-commuter-train-crash/3565986/
+Source: {'name': 'NBC Boston', 'icon': 'https://encrypted-tbn0.gstatic.com/faviconV2?url=https://www.nbcboston.com&amp;client=NEWS_360&amp;size=96&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL', 'authors': ['Asher Klein']}
+--------------------------------------------------
+Title: MBTA’s ‘Draw One’ Construction Will Last 8 Years, Per Environmental Filings
+Link: https://mass.streetsblog.org/2024/12/09/mbtas-draw-one-construction-will-last-8-years-per-environmental-filings
+Source: {'name': 'Streetsblog MASS', 'icon': 'https://encrypted-tbn0.gstatic.com/faviconV2?url=https://mass.streetsblog.org&amp;client=NEWS_360&amp;size=96&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL', 'authors': ['Christian Milneil']}
+--------------------------------------------------
+Title: Governor Healey, AG Campbell Celebrate MBTA Communities Momentum to Lower Housing Costs
+Link: https://www.mass.gov/news/governor-healey-ag-campbell-celebrate-mbta-communities-momentum-to-lower-housing-costs
+Source: {'name': 'Mass.gov', 'icon': 'https://encrypted-tbn0.gstatic.com/faviconV2?url=https://www.mass.gov&amp;client=NEWS_360&amp;size=96&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL'}
+--------------------------------------------------
+Title: Reminder: bus route changes go into effect Sunday
+Link: https://www.boston.com/news/local-news/2024/12/15/reminder-bus-route-changes-go-into-effect-sunday/
+Source: {'name': 'Boston.com', 'icon': 'https://lh3.googleusercontent.com/x2xbDovBkbHheGxsFJhA6hP0TjBuRQfYfRAt3RoNLhh3reh5PWPJhjMklVXTKYxaS8c1-fLWbw', 'authors': ['Gwen Egan']}
+--------------------------------------------------
+Title: Minivan struck by MBTA Commuter Rail train on South Shore
+Link: https://www.wcvb.com/article/minivan-struck-by-commuter-rail-train-in-abington/63073070
+Source: {'name': 'WCVB Boston', 'icon': 'https://encrypted-tbn0.gstatic.com/faviconV2?url=https://www.wcvb.com&amp;client=NEWS_360&amp;size=96&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL', 'authors': ['Mary Saladna', 'Alex Svenson']}
+--------------------------------------------------
+Title: Thousands of gifts donated to MBTA annual toy drive
+Link: https://whdh.com/news/thousands-of-gifts-donated-to-mbta-annual-toy-drive/
+Source: {'name': 'Boston News, Weather, Sports | WHDH 7News', 'icon': 'https://encrypted-tbn3.gstatic.com/faviconV2?url=https://whdh.com&amp;client=NEWS_360&amp;size=96&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL'}
+--------------------------------------------------
+Title: MBTA on brink of eliminating last remaining slow zones
+Link: https://www.yahoo.com/news/mbta-brink-eliminating-last-remaining-190418468.html
+Source: {'name': 'Yahoo! Voices', 'icon': 'https://encrypted-tbn1.gstatic.com/faviconV2?url=https://www.yahoo.com&amp;client=NEWS_360&amp;size=96&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL'}
+--------------------------------------------------
+Title: Boston Man Pleads Guilty to Illegal Firearms Possession at MBTA Station
+Link: https://hoodline.com/2024/12/boston-man-pleads-guilty-to-illegal-firearms-possession-at-mbta-station/
+Source: {'name': 'Hoodline', 'icon': 'https://encrypted-tbn0.gstatic.com/faviconV2?url=https://hoodline.com&amp;client=NEWS_360&amp;size=96&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL', 'authors': ['Mike Chen']}
+--------------------------------------------------
+Title: 2025 Municipal Police Officer, MBTA Transit Police Officer and State Trooper Examination Update!
+Link: https://www.mass.gov/news/2025-municipal-police-officer-mbta-transit-police-officer-and-state-trooper-examination-update
+Source: {'name': 'Mass.gov', 'icon': 'https://encrypted-tbn0.gstatic.com/faviconV2?url=https://www.mass.gov&amp;client=NEWS_360&amp;size=96&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL'}
+--------------------------------------------------
+Title: Storm's downpours flood Boston highway, knock out power for thousands in Mass.
+Link: https://www.nbcboston.com/news/local/boston-massachusetts-storm-power-outages-travel-damage/3575153/
+Source: {'name': 'NBC Boston', 'icon': 'https://encrypted-tbn0.gstatic.com/faviconV2?url=https://www.nbcboston.com&amp;client=NEWS_360&amp;size=96&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL', 'authors': ['Asher Klein', 'Mike Pescaro']}
+--------------------------------------------------
+Title: Woman hospitalized after MBTA train hits SUV in Abington, buses replacing commuter rail service
+Link: https://www.boston25news.com/news/local/commuter-rail-trains-suspended-roads-closed-due-crash-abington/MVOQBB7R7BHM5OWLR7N6U5WMPY/
+Source: {'name': 'Boston 25 News', 'icon': 'https://lh3.googleusercontent.com/6v5xsDc3LzgCyOCtQMDOZdnXfV1nM_YPTy52LTFo8phEzSItxGvU6aIMNMCCO4y0rdR10WFCGhA', 'authors': ['Bryan Lambert']}
+--------------------------------------------------
+Title: Large water main break floods Boylston Street, flows into MBTA station
+Link: https://www.yahoo.com/news/large-water-main-break-floods-220621038.html
+Source: {'name': 'Yahoo! Voices', 'icon': 'https://encrypted-tbn1.gstatic.com/faviconV2?url=https://www.yahoo.com&amp;client=NEWS_360&amp;size=96&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL'}
+--------------------------------------------------
+Title: The final MBTA closure of 2024 has begun. Here's what to know
+Link: https://www.wbur.org/news/2024/12/06/mbta-green-line-closure-december-shuttles-slow-zones-newsletter
+Source: {'name': 'WBUR News', 'icon': 'https://lh3.googleusercontent.com/ecMf-PChf55TfBGl2C92CUVUz1A7xBC0WwL_frfdHDN0BZFWPYdNlDc5EKkmiv6_4vLYMRrw2jY', 'authors': ['Nik Decosta-klipa']}
+--------------------------------------------------
+Title: MBTA launches new live tracking app
+Link: https://www.boston.com/news/transportation/2024/11/21/mbta-launches-new-live-tracking-app/
+Source: {'name': 'Boston.com', 'icon': 'https://lh3.googleusercontent.com/x2xbDovBkbHheGxsFJhA6hP0TjBuRQfYfRAt3RoNLhh3reh5PWPJhjMklVXTKYxaS8c1-fLWbw', 'authors': ['Abby Patkin']}
+--------------------------------------------------
+Title: Healey-Driscoll Administration Celebrates MBTA’s New Income-Eligible Reduced Fare Program
+Link: https://www.mass.gov/news/healey-driscoll-administration-celebrates-mbtas-new-income-eligible-reduced-fare-program
+Source: {'name': 'Mass.gov', 'icon': 'https://encrypted-tbn0.gstatic.com/faviconV2?url=https://www.mass.gov&amp;client=NEWS_360&amp;size=96&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL'}
+--------------------------------------------------
+Title: Thumbs down on MBTA law
+Link: https://www.duxburyclipper.com/articles/thumbs-down-on-mbta-law/
+Source: {'name': 'duxburyclipper.com', 'icon': 'https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.duxburyclipper.com&amp;client=NEWS_360&amp;size=96&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL', 'authors': ['Susanna Sheehan']}
+--------------------------------------------------
+Title: MBTA debuts new app to track buses and trains in Greater Boston - but is it accurate?
+Link: https://www.cbsnews.com/boston/news/mbta-app-bus-train-tracking-accuracy/
+Source: {'name': 'CBS Boston', 'icon': 'https://lh3.googleusercontent.com/3LpP2Sa81UTKAJDV0-G-dh-mL208xNOl3I9c-jzRyqaaX3OPpZRochl8KW9CmTBwOhiKusVL', 'authors': ['Brandon Truitt']}
+--------------------------------------------------
+Title: In Lexington, the state’s housing law is on track to produce nearly 1,000 new homes
+Link: https://www.bostonglobe.com/2024/12/03/business/lexington-mbta-communities-housing/
+Source: {'name': 'The Boston Globe', 'icon': 'https://lh3.googleusercontent.com/VojRvMjpootHN8YGYZ7EOZGelMo0fo_uKh61fo-BhjKrUcdlTeaBxU4RsT764Lo7WoxPCSh-uw', 'authors': ['Andrew Brinker']}
+--------------------------------------------------
+Title: MBTA improves Boston-area transit service but faces looming budget crunch
+Link: https://www.smartcitiesdive.com/news/mbta-boston-massachusetts-transit-authority-service-safety-fiscal-cliff/732907/
+Source: {'name': 'Smart Cities Dive', 'icon': 'https://lh3.googleusercontent.com/A6YUijOXjGaZ7nuwLUlpMehGl5fkVnhOSKmPYb4ecQw1909eT24RCWFQgdctLARMiORvfXamcw', 'authors': ['Dan Zukowski']}
+--------------------------------------------------
+Title: More MBTA shutdowns expected in 2025
+Link: https://commonwealthbeacon.org/transportation/more-mbta-shutdowns-expected-in-2025/
+Source: {'name': 'CommonWealth Beacon', 'icon': 'https://lh3.googleusercontent.com/bv66WY_fNoxxHKCRa_DYgWFJbEsi89XhZgBCvynj1hqRWluRiav5NucMyJLsFBDaStUtazvKfQ', 'authors': ['Gintautas Dumcius']}
+--------------------------------------------------
+Title: Here’s the MBTA’s Plan to Make the Green Line B Branch Accessible
+Link: https://mass.streetsblog.org/2024/11/15/heres-the-mbtas-plan-to-make-the-green-line-b-branch-accessible
+Source: {'name': 'Streetsblog MASS', 'icon': 'https://encrypted-tbn0.gstatic.com/faviconV2?url=https://mass.streetsblog.org&amp;client=NEWS_360&amp;size=96&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL', 'authors': ['Christian Milneil']}
+--------------------------------------------------
+Title: Peabody adopts overlay to comply with MBTA zoning
+Link: https://www.salemnews.com/news/peabody-adopts-overlay-to-comply-with-mbta-zoning/article_0e789f26-b8f5-11ef-bbad-ef449310b2e9.html
+Source: {'name': 'The Salem News', 'icon': 'https://encrypted-tbn3.gstatic.com/faviconV2?url=https://www.salemnews.com&amp;client=NEWS_360&amp;size=96&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL', 'authors': ['Caroline Enos']}
+--------------------------------------------------
+Title: Worcester Line Trains Will Get Shorter – But Also More Frequent
+Link: https://mass.streetsblog.org/2024/12/09/worcester-line-trains-will-get-shorter-but-also-more-frequent
+Source: {'name': 'Streetsblog MASS', 'icon': 'https://encrypted-tbn0.gstatic.com/faviconV2?url=https://mass.streetsblog.org&amp;client=NEWS_360&amp;size=96&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL', 'authors': ['Christian Milneil']}
+--------------------------------------------------
+Title: MBTA about to lift subways' last speed restrictions
+Link: https://www.nbcboston.com/news/local/mbta-slow-zone-update/3558184/
+Source: {'name': 'NBC Boston', 'icon': 'https://encrypted-tbn0.gstatic.com/faviconV2?url=https://www.nbcboston.com&amp;client=NEWS_360&amp;size=96&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL', 'authors': ['Chris Lisinski']}
+--------------------------------------------------
+Title: Mass. high court hears arguments over Milton's defiance of the MBTA Communities Act
+Link: https://www.wgbh.org/news/local/2024-10-07/mass-high-court-hears-arguments-over-miltons-defiance-of-the-mbta-communities-act
+Source: {'name': 'GBH News', 'icon': 'https://lh3.googleusercontent.com/CzS0jxmGqapJHsEU3OmW4zVVLpsiy_OESK_m_EAjJS7xdvsRs55s8rtg_P9McBJBRuc8H6DSsFg', 'authors': ['Alexi Cohan']}
+--------------------------------------------------
+Title: T releases new MBTA Go app to track and plan rides
+Link: https://www.wgbh.org/news/local/2024-11-21/t-releases-new-mbta-go-app-to-track-and-plan-rides
+Source: {'name': 'GBH News', 'icon': 'https://lh3.googleusercontent.com/CzS0jxmGqapJHsEU3OmW4zVVLpsiy_OESK_m_EAjJS7xdvsRs55s8rtg_P9McBJBRuc8H6DSsFg', 'authors': ['Jeremy Siegel']}
+--------------------------------------------------
+Title: MBTA analyst Brian Kane on how the T fell apart, and how to fix it
+Link: https://www.wbur.org/radioboston/2024/12/06/mbta-funding-history-transit-boston
+Source: {'name': 'WBUR News', 'icon': 'https://lh3.googleusercontent.com/ecMf-PChf55TfBGl2C92CUVUz1A7xBC0WwL_frfdHDN0BZFWPYdNlDc5EKkmiv6_4vLYMRrw2jY', 'authors': ['Zeninjor Enwemeka', 'Stephanie Brown', 'Rob Lane']}
+--------------------------------------------------
+Title: Pay your fare: MBTA dispatches engagement team to encourage riders to pay up
+Link: https://www.wbur.org/news/2024/11/12/mbta-fare-evasion-revenue-boston-massachusetts
+Source: {'name': 'WBUR News', 'icon': 'https://lh3.googleusercontent.com/ecMf-PChf55TfBGl2C92CUVUz1A7xBC0WwL_frfdHDN0BZFWPYdNlDc5EKkmiv6_4vLYMRrw2jY', 'authors': ['Andrea Perdomo']}
+--------------------------------------------------
+Title: Will Massachusetts' high court overturn a multifamily housing law? What was said in court
+Link: https://www.patriotledger.com/story/news/courts/2024/10/07/massachusetts-multifamily-housing-law-supreme-judical-court-judges-hear-arguments-to-overturn/75561246007/
+Source: {'name': 'The Patriot Ledger', 'icon': 'https://encrypted-tbn1.gstatic.com/faviconV2?url=https://www.patriotledger.com&amp;client=NEWS_360&amp;size=96&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL', 'authors': ['Hannah Jo Morse']}
+--------------------------------------------------
+Title: After Year of Disruption, MBTA Says Red Line Is Free of Slow Zones
+Link: https://www.thecrimson.com/article/2024/11/25/red-line-slow-zone-free/
+Source: {'name': 'Harvard Crimson', 'icon': 'https://encrypted-tbn3.gstatic.com/faviconV2?url=https://www.thecrimson.com&amp;client=NEWS_360&amp;size=96&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL', 'authors': ['Jack R. Trapanick']}
+--------------------------------------------------
+Title: Putting Phil Eng's leadership at the MBTA in historical context
+Link: https://www.wbur.org/radioboston/2024/11/21/phil-eng-mbta-subway-slow-zones
+Source: {'name': 'WBUR News', 'icon': 'https://lh3.googleusercontent.com/ecMf-PChf55TfBGl2C92CUVUz1A7xBC0WwL_frfdHDN0BZFWPYdNlDc5EKkmiv6_4vLYMRrw2jY', 'authors': ['Rob Lane', 'Cristela Guerra']}
+--------------------------------------------------
+Title: MBTA to begin crackdown on fare scofflaws
+Link: https://www.masslive.com/news/2024/11/mbta-to-begin-crackdown-on-fare-scofflaws.html
+Source: {'name': 'MassLive.com', 'icon': 'https://encrypted-tbn1.gstatic.com/faviconV2?url=https://www.masslive.com&amp;client=NEWS_360&amp;size=96&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL', 'authors': ['Trea Lavery']}
+--------------------------------------------------
+Title: State's highest court hears arguments on forcing Milton to comply with MBTA housing law
+Link: https://www.wbur.org/news/2024/10/08/sjc-mbta-communities-act-milton-andrea-campbell
+Source: {'name': 'WBUR News', 'icon': 'https://lh3.googleusercontent.com/ecMf-PChf55TfBGl2C92CUVUz1A7xBC0WwL_frfdHDN0BZFWPYdNlDc5EKkmiv6_4vLYMRrw2jY', 'authors': ['Colin A. Young']}
+--------------------------------------------------
+Title: Millbury Town Meeting votes to snub MBTA housing law. Here's how it happened.
+Link: https://www.telegram.com/story/news/local/2024/11/11/millbury-town-meeting-voters-snub-mbta-housing-law/76203340007/
+Source: {'name': 'Worcester Telegram', 'icon': 'https://encrypted-tbn1.gstatic.com/faviconV2?url=https://www.telegram.com&amp;client=NEWS_360&amp;size=96&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL', 'authors': ['Marco Cartolano']}
+--------------------------------------------------
+Title: State officials must ‘repent’ for MBTA’s ‘crippling debts,’ watchdog says
+Link: https://commonwealthbeacon.org/transportation/state-officials-must-repent-for-mbtas-crippling-debts-watchdog-says/
+Source: {'name': 'CommonWealth Beacon', 'icon': 'https://lh3.googleusercontent.com/bv66WY_fNoxxHKCRa_DYgWFJbEsi89XhZgBCvynj1hqRWluRiav5NucMyJLsFBDaStUtazvKfQ', 'authors': ['Chris Lisinski']}
+--------------------------------------------------
+Title: Eng says MBTA is considering later night subway service
+Link: https://www.wgbh.org/news/local/2024-09-09/eng-says-mbta-is-considering-later-night-subway-service
+Source: {'name': 'GBH News', 'icon': 'https://lh3.googleusercontent.com/CzS0jxmGqapJHsEU3OmW4zVVLpsiy_OESK_m_EAjJS7xdvsRs55s8rtg_P9McBJBRuc8H6DSsFg', 'authors': ['Sam Turken']}
+--------------------------------------------------
+Title: Milton's rebellion over MBTA housing law: How will state's highest court rule
+Link: https://www.patriotledger.com/story/news/2024/10/05/mbta-communities-act-zoning-milton-ma-lawsuit-supreme-judicial-court-oral-arguments-massachusetts/75499483007/
+Source: {'name': 'The Patriot Ledger', 'icon': 'https://encrypted-tbn1.gstatic.com/faviconV2?url=https://www.patriotledger.com&amp;client=NEWS_360&amp;size=96&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL', 'authors': ['Hannah Jo Morse']}
+--------------------------------------------------
+Title: A look at the MBTA's dwindling slow zones and diversions
+Link: https://www.wbur.org/news/2024/11/11/mbta-slow-zones-orange-line-red-line-diversion-newsletter
+Source: {'name': 'WBUR News', 'icon': 'https://lh3.googleusercontent.com/ecMf-PChf55TfBGl2C92CUVUz1A7xBC0WwL_frfdHDN0BZFWPYdNlDc5EKkmiv6_4vLYMRrw2jY', 'authors': ['Nik Decosta-klipa']}
+--------------------------------------------------
+Title: Harvard Square RED LINE CLOSURE – November Commuter and Traffic Impacts Due to MBTA Red Line Closures
+Link: https://www.harvardsquare.com/harvard-square-red-line-closure-november-commuter-and-trafficimpacts-due-to-mbta-red-line-closures/
+Source: {'name': 'Harvard Square', 'icon': 'https://encrypted-tbn1.gstatic.com/faviconV2?url=https://www.harvardsquare.com&amp;client=NEWS_360&amp;size=96&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL'}
+--------------------------------------------------
+Title: Family to file wrongful death lawsuit after man was hit and killed by MBTA bus
+Link: https://www.nbcboston.com/news/local/mbta-wrongful-death-lawsuit/3523828/
+Source: {'name': 'NBC Boston', 'icon': 'https://encrypted-tbn0.gstatic.com/faviconV2?url=https://www.nbcboston.com&amp;client=NEWS_360&amp;size=96&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL', 'authors': ['Thea Digiammerino', 'Malcolm Johnson']}
+--------------------------------------------------
+Title: 2 more MBTA employees fired amid Cabot Yard investigation
+Link: https://www.nbcboston.com/news/local/mbta-employees-fired-cabot-yard-2/3542070/
+Source: {'name': 'NBC Boston', 'icon': 'https://encrypted-tbn0.gstatic.com/faviconV2?url=https://www.nbcboston.com&amp;client=NEWS_360&amp;size=96&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL', 'authors': ['Thea Digiammerino']}
+--------------------------------------------------
+Title: MBTA sets Green Line shutdown in December to complete track repair project
+Link: https://www.trains.com/trn/news-reviews/news-wire/mbta-sets-green-line-shutdown-in-december-to-complete-track-repair-project/
+Source: {'name': 'TRAINS Magazine', 'icon': 'https://lh3.googleusercontent.com/_n5pDmjrjiFiDfjVKi7cHyhXm3cp2V5HJYKsr8P3aHIhjKpeCdUQKt_FWDjYglYjJS9ijSI9zYI', 'authors': ['David Lassen']}
+--------------------------------------------------
+Title: 20 groups weigh in on MBTA Communities Act case
+Link: https://commonwealthbeacon.org/housing/20-groups-weigh-in-on-mbta-communities-act-case/
+Source: {'name': 'CommonWealth Beacon', 'icon': 'https://lh3.googleusercontent.com/bv66WY_fNoxxHKCRa_DYgWFJbEsi89XhZgBCvynj1hqRWluRiav5NucMyJLsFBDaStUtazvKfQ', 'authors': ['Bruce Mohl']}
+--------------------------------------------------
+Title: Framingham councilors may vote next week on plan to satisfy multifamily zoning law
+Link: https://www.metrowestdailynews.com/story/news/local/2024/10/31/framingham-ma-city-councilors-may-vote-november-7-mbta-communities-act-multifamily-zoning-proposal/75739029007/
+Source: {'name': 'MetroWest Daily News', 'icon': 'https://encrypted-tbn1.gstatic.com/faviconV2?url=https://www.metrowestdailynews.com&amp;client=NEWS_360&amp;size=96&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL', 'authors': ['Tom Benoit']}
+--------------------------------------------------
+Title: What the MBTA’s Bus Network Redesign means for Cambridge and Somerville
+Link: https://www.cambridgeday.com/2024/12/02/what-the-mbtas-bus-network-redesign-means-for-cambridge-and-somerville/
+Source: {'name': 'Cambridge Day', 'icon': 'https://encrypted-tbn0.gstatic.com/faviconV2?url=https://www.cambridgeday.com&amp;client=NEWS_360&amp;size=96&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL', 'authors': ['Sean Flannelly']}
+--------------------------------------------------
+Title: Framingham extends public hearing, delays vote on zoning law compliance plan
+Link: https://www.metrowestdailynews.com/story/news/local/2024/11/11/framingham-city-council-delays-vote-plan-comply-with-new-mbta-communities-zoning-law/75996579007/
+Source: {'name': 'MetroWest Daily News', 'icon': 'https://encrypted-tbn1.gstatic.com/faviconV2?url=https://www.metrowestdailynews.com&amp;client=NEWS_360&amp;size=96&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL', 'authors': ['Tom Benoit']}
+--------------------------------------------------
+Title: MBTA launches new mobile app MBTA Go
+Link: https://www.masstransitmag.com/technology/passenger-info/mobile-applications/press-release/55245345/massachusetts-bay-transportation-authority-mbta-mbta-launches-new-mobile-app-mbta-go
+Source: {'name': 'Mass Transit Magazine', 'icon': 'https://lh3.googleusercontent.com/-o_GG2G_AVF_ASy0A7GCoIILCc6X5L0WRg_xbRfcn9hCfsrcY8oP5rX0e4coz4omzpNf5LrbR-0'}
+--------------------------------------------------
+Title: Boston man arrested at MBTA Ruggles Station in 2020 pleads guilty to federal gun charges
+Link: https://www.bostonglobe.com/2024/12/13/metro/boston-man-guilty-plea-federal-firearms-charges/
+Source: {'name': 'The Boston Globe', 'icon': 'https://lh3.googleusercontent.com/VojRvMjpootHN8YGYZ7EOZGelMo0fo_uKh61fo-BhjKrUcdlTeaBxU4RsT764Lo7WoxPCSh-uw', 'authors': ['Kiera Mcdonald']}
+--------------------------------------------------
+Title: Court date set for showdown over MBTA housing law
+Link: https://www.wgbh.org/news/politics/2024-09-18/court-date-set-for-showdown-over-mbta-housing-law
+Source: {'name': 'GBH News', 'icon': 'https://lh3.googleusercontent.com/CzS0jxmGqapJHsEU3OmW4zVVLpsiy_OESK_m_EAjJS7xdvsRs55s8rtg_P9McBJBRuc8H6DSsFg', 'authors': ['Colin A. Young']}
+--------------------------------------------------
+Title: State's lawsuit against Milton over MBTA housing law goes before high court
+Link: https://www.nbcboston.com/news/local/oral-arguments-monday-in-state-lawsuit-against-milton-over-mbta-housing-law/3511265/
+Source: {'name': 'NBC Boston', 'icon': 'https://encrypted-tbn0.gstatic.com/faviconV2?url=https://www.nbcboston.com&amp;client=NEWS_360&amp;size=96&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL', 'authors': ['Colin A. Young', 'Alysha Palumbo']}
+--------------------------------------------------
+Title: McGee to lead MBTA board as Glynn steps aside
+Link: https://commonwealthbeacon.org/transportation/mcgee-to-lead-mbta-board-as-glynn-steps-aside/
+Source: {'name': 'CommonWealth Beacon', 'icon': 'https://lh3.googleusercontent.com/bv66WY_fNoxxHKCRa_DYgWFJbEsi89XhZgBCvynj1hqRWluRiav5NucMyJLsFBDaStUtazvKfQ', 'authors': ['Bruce Mohl']}
+--------------------------------------------------
+Title: MBTA lifts four speed restrictions on Red Line
+Link: https://www.masstransitmag.com/rail/maintenance/press-release/55242563/massachusetts-bay-transportation-authority-mbta-mbta-lifts-four-speed-restrictions-on-red-line
+Source: {'name': 'Mass Transit Magazine', 'icon': 'https://lh3.googleusercontent.com/-o_GG2G_AVF_ASy0A7GCoIILCc6X5L0WRg_xbRfcn9hCfsrcY8oP5rX0e4coz4omzpNf5LrbR-0'}
+--------------------------------------------------
+Title: SJC raises questions about MBTA Communities Act penalties
+Link: https://commonwealthbeacon.org/housing/sjc-raises-questions-about-mbta-communities-act-penalties/
+Source: {'name': 'CommonWealth Beacon', 'icon': 'https://lh3.googleusercontent.com/bv66WY_fNoxxHKCRa_DYgWFJbEsi89XhZgBCvynj1hqRWluRiav5NucMyJLsFBDaStUtazvKfQ', 'authors': ['Jennifer Smith']}
+--------------------------------------------------
+Title: MBTA to bring back subway line managers
+Link: https://www.masstransitmag.com/safety-security/article/55242927/massachusetts-bay-transportation-authority-mbta-mbta-to-bring-back-subway-line-managers
+Source: {'name': 'Mass Transit Magazine', 'icon': 'https://lh3.googleusercontent.com/-o_GG2G_AVF_ASy0A7GCoIILCc6X5L0WRg_xbRfcn9hCfsrcY8oP5rX0e4coz4omzpNf5LrbR-0'}
+--------------------------------------------------
+Title: Teen arrested 6 days after shooting on MBTA Red Line platform in Boston
+Link: https://www.nbcboston.com/news/local/mbta-train-platform-shooting-arrest/3552633/
+Source: {'name': 'NBC Boston', 'icon': 'https://encrypted-tbn0.gstatic.com/faviconV2?url=https://www.nbcboston.com&amp;client=NEWS_360&amp;size=96&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL', 'authors': ['Jericho Tran', 'Asher Klein']}
+--------------------------------------------------
+Title: 10 MBTA workers on leave amid allegations of ‘potential criminal activity’ at Boston facility
+Link: https://www.boston25news.com/news/local/ten-mbta-workers-leave-amid-allegations-potential-criminal-activity-t-facility/L4JRPA3JHNH43ADEKSUVXFTUAQ/
+Source: {'name': 'Boston 25 News', 'icon': 'https://lh3.googleusercontent.com/6v5xsDc3LzgCyOCtQMDOZdnXfV1nM_YPTy52LTFo8phEzSItxGvU6aIMNMCCO4y0rdR10WFCGhA', 'authors': ['Drew Karedes']}
+--------------------------------------------------
+Title: The MBTA will have multiple closures in November. See when and where
+Link: https://www.patriotledger.com/story/business/transportation/2024/11/01/mbta-closures-red-green-line-november-2024/75960948007/
+Source: {'name': 'The Patriot Ledger', 'icon': 'https://encrypted-tbn1.gstatic.com/faviconV2?url=https://www.patriotledger.com&amp;client=NEWS_360&amp;size=96&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL', 'authors': ['Catherine Messier']}
+--------------------------------------------------
+Title: MBTA workers are taking home hundreds of thousands of dollars in overtime pay
+Link: https://www.bostonglobe.com/2024/11/18/metro/mbta-payroll-overtime-spending/
+Source: {'name': 'The Boston Globe', 'icon': 'https://lh3.googleusercontent.com/VojRvMjpootHN8YGYZ7EOZGelMo0fo_uKh61fo-BhjKrUcdlTeaBxU4RsT764Lo7WoxPCSh-uw', 'authors': ['Shannon Larson']}
+--------------------------------------------------
+Title: New Pilot Program Offers Free MBTA Passes to SMFA Degree Candidates
+Link: https://now.tufts.edu/2024/09/03/new-pilot-program-offers-free-mbta-passes-smfa-degree-candidates
+Source: {'name': 'Tufts Now', 'icon': 'https://lh3.googleusercontent.com/FV3kcTa4Ixr6GK5BSJ7bpZIS5BLxHEziF9qFnmUNNMBMYGGCIXxruMZbm3-YU7gmXt7I2kpOKw', 'authors': ['Dave Nuscher']}
+--------------------------------------------------
+Title: MBTA resumes Green Line service 2 days after derailment near Lechmere
+Link: https://www.wgbh.org/news/local/2024-10-03/mbta-resumes-green-line-service-2-days-after-derailment-near-lechmere
+Source: {'name': 'GBH News', 'icon': 'https://lh3.googleusercontent.com/CzS0jxmGqapJHsEU3OmW4zVVLpsiy_OESK_m_EAjJS7xdvsRs55s8rtg_P9McBJBRuc8H6DSsFg', 'authors': ['Marilyn Schairer']}
+--------------------------------------------------
+Title: Wednesday’s storm brings up to 4 inches of rain, power outages, travel delays
+Link: https://www.boston.com/weather/weather/2024/12/11/storm-impacts-wednesday-dec-11-2024/
+Source: {'name': 'Boston.com', 'icon': 'https://lh3.googleusercontent.com/x2xbDovBkbHheGxsFJhA6hP0TjBuRQfYfRAt3RoNLhh3reh5PWPJhjMklVXTKYxaS8c1-fLWbw', 'authors': ['Molly Farrar', 'Dialynn Dwyer']}
+--------------------------------------------------
+Title: City of Boston, MBTA Release Refined Designs for Blue Hill Avenue Transit Project
+Link: https://mass.streetsblog.org/2024/11/08/city-of-boston-mbta-release-refined-designs-for-blue-hill-avenue-transit-project
+Source: {'name': 'Streetsblog MASS', 'icon': 'https://encrypted-tbn0.gstatic.com/faviconV2?url=https://mass.streetsblog.org&amp;client=NEWS_360&amp;size=96&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL', 'authors': ['Christian Milneil']}
+--------------------------------------------------
+Title: MBTA chief 'confident' South Coast Rail trains will roll in May 2025. Everything to know
+Link: https://www.tauntongazette.com/story/news/local/2024/09/19/south-coast-rail-commuter-train-taunton-mbta-station-fall-river-new-bedford/75289062007/
+Source: {'name': 'Taunton Daily Gazette', 'icon': 'https://encrypted-tbn0.gstatic.com/faviconV2?url=https://www.tauntongazette.com&amp;client=NEWS_360&amp;size=96&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL', 'authors': ['Daniel Schemer']}
+--------------------------------------------------
+Title: MBTA sets Red, Green line shutdowns in November
+Link: https://www.trains.com/trn/news-reviews/news-wire/mbta-sets-red-green-line-shutdowns-in-november/
+Source: {'name': 'TRAINS Magazine', 'icon': 'https://lh3.googleusercontent.com/_n5pDmjrjiFiDfjVKi7cHyhXm3cp2V5HJYKsr8P3aHIhjKpeCdUQKt_FWDjYglYjJS9ijSI9zYI'}
+--------------------------------------------------
+Title: Budget chief wants to direct $1B toward MBTA, transportation improvements
+Link: https://www.nbcboston.com/news/local/mbta-funding-proposal/3530390/
+Source: {'name': 'NBC Boston', 'icon': 'https://encrypted-tbn0.gstatic.com/faviconV2?url=https://www.nbcboston.com&amp;client=NEWS_360&amp;size=96&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL', 'authors': ['Sam Drysdale']}
+--------------------------------------------------
+Title: MBTA to close the Red Line between Harvard and Broadway until Nov. 24
+Link: https://www.wcvb.com/article/mbta-close-red-line-between-harvard-broadway-until-nov-24/62931615
+Source: {'name': 'WCVB Boston', 'icon': 'https://encrypted-tbn0.gstatic.com/faviconV2?url=https://www.wcvb.com&amp;client=NEWS_360&amp;size=96&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL', 'authors': ['Peter Eliopoulos']}
+--------------------------------------------------
+Title: Signs of South Coast Rail are finally here in Fall River: What to know in 60 seconds
+Link: https://www.heraldnews.com/story/news/2024/10/18/mbta-puts-south-coast-rail-highway-signs-in-fall-river-60-second-read/75721047007/
+Source: {'name': 'Fall River Herald News', 'icon': 'https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.heraldnews.com&amp;client=NEWS_360&amp;size=96&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL', 'authors': ['Dan Medeiros']}
+--------------------------------------------------
+Title: Ghosted by the bus: Why some MBTA buses never arrive
+Link: https://www.wgbh.org/news/local/2024-09-06/ghosted-by-the-bus-why-some-mbta-buses-never-arrive
+Source: {'name': 'GBH News', 'icon': 'https://lh3.googleusercontent.com/CzS0jxmGqapJHsEU3OmW4zVVLpsiy_OESK_m_EAjJS7xdvsRs55s8rtg_P9McBJBRuc8H6DSsFg', 'authors': ['Annaliese Baker']}
+--------------------------------------------------
+Title: A Rider’s Guide to the MBTA’s Looming Financial Crisis
+Link: https://mass.streetsblog.org/2024/08/23/a-riders-guide-to-the-mbtas-looming-financial-crisis
+Source: {'name': 'Streetsblog MASS', 'icon': 'https://encrypted-tbn0.gstatic.com/faviconV2?url=https://mass.streetsblog.org&amp;client=NEWS_360&amp;size=96&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL', 'authors': ['Christian Milneil']}
+--------------------------------------------------
+Title: MBTA Board chair stepping down, being replaced by former Lynn mayor
+Link: https://www.nbcboston.com/news/local/mbta-board-chair-stepping-down-being-replaced-by-former-lynn-mayor/3526831/
+Source: {'name': 'NBC Boston', 'icon': 'https://encrypted-tbn0.gstatic.com/faviconV2?url=https://www.nbcboston.com&amp;client=NEWS_360&amp;size=96&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL', 'authors': ['Chris Lisinski']}
+--------------------------------------------------
+Title: MBTA estimates 25% of south-side commuter rail fares not being collected
+Link: https://commonwealthbeacon.org/transportation/mbta-estimates-25-of-south-side-commuter-rail-fares-not-being-collected/
+Source: {'name': 'CommonWealth Beacon', 'icon': 'https://lh3.googleusercontent.com/bv66WY_fNoxxHKCRa_DYgWFJbEsi89XhZgBCvynj1hqRWluRiav5NucMyJLsFBDaStUtazvKfQ', 'authors': ['Bruce Mohl']}
+--------------------------------------------------
+Title: Downed wire, tree cause cancellations, delays on MBTA commuter rail
+Link: https://www.bostonglobe.com/2024/12/11/metro/downed-wire-tree-cause-cancellations-delays-mbta-commuter-rail/
+Source: {'name': 'The Boston Globe', 'icon': 'https://lh3.googleusercontent.com/VojRvMjpootHN8YGYZ7EOZGelMo0fo_uKh61fo-BhjKrUcdlTeaBxU4RsT764Lo7WoxPCSh-uw', 'authors': ['Nick Stoico']}
+--------------------------------------------------
+Title: Commuter Rail delayed and Orange Line suspended due to storm damage
+Link: https://www.wcvb.com/article/storm-delays-commuter-rail-lines-suspends-orange-line/63162553
+Source: {'name': 'WCVB Boston', 'icon': 'https://encrypted-tbn0.gstatic.com/faviconV2?url=https://www.wcvb.com&amp;client=NEWS_360&amp;size=96&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL', 'authors': ['Alex Svenson']}
+--------------------------------------------------
+Title: Always broke: The MBTA’s long-running theme
+Link: https://commonwealthbeacon.org/opinion/always-broke-the-mbtas-long-running-theme/
+Source: {'name': 'CommonWealth Beacon', 'icon': 'https://lh3.googleusercontent.com/bv66WY_fNoxxHKCRa_DYgWFJbEsi89XhZgBCvynj1hqRWluRiav5NucMyJLsFBDaStUtazvKfQ', 'authors': ['Brian Kane']}
+--------------------------------------------------
+Performing Google News search for: Massachusetts Bay Transportation Authority
+Title: KBRA Assigns AA+ Rating to Massachusetts Bay Transportation Authority Subordinated Sales Tax Bonds 2024 Series A (USDOT Loan); Affirms AAA Rating for Senior Sales Tax Bonds
+Link: https://www.businesswire.com/news/home/20241211901987/en/KBRA-Assigns-AA-Rating-to-Massachusetts-Bay-Transportation-Authority-Subordinated-Sales-Tax-Bonds-2024-Series-A-USDOT-Loan-Affirms-AAA-Rating-for-Senior-Sales-Tax-Bonds
+Source: {'name': 'Business Wire', 'icon': 'https://encrypted-tbn3.gstatic.com/faviconV2?url=https://www.businesswire.com&amp;client=NEWS_360&amp;size=96&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL'}
+--------------------------------------------------
+Title: MBTA Red Line now slow zone-free for first time in 20 years
+Link: https://www.masstransitmag.com/rail/maintenance/press-release/55245983/massachusetts-bay-transportation-authority-mbta-mbta-now-slow-zone-free-for-first-time-in-20-years
+Source: {'name': 'Mass Transit Magazine', 'icon': 'https://lh3.googleusercontent.com/-o_GG2G_AVF_ASy0A7GCoIILCc6X5L0WRg_xbRfcn9hCfsrcY8oP5rX0e4coz4omzpNf5LrbR-0'}
+--------------------------------------------------
+Title: 1 hurt after rideshare car drives onto MBTA Green Line tracks
+Link: https://www.masslive.com/news/2024/12/1-hurt-after-rideshare-car-drives-onto-mbta-green-line-tracks.html
+Source: {'name': 'MassLive.com', 'icon': 'https://encrypted-tbn1.gstatic.com/faviconV2?url=https://www.masslive.com&amp;client=NEWS_360&amp;size=96&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL', 'authors': ['Irene Rotondo']}
+--------------------------------------------------
+Title: MBTA improves Boston-area transit service but faces looming budget crunch
+Link: https://www.smartcitiesdive.com/news/mbta-boston-massachusetts-transit-authority-service-safety-fiscal-cliff/732907/
+Source: {'name': 'Smart Cities Dive', 'icon': 'https://lh3.googleusercontent.com/A6YUijOXjGaZ7nuwLUlpMehGl5fkVnhOSKmPYb4ecQw1909eT24RCWFQgdctLARMiORvfXamcw', 'authors': ['Dan Zukowski']}
+--------------------------------------------------
+Title: MBTA is ‘barely treading water'
+Link: https://www.route-fifty.com/infrastructure/2024/06/mbta-barely-treading-water/397320/
+Source: {'name': 'Route Fifty', 'icon': 'https://lh3.googleusercontent.com/gR-sbJuKMAoOKd2b2cSRfPmZCtjWL-QxwgswbRf7pXwx7oxo6vuzI3b3Lz_s9su2LWxoi9ao', 'authors': ['Gintautas Dumcius']}
+--------------------------------------------------
+Title: MBTA approves $54 million battery-electric train plan for Fairmount Line
+Link: https://www.globalrailwayreview.com/news/176023/mbta-54-million-battery-electric-train-plan-fairmount-line/
+Source: {'name': 'Global Railway Review', 'icon': 'https://lh3.googleusercontent.com/vS6-JThKUo9jdTC1sxjaaU0TWldSt_KhQBFBhxQD6sSj8P_KTfOGck5jV9Lj4V742-Dzv28wAA'}
+--------------------------------------------------
+Title: MBTA launches first-party transit app to enhance rider experience
+Link: https://dailyfreepress.com/2024/12/02/mbta-launches-first-party-transit-app-to-enhance-rider-experience/
+Source: {'name': 'Daily Free Press', 'icon': 'https://encrypted-tbn0.gstatic.com/faviconV2?url=https://dailyfreepress.com&amp;client=NEWS_360&amp;size=96&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL', 'authors': ['Samantha Genzer']}
+--------------------------------------------------
+Title: MBTA launches a new mobile app – MBTA Go
+Link: https://caughtindot.com/mbta-launches-a-new-mobile-app-mbta-go/
+Source: {'name': 'Caught In Dot', 'icon': 'https://encrypted-tbn3.gstatic.com/faviconV2?url=https://caughtindot.com&amp;client=NEWS_360&amp;size=96&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL', 'authors': ['Maureen Dahill']}
+--------------------------------------------------
+Title: MBTA debuts new app to track buses and trains in Greater Boston - but is it accurate?
+Link: https://www.cbsnews.com/boston/news/mbta-app-bus-train-tracking-accuracy/
+Source: {'name': 'CBS Boston', 'icon': 'https://lh3.googleusercontent.com/3LpP2Sa81UTKAJDV0-G-dh-mL208xNOl3I9c-jzRyqaaX3OPpZRochl8KW9CmTBwOhiKusVL', 'authors': ['Brandon Truitt']}
+--------------------------------------------------
+Title: MBTA unveils new Type 10 Green Line train, collects feedback from community
+Link: https://huntnewsnu.com/81241/city/mbta-unveils-new-type-10-green-line-train-collects-feedback-from-community/
+Source: {'name': 'The Huntington News', 'icon': 'https://encrypted-tbn0.gstatic.com/faviconV2?url=https://huntnewsnu.com&amp;client=NEWS_360&amp;size=96&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL'}
+--------------------------------------------------
+Title: MBTA to Electrify its First Commuter Rail Line
+Link: https://www.planetizen.com/news/2024/09/131779-mbta-electrify-its-first-commuter-rail-line
+Source: {'name': 'Planetizen', 'icon': 'https://encrypted-tbn0.gstatic.com/faviconV2?url=https://www.planetizen.com&amp;client=NEWS_360&amp;size=96&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL', 'authors': ['Irvin Dawid']}
+--------------------------------------------------
+Title: MBTA to bring back subway line managers
+Link: https://www.masstransitmag.com/safety-security/article/55242927/massachusetts-bay-transportation-authority-mbta-mbta-to-bring-back-subway-line-managers
+Source: {'name': 'Mass Transit Magazine', 'icon': 'https://lh3.googleusercontent.com/-o_GG2G_AVF_ASy0A7GCoIILCc6X5L0WRg_xbRfcn9hCfsrcY8oP5rX0e4coz4omzpNf5LrbR-0'}
+--------------------------------------------------
+Title: Massachusetts investing in commuter rail to relieve traffic congestion
+Link: https://www.smartcitiesdive.com/news/massachusetts-mbta-commuter-rail-to-relieve-traffic-congestion/730419/
+Source: {'name': 'Smart Cities Dive', 'icon': 'https://lh3.googleusercontent.com/A6YUijOXjGaZ7nuwLUlpMehGl5fkVnhOSKmPYb4ecQw1909eT24RCWFQgdctLARMiORvfXamcw', 'authors': ['Dan Zukowski']}
+--------------------------------------------------
+Title: MBTA launches new mobile app MBTA Go
+Link: https://www.masstransitmag.com/technology/passenger-info/mobile-applications/press-release/55245345/massachusetts-bay-transportation-authority-mbta-mbta-launches-new-mobile-app-mbta-go
+Source: {'name': 'Mass Transit Magazine', 'icon': 'https://lh3.googleusercontent.com/-o_GG2G_AVF_ASy0A7GCoIILCc6X5L0WRg_xbRfcn9hCfsrcY8oP5rX0e4coz4omzpNf5LrbR-0'}
+--------------------------------------------------
+Title: Battery-powered trains coming to Boston
+Link: https://www.smartcitiesdive.com/news/battery-electric-trains-coming-to-boston-mbta-keolis/722821/
+Source: {'name': 'Smart Cities Dive', 'icon': 'https://lh3.googleusercontent.com/A6YUijOXjGaZ7nuwLUlpMehGl5fkVnhOSKmPYb4ecQw1909eT24RCWFQgdctLARMiORvfXamcw', 'authors': ['Dan Zukowski']}
+--------------------------------------------------
+Title: MBTA lifts four speed restrictions on Red Line
+Link: https://www.masstransitmag.com/rail/maintenance/press-release/55242563/massachusetts-bay-transportation-authority-mbta-mbta-lifts-four-speed-restrictions-on-red-line
+Source: {'name': 'Mass Transit Magazine', 'icon': 'https://lh3.googleusercontent.com/-o_GG2G_AVF_ASy0A7GCoIILCc6X5L0WRg_xbRfcn9hCfsrcY8oP5rX0e4coz4omzpNf5LrbR-0'}
+--------------------------------------------------
+Title: MBTA teams up with local communities to implement new bus lanes
+Link: https://www.masstransitmag.com/bus/infrastructure/press-release/55237226/massachusetts-bay-transportation-authority-mbta-mbta-teams-up-with-local-communities-to-implement-new-bus-lanes
+Source: {'name': 'Mass Transit Magazine', 'icon': 'https://lh3.googleusercontent.com/-o_GG2G_AVF_ASy0A7GCoIILCc6X5L0WRg_xbRfcn9hCfsrcY8oP5rX0e4coz4omzpNf5LrbR-0'}
+--------------------------------------------------
+Title: MBTA removes nine speed restrictions on Orange Line
+Link: https://www.masstransitmag.com/rail/maintenance/press-release/55240872/massachusetts-bay-transportation-authority-mbta-mbta-removes-nine-speed-restrictions-on-orange-line
+Source: {'name': 'Mass Transit Magazine', 'icon': 'https://lh3.googleusercontent.com/-o_GG2G_AVF_ASy0A7GCoIILCc6X5L0WRg_xbRfcn9hCfsrcY8oP5rX0e4coz4omzpNf5LrbR-0'}
+--------------------------------------------------
+Title: MBTA transfers dispatching responsibilities for South Coast Rail territory to Keolis Commuter Services
+Link: https://www.masstransitmag.com/rail/press-release/55130754/massachusetts-bay-transportation-authority-mbta-mbta-transfers-dispatching-responsibilities-for-south-coast-rail-territory-to-keolis-commuter-services
+Source: {'name': 'Mass Transit Magazine', 'icon': 'https://lh3.googleusercontent.com/-o_GG2G_AVF_ASy0A7GCoIILCc6X5L0WRg_xbRfcn9hCfsrcY8oP5rX0e4coz4omzpNf5LrbR-0'}
+--------------------------------------------------
+Title: MBTA removes 20 speed restrictions on Orange Line
+Link: https://www.masstransitmag.com/rail/maintenance/press-release/55237844/massachusetts-bay-transportation-authority-mbta-mbta-removes-20-speed-restrictions-on-orange-line
+Source: {'name': 'Mass Transit Magazine', 'icon': 'https://lh3.googleusercontent.com/-o_GG2G_AVF_ASy0A7GCoIILCc6X5L0WRg_xbRfcn9hCfsrcY8oP5rX0e4coz4omzpNf5LrbR-0'}
+--------------------------------------------------
+Title: MBTA sets Green Line shutdown in December to complete track repair project
+Link: https://www.trains.com/trn/news-reviews/news-wire/mbta-sets-green-line-shutdown-in-december-to-complete-track-repair-project/
+Source: {'name': 'TRAINS Magazine', 'icon': 'https://lh3.googleusercontent.com/_n5pDmjrjiFiDfjVKi7cHyhXm3cp2V5HJYKsr8P3aHIhjKpeCdUQKt_FWDjYglYjJS9ijSI9zYI', 'authors': ['David Lassen']}
+--------------------------------------------------
+Title: MBTA and CAF Present New Green Line Vehicle Mockup
+Link: https://railway-news.com/mbta-and-caf-present-new-green-line-vehicle-mockup/
+Source: {'name': 'railway-news.com', 'icon': 'https://encrypted-tbn0.gstatic.com/faviconV2?url=https://railway-news.com&amp;client=NEWS_360&amp;size=96&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL', 'authors': ['Tiana May']}
+--------------------------------------------------
+Title: MBTA removes six safety speed restrictions on Red Line
+Link: https://www.masstransitmag.com/rail/maintenance/press-release/55136566/massachusetts-bay-transportation-authority-mbta-mbta-removes-six-safety-speed-restrictions-on-red-line
+Source: {'name': 'Mass Transit Magazine', 'icon': 'https://lh3.googleusercontent.com/-o_GG2G_AVF_ASy0A7GCoIILCc6X5L0WRg_xbRfcn9hCfsrcY8oP5rX0e4coz4omzpNf5LrbR-0'}
+--------------------------------------------------
+Title: MBTA begins train testing on South Coast Rail Project
+Link: https://www.masstransitmag.com/rail/infrastructure/press-release/55089165/massachusetts-bay-transportation-authority-mbta-mbta-begins-train-testing-on-south-coast-rail-project
+Source: {'name': 'Mass Transit Magazine', 'icon': 'https://lh3.googleusercontent.com/-o_GG2G_AVF_ASy0A7GCoIILCc6X5L0WRg_xbRfcn9hCfsrcY8oP5rX0e4coz4omzpNf5LrbR-0'}
+--------------------------------------------------
+Title: MBTA to launch contactless payment methods on various transit methods Aug. 1
+Link: https://www.masstransitmag.com/technology/fare-collection/press-release/55124972/massachusetts-bay-transportation-authority-mbta-mbta-to-launch-contactless-payment-methods-on-various-transit-methods-aug-1
+Source: {'name': 'Mass Transit Magazine', 'icon': 'https://lh3.googleusercontent.com/-o_GG2G_AVF_ASy0A7GCoIILCc6X5L0WRg_xbRfcn9hCfsrcY8oP5rX0e4coz4omzpNf5LrbR-0'}
+--------------------------------------------------
+Title: MBTA to launch Narcan pilot on Red Line
+Link: https://www.masstransitmag.com/safety-security/press-release/55125688/massachusetts-bay-transportation-authority-mbta-mbta-to-launch-narcan-pilot-on-red-line
+Source: {'name': 'Mass Transit Magazine', 'icon': 'https://lh3.googleusercontent.com/-o_GG2G_AVF_ASy0A7GCoIILCc6X5L0WRg_xbRfcn9hCfsrcY8oP5rX0e4coz4omzpNf5LrbR-0'}
+--------------------------------------------------
+Title: Tap-to-Pay for MBTA Starts Aug 1 -- But not for Commuter Rail
+Link: https://franklinobserver.town.news/g/franklin-town-ma/n/266940
+Source: {'name': 'Franklin Observer', 'icon': 'https://encrypted-tbn2.gstatic.com/faviconV2?url=https://franklinobserver.town.news&amp;client=NEWS_360&amp;size=96&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL', 'authors': ['Alan Earls']}
+--------------------------------------------------
+Title: MBTA and Swiftly pilot new transit navigation system
+Link: https://www.masstransitmag.com/technology/intelligent-transportation-systems/communications-navigation-cad-avl-gps/press-release/55180129/massachusetts-bay-transportation-authority-mbta-mbta-and-swiftly-pilot-new-transit-navigation-system
+Source: {'name': 'Mass Transit Magazine', 'icon': 'https://lh3.googleusercontent.com/-o_GG2G_AVF_ASy0A7GCoIILCc6X5L0WRg_xbRfcn9hCfsrcY8oP5rX0e4coz4omzpNf5LrbR-0'}
+--------------------------------------------------
+Title: MBTA Launches Official Mobile App, MBTA Go
+Link: https://wbznewsradio.iheart.com/content/mbta-launches-official-mobile-app-mbta-go/
+Source: {'name': 'iHeart', 'icon': 'https://encrypted-tbn0.gstatic.com/faviconV2?url=https://wbznewsradio.iheart.com&amp;client=NEWS_360&amp;size=96&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL'}
+--------------------------------------------------
+Title: MBTA works to improve Red Line services with plans for new construction vehicle entrance
+Link: https://www.masstransitmag.com/rail/infrastructure/press-release/55140475/massachusetts-bay-transportation-authority-mbta-mbta-works-to-improve-red-line-services-with-plans-for-new-construction-vehicle-entrance
+Source: {'name': 'Mass Transit Magazine', 'icon': 'https://lh3.googleusercontent.com/-o_GG2G_AVF_ASy0A7GCoIILCc6X5L0WRg_xbRfcn9hCfsrcY8oP5rX0e4coz4omzpNf5LrbR-0'}
+--------------------------------------------------
+Title: MBTA reduced-fare program brings half-off rides to low-income passengers
+Link: https://huntnewsnu.com/80665/city/mbta-reduced-fare-program-brings-half-off-rides-to-low-income-passengers/
+Source: {'name': 'The Huntington News', 'icon': 'https://encrypted-tbn0.gstatic.com/faviconV2?url=https://huntnewsnu.com&amp;client=NEWS_360&amp;size=96&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL', 'authors': ['Eli Curwin']}
+--------------------------------------------------
+Title: MassDOT, MBTA celebrate launch of Income-Eligible Reduced Fares Program
+Link: https://www.masstransitmag.com/technology/fare-collection/press-release/55137915/massachusetts-department-of-transportation-massdot-massdot-mbta-celebrate-launch-of-income-eligible-reduced-fares-program
+Source: {'name': 'Mass Transit Magazine', 'icon': 'https://lh3.googleusercontent.com/-o_GG2G_AVF_ASy0A7GCoIILCc6X5L0WRg_xbRfcn9hCfsrcY8oP5rX0e4coz4omzpNf5LrbR-0'}
+--------------------------------------------------
+Title: MBTA sets Red, Green line shutdowns in November
+Link: https://www.trains.com/trn/news-reviews/news-wire/mbta-sets-red-green-line-shutdowns-in-november/
+Source: {'name': 'TRAINS Magazine', 'icon': 'https://lh3.googleusercontent.com/_n5pDmjrjiFiDfjVKi7cHyhXm3cp2V5HJYKsr8P3aHIhjKpeCdUQKt_FWDjYglYjJS9ijSI9zYI'}
+--------------------------------------------------
+Title: MBTA removes eight safety speed restrictions on Green Line B Branch
+Link: https://www.masstransitmag.com/rail/maintenance/press-release/55134293/massachusetts-bay-transportation-authority-mbta-mbta-removes-eight-safety-speed-restrictions-on-green-line-b-branch
+Source: {'name': 'Mass Transit Magazine', 'icon': 'https://lh3.googleusercontent.com/-o_GG2G_AVF_ASy0A7GCoIILCc6X5L0WRg_xbRfcn9hCfsrcY8oP5rX0e4coz4omzpNf5LrbR-0'}
+--------------------------------------------------
+Title: MBTA Orders 41 Rail Cars from Hyundai Rotem
+Link: https://railway-news.com/mbta-orders-41-rail-cars-from-hyundai-rotem/
+Source: {'name': 'railway-news.com', 'icon': 'https://encrypted-tbn0.gstatic.com/faviconV2?url=https://railway-news.com&amp;client=NEWS_360&amp;size=96&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL', 'authors': ['Tiana May']}
+--------------------------------------------------
+Title: MBTA sets October maintenance shutdowns
+Link: https://www.trains.com/trn/news-reviews/news-wire/mbta-sets-october-maintenance-shutdowns/
+Source: {'name': 'TRAINS Magazine', 'icon': 'https://lh3.googleusercontent.com/_n5pDmjrjiFiDfjVKi7cHyhXm3cp2V5HJYKsr8P3aHIhjKpeCdUQKt_FWDjYglYjJS9ijSI9zYI'}
+--------------------------------------------------
+Title: MBTA general manager talks future of South Coast Rail during test stop in New Bedford
+Link: https://turnto10.com/news/local/south-coast-rail-massachusetts-bay-transportation-authority-mbta-middleborough-new-bedford-station-pedestrian-bridge-commuter-trail-schedule-fares-tickets-september-18-2024
+Source: {'name': 'Turn to 10', 'icon': 'https://encrypted-tbn0.gstatic.com/faviconV2?url=https://turnto10.com&amp;client=NEWS_360&amp;size=96&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL', 'authors': ['Kennedy Buck']}
+--------------------------------------------------
+Title: MBTA removes six safety speed restrictions on Orange Line
+Link: https://www.masstransitmag.com/rail/infrastructure/press-release/55093841/massachusetts-bay-transportation-authority-mbta-mbta-finishes-critical-track-safety-work
+Source: {'name': 'Mass Transit Magazine', 'icon': 'https://lh3.googleusercontent.com/-o_GG2G_AVF_ASy0A7GCoIILCc6X5L0WRg_xbRfcn9hCfsrcY8oP5rX0e4coz4omzpNf5LrbR-0'}
+--------------------------------------------------
+Title: US: MBTA Pilots NextGen Bus Navigation Technology
+Link: https://bus-news.com/us-mbta-pilots-nextgen-bus-navigation-technology/
+Source: {'name': 'Bus-News', 'icon': 'https://encrypted-tbn0.gstatic.com/faviconV2?url=https://bus-news.com&amp;client=NEWS_360&amp;size=96&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL', 'authors': ['Tiana May']}
+--------------------------------------------------
+Title: MBTA to release Climate Assessment
+Link: https://www.masstransitmag.com/management/press-release/55143211/massachusetts-bay-transportation-authority-mbta-mbta-to-release-climate-assessment
+Source: {'name': 'Mass Transit Magazine', 'icon': 'https://lh3.googleusercontent.com/-o_GG2G_AVF_ASy0A7GCoIILCc6X5L0WRg_xbRfcn9hCfsrcY8oP5rX0e4coz4omzpNf5LrbR-0'}
+--------------------------------------------------
+Title: Low-income MBTA riders can now apply for reduced fares
+Link: https://www.wgbh.org/news/local/2024-09-03/low-income-mbta-riders-can-now-apply-for-reduced-fares
+Source: {'name': 'GBH News', 'icon': 'https://lh3.googleusercontent.com/CzS0jxmGqapJHsEU3OmW4zVVLpsiy_OESK_m_EAjJS7xdvsRs55s8rtg_P9McBJBRuc8H6DSsFg', 'authors': ['Alexi Cohan']}
+--------------------------------------------------
+Title: MBTA to Acquire Battery Electric Trains
+Link: https://railfan.com/mbta-to-acquire-battery-electric-trains/
+Source: {'name': 'Railfan &amp; Railroad Magazine', 'icon': 'https://encrypted-tbn3.gstatic.com/faviconV2?url=https://railfan.com&amp;client=NEWS_360&amp;size=96&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL'}
+--------------------------------------------------
+Title: MBTA Board of Directors approves Fiscal Years 2025-2029 MBTA Capital Investment Plan
+Link: https://www.masstransitmag.com/management/press-release/55088260/massachusetts-bay-transportation-authority-mbta-mbta-board-of-directors-approves-fiscal-years-2025-2029-mbta-capital-investment-plan
+Source: {'name': 'Mass Transit Magazine', 'icon': 'https://lh3.googleusercontent.com/-o_GG2G_AVF_ASy0A7GCoIILCc6X5L0WRg_xbRfcn9hCfsrcY8oP5rX0e4coz4omzpNf5LrbR-0'}
+--------------------------------------------------
+Title: MBTA to launch Phase 1 of its Bus Network Redesign Dec. 15
+Link: https://www.masstransitmag.com/bus/press-release/55233929/massachusetts-bay-transportation-authority-mbta-mbta-to-launch-phase-1-of-its-bus-network-redesign-dec-15
+Source: {'name': 'Mass Transit Magazine', 'icon': 'https://lh3.googleusercontent.com/-o_GG2G_AVF_ASy0A7GCoIILCc6X5L0WRg_xbRfcn9hCfsrcY8oP5rX0e4coz4omzpNf5LrbR-0'}
+--------------------------------------------------
+Title: Boston to Roll Out Tap-to-Pay Transit Fare Payment Option
+Link: https://www.govtech.com/transportation/boston-to-roll-out-tap-to-pay-transit-fare-payment-option
+Source: {'name': 'Government Technology', 'icon': 'https://lh3.googleusercontent.com/BJ3dLpNqN42FrxXnqiD8jFnjPf2U3SUtum_rSUs7l1jk96I5x6tpxUW9XREGJ78hPe8-pxLJ', 'authors': ['Skip Descant']}
+--------------------------------------------------
+Title: People News: METRO, MBTA
+Link: https://www.railwayage.com/news/people-news-metro-mbta/
+Source: {'name': 'RailwayAge Magazine', 'icon': 'https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.railwayage.com&amp;client=NEWS_360&amp;size=96&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL'}
+--------------------------------------------------
+Title: Keolis contract extended in Boston
+Link: https://www.groupe-sncf.com/en/group/about-us/companies/keolis/boston
+Source: {'name': 'SNCF', 'icon': 'https://encrypted-tbn1.gstatic.com/faviconV2?url=https://www.groupe-sncf.com&amp;client=NEWS_360&amp;size=96&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL'}
+--------------------------------------------------
+Title: Big MBTA funding boost planned in Mass. House budget
+Link: https://www.wgbh.org/news/politics/2024-04-09/big-mbta-funding-boost-planned-in-mass-house-budget
+Source: {'name': 'GBH News', 'icon': 'https://lh3.googleusercontent.com/CzS0jxmGqapJHsEU3OmW4zVVLpsiy_OESK_m_EAjJS7xdvsRs55s8rtg_P9McBJBRuc8H6DSsFg', 'authors': ['Katie Lannan']}
+--------------------------------------------------
+Title: MBTA, city of Somerville, Mass., invest in bus lane improvements on Washington Street
+Link: https://www.masstransitmag.com/bus/infrastructure/press-release/55090721/massachusetts-bay-transportation-authority-mbta-mbta-city-of-somerville-mass-invest-in-bus-lane-improvements-on-washington-street
+Source: {'name': 'Mass Transit Magazine', 'icon': 'https://lh3.googleusercontent.com/-o_GG2G_AVF_ASy0A7GCoIILCc6X5L0WRg_xbRfcn9hCfsrcY8oP5rX0e4coz4omzpNf5LrbR-0'}
+--------------------------------------------------
+Title: MBTA work removes five Red Line speed restrictions
+Link: https://www.trains.com/trn/news-reviews/news-wire/mbta-work-removes-five-red-line-speed-restrictions/
+Source: {'name': 'TRAINS Magazine', 'icon': 'https://lh3.googleusercontent.com/_n5pDmjrjiFiDfjVKi7cHyhXm3cp2V5HJYKsr8P3aHIhjKpeCdUQKt_FWDjYglYjJS9ijSI9zYI'}
+--------------------------------------------------
+Title: Upcoming rail connection to New Bedford to happen as the city sees a significant economic shift
+Link: https://www.bostonglobe.com/2024/11/30/metro/new-bedford-commuter-rail/
+Source: {'name': 'The Boston Globe', 'icon': 'https://lh3.googleusercontent.com/VojRvMjpootHN8YGYZ7EOZGelMo0fo_uKh61fo-BhjKrUcdlTeaBxU4RsT764Lo7WoxPCSh-uw', 'authors': ['Omar Mohammed']}
+--------------------------------------------------
+Title: MBTA board approves five-year, $9.6 billion capital plan
+Link: https://www.trains.com/trn/news-reviews/news-wire/mbta-board-approves-five-year-9-6-billion-capital-plan/
+Source: {'name': 'TRAINS Magazine', 'icon': 'https://lh3.googleusercontent.com/_n5pDmjrjiFiDfjVKi7cHyhXm3cp2V5HJYKsr8P3aHIhjKpeCdUQKt_FWDjYglYjJS9ijSI9zYI'}
+--------------------------------------------------
+Title: Rail maintenance updates from MBTA and TTC
+Link: https://www.masstransitmag.com/rail/maintenance/article/55129843/rail-maintenance-updates-from-mbta-and-ttc
+Source: {'name': 'Mass Transit Magazine', 'icon': 'https://lh3.googleusercontent.com/-o_GG2G_AVF_ASy0A7GCoIILCc6X5L0WRg_xbRfcn9hCfsrcY8oP5rX0e4coz4omzpNf5LrbR-0', 'authors': ['Brandon Lewis']}
+--------------------------------------------------
+Title: MBTA eliminates six speed restrictions in latest track maintenance project
+Link: https://www.trains.com/trn/news-reviews/news-wire/mbta-eliminates-six-speed-restrictions-in-latest-track-maintenance-project/
+Source: {'name': 'TRAINS Magazine', 'icon': 'https://lh3.googleusercontent.com/_n5pDmjrjiFiDfjVKi7cHyhXm3cp2V5HJYKsr8P3aHIhjKpeCdUQKt_FWDjYglYjJS9ijSI9zYI'}
+--------------------------------------------------
+Title: Organizers marched to get googly eyes on Boston trains. Officials listened.
+Link: https://www.washingtonpost.com/nation/2024/07/01/train-googly-eyes-mbta-boston-march/
+Source: {'name': 'The Washington Post', 'icon': 'https://lh3.googleusercontent.com/o6yPxQMQu9ofTcfOYO51BWEv7jK44QjB14DqTK_cl1N3LsWVEF3GUHd1byHOQ3n8L6ySZluEhZQ', 'authors': ['Daniel Wu']}
+--------------------------------------------------
+Title: MBTA purchases additional 41 bi-level commuter rail cars from Hyundai Rotem
+Link: https://www.masstransitmag.com/rail/vehicles/press-release/55133351/massachusetts-bay-transportation-authority-mbta-mbta-purchases-additional-41-bi-level-commuter-rail-cars-from-hyundai-rotem
+Source: {'name': 'Mass Transit Magazine', 'icon': 'https://lh3.googleusercontent.com/-o_GG2G_AVF_ASy0A7GCoIILCc6X5L0WRg_xbRfcn9hCfsrcY8oP5rX0e4coz4omzpNf5LrbR-0'}
+--------------------------------------------------
+Title: Latest MBTA track work clears final Orange Line speed restrictions
+Link: https://www.trains.com/trn/news-reviews/news-wire/latest-mbta-track-work-clears-final-orange-line-speed-restrictions/
+Source: {'name': 'TRAINS Magazine', 'icon': 'https://lh3.googleusercontent.com/_n5pDmjrjiFiDfjVKi7cHyhXm3cp2V5HJYKsr8P3aHIhjKpeCdUQKt_FWDjYglYjJS9ijSI9zYI'}
+--------------------------------------------------
+Title: Transit Briefs: Amtrak, MBTA, Metrolinx
+Link: https://www.railwayage.com/passenger/transit-briefs-amtrak-mbta-metrolinx/
+Source: {'name': 'RailwayAge Magazine', 'icon': 'https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.railwayage.com&amp;client=NEWS_360&amp;size=96&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL'}
+--------------------------------------------------
+Title: Low-income subway, bus and commuter rail riders in Boston could be getting cheaper fares
+Link: https://apnews.com/article/massachusetts-mbta-subway-bus-fares-low-income-d6647b5082972597aa493ec1276b6cb1
+Source: {'name': 'The Associated Press', 'icon': 'https://lh3.googleusercontent.com/M087pJgRw3PLf4gl-Y7U-tJn6uaN99AUbFIuX7fmMnhq5QeNylJQMq_UeYPPVaEPk-5jL9I3QA', 'authors': ['Steve Leblanc']}
+--------------------------------------------------
+Title: Some Boston subway trains are now sporting googly eyes
+Link: https://apnews.com/article/boston-subway-trains-googly-eyes-42c69329096151eba01dc5b31f34fedc
+Source: {'name': 'The Associated Press', 'icon': 'https://lh3.googleusercontent.com/M087pJgRw3PLf4gl-Y7U-tJn6uaN99AUbFIuX7fmMnhq5QeNylJQMq_UeYPPVaEPk-5jL9I3QA', 'authors': ['Steve Leblanc']}
+--------------------------------------------------
+Title: MBTA names Jeff Cook chief administrative officer, Alicia Gomes executive director of light rail
+Link: https://www.masstransitmag.com/management/press-release/55129154/massachusetts-bay-transportation-authority-mbta-mbta-names-jeff-cook-chief-administrative-officer-alicia-gomes-executive-director-of-light-rail
+Source: {'name': 'Mass Transit Magazine', 'icon': 'https://lh3.googleusercontent.com/-o_GG2G_AVF_ASy0A7GCoIILCc6X5L0WRg_xbRfcn9hCfsrcY8oP5rX0e4coz4omzpNf5LrbR-0'}
+--------------------------------------------------
+Title: Budget chief wants to direct $1B toward MBTA, transportation improvements
+Link: https://www.nbcboston.com/news/local/mbta-funding-proposal/3530390/
+Source: {'name': 'NBC Boston', 'icon': 'https://encrypted-tbn0.gstatic.com/faviconV2?url=https://www.nbcboston.com&amp;client=NEWS_360&amp;size=96&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL', 'authors': ['Sam Drysdale']}
+--------------------------------------------------
+Title: MBTA Board greenlights plan from Keolis to introduce electric trains on Fairmount Commuter Rail Line
+Link: https://www.masstransitmag.com/rail/vehicles/press-release/55128908/keolis-commuter-services-mbta-board-greenlights-plan-from-keolis-to-introduce-electric-trains-on-fairmount-commuter-rail-line
+Source: {'name': 'Mass Transit Magazine', 'icon': 'https://lh3.googleusercontent.com/-o_GG2G_AVF_ASy0A7GCoIILCc6X5L0WRg_xbRfcn9hCfsrcY8oP5rX0e4coz4omzpNf5LrbR-0'}
+--------------------------------------------------
+Title: MBTA reports on adoption of contactless payments on Boston’s transit network
+Link: https://www.nfcw.com/2024/09/11/388846/mbta-reports-on-adoption-of-contactless-payments-on-bostons-transit-network/
+Source: {'name': 'NFC World', 'icon': 'https://encrypted-tbn3.gstatic.com/faviconV2?url=https://www.nfcw.com&amp;client=NEWS_360&amp;size=96&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL', 'authors': ['Sarah Clark']}
+--------------------------------------------------
+Title: Falling scaffolding plank narrowly misses pedestrians at Boston's South Station
+Link: https://www.theridgefieldpress.com/news/article/falling-scaffolding-plank-narrowly-misses-19916885.php
+Source: {'name': 'The Ridgefield Press', 'icon': 'https://encrypted-tbn1.gstatic.com/faviconV2?url=https://www.theridgefieldpress.com&amp;client=NEWS_360&amp;size=96&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL'}
+--------------------------------------------------
+Title: Four MBTA employees fired in connection with criminal investigation at Cabot Yard, Phil Eng says
+Link: https://www.bostonglobe.com/2024/10/30/metro/mbta-cabot-yard-investigation/
+Source: {'name': 'The Boston Globe', 'icon': 'https://lh3.googleusercontent.com/VojRvMjpootHN8YGYZ7EOZGelMo0fo_uKh61fo-BhjKrUcdlTeaBxU4RsT764Lo7WoxPCSh-uw', 'authors': ['Shannon Larson']}
+--------------------------------------------------
+Title: In Boston, All Aboard Googly-Eyed Trains
+Link: https://www.nytimes.com/2024/06/30/us/boston-t-train-googly-eyes.html
+Source: {'name': 'The New York Times', 'icon': 'https://lh3.googleusercontent.com/tDFSwtr61ZReDD_jw6kEPWegHMSqGEHx-ZS_t-e10We-GfWEPVYkn0uLk_Vn8XQHg8wcnhMWmug', 'authors': ['Orlando Mayorquin']}
+--------------------------------------------------
+Title: Boston’s Broke and Broken Transit System Hurts Downtown Recovery
+Link: https://www.bloomberg.com/news/articles/2024-08-14/boston-s-broke-and-broken-transit-system-hurts-downtown-recovery
+Source: {'name': 'Bloomberg', 'icon': 'https://lh3.googleusercontent.com/NGEszdY4BPKjXpMWL2fgAHQasyKjNgr-yPt6p2ELILT6x6SV6gjNxJgplAAFTRD6-UhwMebPlA', 'authors': ['Sri Taylor']}
+--------------------------------------------------
+Title: MBTA Budget Inadequate for Key Projects
+Link: https://www.planetizen.com/news/2024/06/129508-mbta-budget-inadequate-key-projects
+Source: {'name': 'Planetizen', 'icon': 'https://encrypted-tbn0.gstatic.com/faviconV2?url=https://www.planetizen.com&amp;client=NEWS_360&amp;size=96&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL', 'authors': ['Diana Ionescu']}
+--------------------------------------------------
+Title: MBTA removes 19 safety speed restrictions on Blue Line
+Link: https://www.masstransitmag.com/rail/infrastructure/press-release/55036496/massachusetts-bay-transportation-authority-mbta-mbta-removes-19-safety-speed-restrictions-on-blue-line
+Source: {'name': 'Mass Transit Magazine', 'icon': 'https://lh3.googleusercontent.com/-o_GG2G_AVF_ASy0A7GCoIILCc6X5L0WRg_xbRfcn9hCfsrcY8oP5rX0e4coz4omzpNf5LrbR-0'}
+--------------------------------------------------
+Title: MBTA Red Line work eliminates 37 speed restrictions
+Link: https://www.trains.com/trn/news-reviews/news-wire/mbta-red-line-work-eliminates-37-speed-restrictions/
+Source: {'name': 'TRAINS Magazine', 'icon': 'https://lh3.googleusercontent.com/_n5pDmjrjiFiDfjVKi7cHyhXm3cp2V5HJYKsr8P3aHIhjKpeCdUQKt_FWDjYglYjJS9ijSI9zYI'}
+--------------------------------------------------
+Title: MBTA Board of Directors approves plan to implement reduced fares program for riders with low-income
+Link: https://www.masstransitmag.com/technology/fare-collection/press-release/55001195/massachusetts-bay-transportation-authority-mbta-mbta-board-of-directors-approves-plan-to-implement-reduced-fares-program-for-riders-with-low-income
+Source: {'name': 'Mass Transit Magazine', 'icon': 'https://lh3.googleusercontent.com/-o_GG2G_AVF_ASy0A7GCoIILCc6X5L0WRg_xbRfcn9hCfsrcY8oP5rX0e4coz4omzpNf5LrbR-0'}
+--------------------------------------------------
+Title: MBTA celebrates new class of heavy rail motorpersons
+Link: https://www.masstransitmag.com/rail/press-release/55001466/massachusetts-bay-transportation-authority-mbta-mbta-celebrates-new-class-of-heavy-rail-motorpersons
+Source: {'name': 'Mass Transit Magazine', 'icon': 'https://lh3.googleusercontent.com/-o_GG2G_AVF_ASy0A7GCoIILCc6X5L0WRg_xbRfcn9hCfsrcY8oP5rX0e4coz4omzpNf5LrbR-0'}
+--------------------------------------------------
+Title: Boston, MBTA Officials Reveal New Designs for Future Blue Hill Avenue Transit Project
+Link: https://www.constructionequipmentguide.com/boston-mbta-officials-reveal-new-designs-for-future-blue-hill-avenue-transit-project/66496
+Source: {'name': 'Construction Equipment Guide', 'icon': 'https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.constructionequipmentguide.com&amp;client=NEWS_360&amp;size=96&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL'}
+--------------------------------------------------
+Title: MBTA to switch on contactless payments across Boston’s public transportation network
+Link: https://www.nfcw.com/2024/07/17/388520/mbta-to-switch-on-contactless-payments-across-bostons-public-transportation-network/
+Source: {'name': 'NFC World', 'icon': 'https://encrypted-tbn3.gstatic.com/faviconV2?url=https://www.nfcw.com&amp;client=NEWS_360&amp;size=96&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL', 'authors': ['Sarah Clark']}
+--------------------------------------------------
+Title: Major Red Line shutdown part of MBTA maintenance plans for July
+Link: https://www.trains.com/trn/news-reviews/news-wire/major-red-line-shutdown-part-of-mbta-maintenance-plans-for-july/
+Source: {'name': 'TRAINS Magazine', 'icon': 'https://lh3.googleusercontent.com/_n5pDmjrjiFiDfjVKi7cHyhXm3cp2V5HJYKsr8P3aHIhjKpeCdUQKt_FWDjYglYjJS9ijSI9zYI'}
+--------------------------------------------------
+Title: Skanska awarded supplemental track improvements contract for MBTA Red Line
+Link: https://www.masstransitmag.com/rail/maintenance/press-release/55041378/skanska-usa-skansa-awarded-supplemental-track-improvements-contract-for-mbta-red-line
+Source: {'name': 'Mass Transit Magazine', 'icon': 'https://lh3.googleusercontent.com/-o_GG2G_AVF_ASy0A7GCoIILCc6X5L0WRg_xbRfcn9hCfsrcY8oP5rX0e4coz4omzpNf5LrbR-0'}
+--------------------------------------------------
+Title: Man dead after collision with Massachusetts Bay Transportation Authority train
+Link: https://fallriverreporter.com/man-dead-after-collision-with-massachusetts-bay-transportation-authority-train/
+Source: {'name': 'Fall River Reporter', 'icon': 'https://encrypted-tbn1.gstatic.com/faviconV2?url=https://fallriverreporter.com&amp;client=NEWS_360&amp;size=96&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL'}
+--------------------------------------------------
+Title: Transit Briefs: MBTA, NYMTA, TransLink
+Link: https://www.railwayage.com/passenger/transit-briefs-mbta-nymta-translink/
+Source: {'name': 'RailwayAge Magazine', 'icon': 'https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.railwayage.com&amp;client=NEWS_360&amp;size=96&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL'}
+--------------------------------------------------
+Title: News photo: MBTA’s ‘Cranberry’ locomotive
+Link: https://www.trains.com/trn/news-reviews/news-wire/news-photo-mbtas-cranberry-locomotive/
+Source: {'name': 'TRAINS Magazine', 'icon': 'https://lh3.googleusercontent.com/_n5pDmjrjiFiDfjVKi7cHyhXm3cp2V5HJYKsr8P3aHIhjKpeCdUQKt_FWDjYglYjJS9ijSI9zYI'}
+--------------------------------------------------
+Title: MBTA completes critical track work on Red Line
+Link: https://www.masstransitmag.com/rail/maintenance/press-release/53096951/massachusetts-bay-transportation-authority-mbta-mbta-completes-critical-track-work-on-red-line
+Source: {'name': 'Mass Transit Magazine', 'icon': 'https://lh3.googleusercontent.com/-o_GG2G_AVF_ASy0A7GCoIILCc6X5L0WRg_xbRfcn9hCfsrcY8oP5rX0e4coz4omzpNf5LrbR-0'}
+--------------------------------------------------
+Title: MBTA celebrating plan for battery-electric trains
+Link: https://www.wcvb.com/article/mbta-celebrating-plan-for-battery-electric-trains/61866446
+Source: {'name': 'WCVB Boston', 'icon': 'https://encrypted-tbn0.gstatic.com/faviconV2?url=https://www.wcvb.com&amp;client=NEWS_360&amp;size=96&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL', 'authors': ['Matt Reed']}
+--------------------------------------------------
+Title: Massachusetts Bay Transportation Authority announces South Attleboro commuter rail station set to reopen
+Link: https://fallriverreporter.com/massachusetts-bay-transportation-authority-announces-south-attleboro-commuter-rail-station-set-to-reopen/
+Source: {'name': 'Fall River Reporter', 'icon': 'https://encrypted-tbn1.gstatic.com/faviconV2?url=https://fallriverreporter.com&amp;client=NEWS_360&amp;size=96&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL', 'authors': ['Ken Paiva']}
+--------------------------------------------------
+Title: The MBTA deserves a true investment
+Link: https://www.tuftsdaily.com/article/2024/03/the-mbta-deserves-a-true-investment
+Source: {'name': 'Tufts Daily', 'icon': 'https://encrypted-tbn3.gstatic.com/faviconV2?url=https://www.tuftsdaily.com&amp;client=NEWS_360&amp;size=96&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL', 'authors': ['Kunal Botla']}
+--------------------------------------------------
+Title: Winchester denies MBTA request to use parking spaces
+Link: https://homenewshere.com/daily_times_chronicle/news/winchester/article_d25f9956-8bca-11ef-a84d-8b9e795dd342.html
+Source: {'name': 'Woburn Daily Times', 'icon': 'https://encrypted-tbn2.gstatic.com/faviconV2?url=https://homenewshere.com&amp;client=NEWS_360&amp;size=96&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL'}
+--------------------------------------------------
+Title: Coming Soon: Waving Your Phone to Ride on the MBTA | BU Today
+Link: https://www.bu.edu/articles/2024/coming-soon-waving-your-phone-to-ride-on-the-mbta/
+Source: {'name': 'Boston University', 'icon': 'https://lh3.googleusercontent.com/EknYqfy9nzbFzO9SlL6IISE4_Ev5NgzIp3-eDkWgGLsHNxkCa1-cPaUdoGiuCE0BDyQuHxqu1A', 'authors': ['Gia Shin']}
+--------------------------------------------------
+Title: MBTA removes seven safety speed restrictions on Orange Line
+Link: https://www.masstransitmag.com/rail/infrastructure/press-release/53100019/massachusetts-bay-transportation-authority-mbta-mbta-removes-seven-safety-speed-restrictions-on-orange-line
+Source: {'name': 'Mass Transit Magazine', 'icon': 'https://lh3.googleusercontent.com/-o_GG2G_AVF_ASy0A7GCoIILCc6X5L0WRg_xbRfcn9hCfsrcY8oP5rX0e4coz4omzpNf5LrbR-0'}
+--------------------------------------------------
+Title: Foxboro officials kick off listening tour about MBTA Communities Act
+Link: https://www.thesunchronicle.com/foxboro_reporter/news/local_news/foxboro-officials-kick-off-listening-tour-about-mbta-communities-act/article_8eb2664a-5a4f-11ef-9690-37f2ed0c65c6.html
+Source: {'name': 'The Sun Chronicle', 'icon': 'https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.thesunchronicle.com&amp;client=NEWS_360&amp;size=96&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL'}
+--------------------------------------------------
+Title: MBTA launches bus stop signage pilot
+Link: https://www.masstransitmag.com/technology/passenger-info/signage-and-displays/press-release/55017518/massachusetts-bay-transportation-authority-mbta-mbta-launches-bus-stop-signage-pilot
+Source: {'name': 'Mass Transit Magazine', 'icon': 'https://lh3.googleusercontent.com/-o_GG2G_AVF_ASy0A7GCoIILCc6X5L0WRg_xbRfcn9hCfsrcY8oP5rX0e4coz4omzpNf5LrbR-0'}
+--------------------------------------------------
+Title: MBTA Orange Line project eliminates 20 speed restrictions
+Link: https://www.trains.com/trn/news-reviews/news-wire/mbta-orange-line-project-eliminates-20-speed-restrictions/
+Source: {'name': 'TRAINS Magazine', 'icon': 'https://lh3.googleusercontent.com/_n5pDmjrjiFiDfjVKi7cHyhXm3cp2V5HJYKsr8P3aHIhjKpeCdUQKt_FWDjYglYjJS9ijSI9zYI'}
+--------------------------------------------------
+Title: MBTA continues progress in eliminating slow orders
+Link: https://www.trains.com/trn/news-reviews/news-wire/mbta-continues-progress-in-eliminating-slow-orders/
+Source: {'name': 'TRAINS Magazine', 'icon': 'https://lh3.googleusercontent.com/_n5pDmjrjiFiDfjVKi7cHyhXm3cp2V5HJYKsr8P3aHIhjKpeCdUQKt_FWDjYglYjJS9ijSI9zYI'}
+--------------------------------------------------
+Title: MBTA extends current Blue Line maintenance closure
+Link: https://www.trains.com/trn/news-reviews/news-wire/mbta-extends-current-blue-line-maintenance-closure/
+Source: {'name': 'TRAINS Magazine', 'icon': 'https://lh3.googleusercontent.com/_n5pDmjrjiFiDfjVKi7cHyhXm3cp2V5HJYKsr8P3aHIhjKpeCdUQKt_FWDjYglYjJS9ijSI9zYI'}
+--------------------------------------------------
+Title: Millbury Town Meeting votes to snub MBTA housing law. Here's how it happened.
+Link: https://www.telegram.com/story/news/local/2024/11/11/millbury-town-meeting-voters-snub-mbta-housing-law/76203340007/
+Source: {'name': 'Worcester Telegram', 'icon': 'https://encrypted-tbn1.gstatic.com/faviconV2?url=https://www.telegram.com&amp;client=NEWS_360&amp;size=96&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL', 'authors': ['Marco Cartolano']}
+--------------------------------------------------
+Title: LTD, MBTA ridership up during FY 24
+Link: https://www.masstransitmag.com/management/press-release/55139225/ltd-mbta-ridership-up-during-fy-24
+Source: {'name': 'Mass Transit Magazine', 'icon': 'https://lh3.googleusercontent.com/-o_GG2G_AVF_ASy0A7GCoIILCc6X5L0WRg_xbRfcn9hCfsrcY8oP5rX0e4coz4omzpNf5LrbR-0', 'authors': ['Eman Abu Khaled']}
+--------------------------------------------------
+Title: MBTA Completes Track Work on Orange Line; Removes Six Speed Restrictions
+Link: https://www.rtands.com/track-maintenance/mbta-completes-track-work-on-orange-line-removes-six-speed-restrictions/
+Source: {'name': 'Railway Track &amp; Structures', 'icon': 'https://encrypted-tbn0.gstatic.com/faviconV2?url=https://www.rtands.com&amp;client=NEWS_360&amp;size=96&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL', 'authors': ['Jennifer McLawhorn']}
+--------------------------------------------------
+Title: MBTA Orange Line: A Total Transformation
+Link: https://railfan.com/mbta-orange-line-a-total-transformation/
+Source: {'name': 'Railfan &amp; Railroad Magazine', 'icon': 'https://encrypted-tbn3.gstatic.com/faviconV2?url=https://railfan.com&amp;client=NEWS_360&amp;size=96&amp;type=FAVICON&amp;fallback_opts=TYPE,SIZE,URL'}
+--------------------------------------------------
+Title: Green Line’s B Branch has all speed restrictions removed during latest MBTA project
+Link: https://www.trains.com/trn/news-reviews/news-wire/green-lines-b-branch-has-all-speed-restrictions-removed-during-latest-mbta-project/
+Source: {'name': 'TRAINS Magazine', 'icon': 'https://lh3.googleusercontent.com/_n5pDmjrjiFiDfjVKi7cHyhXm3cp2V5HJYKsr8P3aHIhjKpeCdUQKt_FWDjYglYjJS9ijSI9zYI'}
+--------------------------------------------------
+Title: MBTA, MassDOT release results of Silver Line Extension Alternatives Analysis
+Link: https://www.masstransitmag.com/bus/press-release/53098713/massachusetts-bay-transportation-authority-mbta-mbta-massdot-release-results-of-silver-line-extension-alternatives-analysis
+Source: {'name': 'Mass Transit Magazine', 'icon': 'https://lh3.googleusercontent.com/-o_GG2G_AVF_ASy0A7GCoIILCc6X5L0WRg_xbRfcn9hCfsrcY8oP5rX0e4coz4omzpNf5LrbR-0'}
+--------------------------------------------------
+Title: MBTA names David Perry director of commuter ferry services
+Link: https://www.masstransitmag.com/management/press-release/55021701/massachusetts-bay-transportation-authority-mbta-mbta-names-david-perry-director-of-commuter-ferry-services
+Source: {'name': 'Mass Transit Magazine', 'icon': 'https://lh3.googleusercontent.com/-o_GG2G_AVF_ASy0A7GCoIILCc6X5L0WRg_xbRfcn9hCfsrcY8oP5rX0e4coz4omzpNf5LrbR-0'}
+--------------------------------------------------
+Title: MBTA shutdown on Green Line to complete critical track work successful
+Link: https://www.masstransitmag.com/rail/infrastructure/press-release/53095261/massachusetts-bay-transportation-authority-mbta-mbta-shutdown-on-green-line-to-complete-critical-track-work-successful
+Source: {'name': 'Mass Transit Magazine', 'icon': 'https://lh3.googleusercontent.com/-o_GG2G_AVF_ASy0A7GCoIILCc6X5L0WRg_xbRfcn9hCfsrcY8oP5rX0e4coz4omzpNf5LrbR-0'}
+--------------------------------------------------
+Combined news data from both queries saved to ../../data/raw-data/google_news_resultss.json</code></pre>
+</div>
+</div>
+</section>
+<section id="reliability" class="level2">
+<h2 class="anchored" data-anchor-id="reliability">Reliability</h2>
+<p>For the sake of collection replication, we will show the first few lines of reliability dataset and its shape as reference</p>
+<div id="cell-16" class="cell" data-execution_count="20">
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>example_data_reliability <span class="op">=</span> <span class="st">"../../data/raw-data/MBTA_The_RIDE_Reliability.csv"</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>df2 <span class="op">=</span> pd.read_csv(example_data_reliability)</span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>shape <span class="op">=</span> df2.shape</span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df2.head(<span class="dv">5</span>))</span>
+<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(shape) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>                trip_date  ontime_trip_count  trip_count  ObjectId
+0  2014/07/01 04:00:00+00               5479        5884         1
+1  2014/07/02 04:00:00+00               5297        5612         2
+2  2014/07/03 04:00:00+00               4959        5306         3
+3  2014/07/04 04:00:00+00               1530        1558         4
+4  2014/07/05 04:00:00+00               2420        2580         5
+(3681, 4)</code></pre>
+</div>
+</div>
+</section>
+<section id="accuracy" class="level2">
+<h2 class="anchored" data-anchor-id="accuracy">Accuracy</h2>
+<p>For the sake of collection replication, we will show the first few lines of accurracy dataset and its shape as reference</p>
+<div id="cell-18" class="cell" data-execution_count="21">
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>example_data_accuracy <span class="op">=</span> <span class="st">"../../data/raw-data/rapid_transit_and_bus_prediction_accuracy_data.csv"</span></span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>df3 <span class="op">=</span> pd.read_csv(example_data_accuracy)</span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>shape <span class="op">=</span> df3.shape</span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df3.head(<span class="dv">5</span>))</span>
+<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(shape) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>       weekly mode route_id        bin arrival_departure  num_predictions  \
+0  2020-08-06  bus      NaN    0-3 min         departure           233967   
+1  2020-08-06  bus      NaN    3-6 min         departure           227406   
+2  2020-08-06  bus      NaN   6-12 min         departure           445848   
+3  2020-08-06  bus      NaN  12-30 min         departure          1261843   
+4  2020-08-13  bus      NaN    0-3 min         departure           240187   
+
+   num_accurate_predictions  
+0                    183615  
+1                    178297  
+2                    368421  
+3                   1101363  
+4                    189546  
+(7964, 7)</code></pre>
+</div>
+</div>
+</section>
+<section id="financial-statement" class="level2">
+<h2 class="anchored" data-anchor-id="financial-statement">Financial Statement</h2>
+<p>Arguably, the transformation from pdf to csv structured file lies in the intersection of collection and cleaning. However, we will be explaining the transformation into the cleaning page.</p>
+<p><strong>Before Transforming</strong>:</p>
+<p>Below is a linked example of the financial statement pdf file <strong>before</strong> converting to a structured format (.csv)</p>
+<p><a href="https://www.mass.gov/doc/fiscal-2023-massdot/download">View a Financial Statement PDF as an example</a></p>
 </section>
 </section>
 <section id="summary" class="level1">
 <h1>Summary</h1>
-<p>This section should be written for a <strong>technical audience</strong>, focusing on detailed analysis, factual reporting, and clear presentation of data. The following serves as a guide, but feel free to adjust as needed.</p>
+<p>This section will focus on the challenges, benchmarks, and conclusions drawn from our data collection portion. It provides a technical overview on obstacles and limiations with our current dataset. Then, it will provide a brief overview on our next step.</p>
 <section id="challenges" class="level2">
 <h2 class="anchored" data-anchor-id="challenges">Challenges</h2>
+<p><strong>Transparency</strong> - While the MBTA Open Data Portal provided substantial data in a fairly clean format, there is not transparency about how data is collected by the MBTA. Therefore, we cannot account for biased data (especially since the MBTA is self-reporting). We also do not know if earlier years have incomplete coverage.</p>
 <ul>
-<li>Discuss any technical challenges faced during the project, such as data limitations, computational issues, or obstacles encountered during analysis.</li>
-<li>Explain unexpected results and their technical implications.</li>
-<li>Identify areas for future work, including potential optimizations, further analysis, or scaling solutions.</li>
+<li>Financial data only provides aggregated transactional data. We are unable to track individual transactions.</li>
+</ul>
+<p><strong>Collection Method Difficulties</strong> - Financial data required additional preprocessing as they were available only in PDF format. Converting to structured formats produced difficulties. We initially used pdfplumber library to extract table from pdf file, but failed at integrating it. We then decided on camelot.</p>
+<ul>
+<li>SerpAPI has rate limits with their basic free plan. Careful management is required when collecting data.</li>
 </ul>
 </section>
 <section id="benchmarks" class="level2">
 <h2 class="anchored" data-anchor-id="benchmarks">Benchmarks</h2>
 <ul>
-<li>Compare your findings to relevant research, industry benchmarks, or intuitive expectations, if applicable.</li>
+<li>While reliability, ridership details, and accuracy have been datasets explored in the past. Public perception (text analysis on recent news) has rarely been a dataset collected.</li>
 </ul>
 </section>
-<section id="conclusion-and-future-steps" class="level2">
-<h2 class="anchored" data-anchor-id="conclusion-and-future-steps">Conclusion and Future Steps</h2>
+<section id="conclusion" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
+<p><strong>Next Step</strong> - Following the collection, we will now clean the datasets to ensure it is prime for analysis.</p>
+<p><strong>Potential Improvements</strong> - Further analysis may cause pivoting in datasts involved. For instance, we may be able to find financial statements that are not aggregated and not in pdf format.</p>
 <ul>
-<li>Summarize the key technical points and outcomes of the project.</li>
-<li>Suggest potential improvements or refinements to this part of the project.</li>
-<li>Based on the results, provide actionable recommendations for further research or optimization efforts.</li>
+<li>It would also be preferrable to track public perceptions from 2020-2024 to track how public perception could have possibly changed through text analysis.</li>
 </ul>
+<p><strong><a href="../../technical-details/data-cleaning/main.html">Click here to visit the next step: Data Cleaning</a></strong></p>
 
 
 </section>

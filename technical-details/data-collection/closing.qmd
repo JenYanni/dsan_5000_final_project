@@ -1,19 +1,31 @@
 # Summary
 
-This section should be written for a **technical audience**, focusing on detailed analysis, factual reporting, and clear presentation of data. The following serves as a guide, but feel free to adjust as needed.
+This section will focus on the challenges, benchmarks, and conclusions drawn from our data collection portion. It provides a technical overview on obstacles and limiations with our current dataset. Then, it will provide a brief overview on our next step. 
 
 ## Challenges
 
-- Discuss any technical challenges faced during the project, such as data limitations, computational issues, or obstacles encountered during analysis.
-- Explain unexpected results and their technical implications.
-- Identify areas for future work, including potential optimizations, further analysis, or scaling solutions.
+**Transparency**
+- While the MBTA Open Data Portal provided substantial data in a fairly clean format, there is not transparency about how data is collected by the MBTA. Therefore, we cannot account for biased data (especially since the MBTA is self-reporting). We also do not know if earlier years have incomplete coverage. 
+
+- Financial data only provides aggregated transactional data. We are unable to track individual transactions. 
+
+**Collection Method Difficulties** 
+- Financial data required additional preprocessing as they were available only in PDF format. Converting to structured formats produced difficulties. We initially used  pdfplumber library to extract table from pdf file, but failed at integrating it. We then decided on camelot. 
+
+- SerpAPI has rate limits with their basic free plan. Careful management is required when collecting data. 
+
 
 ## Benchmarks
+- While reliability, ridership details, and accuracy have been datasets explored in the past. Public perception (text analysis on recent news) has rarely been a dataset collected. 
 
-- Compare your findings to relevant research, industry benchmarks, or intuitive expectations, if applicable.
+## Conclusion 
 
-## Conclusion and Future Steps
+**Next Step** 
+- Following the collection, we will now clean the datasets to ensure it is prime for analysis. 
 
-- Summarize the key technical points and outcomes of the project.
-- Suggest potential improvements or refinements to this part of the project.
-- Based on the results, provide actionable recommendations for further research or optimization efforts.
+**Potential Improvements** 
+- Further analysis may cause pivoting in datasts involved. For instance, we may be able to find financial statements that are not aggregated and not in pdf format. 
+
+- It would also be preferrable to track public perceptions from 2020-2024 to track how public perception could have possibly changed through text analysis. 
+
+**[Click here to visit the next step: Data Cleaning](../data-cleaning/main.ipynb)**

@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.5.54">
+<meta name="generator" content="quarto-1.5.57">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -163,13 +163,81 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="overview" class="level1">
 <h1>Overview</h1>
-<p>In this section, provide a high-level overview for technical staff, summarizing the key tasks and processes carried out here. Include the following elements:</p>
 <ul>
-<li><strong>Goals</strong>: Clearly define the purpose of the tasks or analysis being conducted.</li>
-<li><strong>Motivation</strong>: Explain the reasoning behind the work, such as solving a specific problem, improving a system, or optimizing performance.</li>
-<li><strong>Objectives</strong>: Outline the specific outcomes you aim to achieve, whether it’s implementing a solution, analyzing data, or building a model.</li>
+<li><p><strong>Overarching Research Question</strong>: Analyze if the ongoing renovation project improved the reliability and performance of the MBTA system. Are there early indicators of significant improvement to the usage and performance of the MBTA system?</p></li>
+<li><p><strong>Goal</strong>: Gather and compile datasets relevant to our research question and its sub-questions. We identified reputable data sources and defined our collection methods by choosing an dataset accessed through an API, while finding datasets that have features which fit into requirements of future binary, multivariate, and regression analysis.</p></li>
+<li><p><strong>Motivation</strong>:</p>
+<ul>
+<li><code>Centralize Data Access</code>: This is a huge project and a tough question to answer! Consolidating datasets to one source not only makes our analysis easier, but also helps Jen and I collaborate.</li>
+<li><code>Contextual Insights</code>: We want to collect as much datasets to inform our question. The more, the better. We want to gain a holistic understanding of MBTA from its performance to public perceptions</li>
+</ul></li>
+<li><p><strong>Objectives</strong>: Outline the specific outcomes you aim to achieve, whether it’s implementing a solution, analyzing data, or building a model.</p>
+<ul>
+<li><code>Identify and Gather Relevant and Reliable Datasts</code></li>
+<li><code>Ensure Data Coverage (2020-2024)</code></li>
+<li><code>Document data sources</code></li>
+<li><code>Validate data accessibility so recreation is possible</code></li>
+</ul></li>
+<li><p><strong>Dataset Info</strong>:</p>
+<ul>
+<li><code>Datasource</code>: MBTA Bluebook Open Data Portal</li>
+<li><code>Type</code>: Tabular (.csv)</li>
+<li><code>Years</code>: 2020-2024
+<ul>
+<li><a href="https://mbta-massdot.opendata.arcgis.com/datasets/MassDOT::mbta-service-alerts-2020-2023/about">MBTA Service Alerts 2020-2023</a></li>
+<li><a href="https://mbta-massdot.opendata.arcgis.com/datasets/f960d5089e164fb8b6c6936c70719d72/about">MBTA Service Alerts 2024</a></li>
+</ul></li>
+<li><code>Purpose</code>:
+<ul>
+<li>Analyze causes and effects of service disruptions.</li>
+<li>Identify routes and stations prone to frequent alerts.</li>
+<li>Measure severity and frequency of alerts over time.</li>
+</ul></li>
+<li><code>Datasource</code>: Serpapi: Google News Feed</li>
+<li><code>Type</code>: Tabular (.json), API</li>
+<li><code>Years</code>: 2024
+<ul>
+<li><a href="https://serpapi.com/google-news-api">Google News Feed</a></li>
+</ul></li>
+<li><code>Purpose</code>:
+<ul>
+<li>Understand current public perception through text analysis (sentimen analysis, topic modeling, keyword extraction)</li>
+<li>Technical use of APIs</li>
+</ul></li>
+<li><code>Datasource</code>: MBTA Bluebook Open Data Portal</li>
+<li><code>Type</code>: Tabular (.csv)</li>
+<li><code>Years</code>: 2014-2024
+<ul>
+<li><a href="https://mbta-massdot.opendata.arcgis.com/datasets/cb4f4fb3cdf443e7a9d66c87ab1f5e17_0/explore">MBTA The Ride Reliability</a></li>
+</ul></li>
+<li><code>Purpose</code>:
+<ul>
+<li>Evlauate long-term trends in service reliability</li>
+<li>Identify improvements or challenges in accessibility services.</li>
+</ul></li>
+<li><code>Datasource</code>: MBTA Bluebook Open Data Portal</li>
+<li><code>Type</code>: Tabular (.json)</li>
+<li><code>Years</code>: 2020-2024
+<ul>
+<li><a href="https://mbta-massdot.opendata.arcgis.com/datasets/MassDOT::rapid-transit-and-bus-prediction-accuracy-data/about">Rapid Transit and Bus Prediction Accuracy Data</a></li>
+</ul></li>
+<li><code>Purpose</code>:
+<ul>
+<li>Find differences between predicted and actual service performance</li>
+<li>Evalute prediction accuracy trends</li>
+</ul></li>
+<li><code>Datasource</code>: Financial Statements</li>
+<li><code>Type</code>: PDF (.json)</li>
+<li><code>Years</code>: 2019-2024
+<ul>
+<li><a href="https://www.mbta.com/financials/audited-financials">Financial Statement FY 2019-2024</a></li>
+</ul></li>
+<li><code>Purpose</code>:
+<ul>
+<li>Understand macro-level trends in financial trends and whether it correlates with system performance</li>
+</ul></li>
+</ul></li>
 </ul>
-<p>This overview should give technical staff a clear understanding of the context and importance of the work, while guiding them on what to focus on in the details that follow.</p>
 
 
 </section>
