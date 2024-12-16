@@ -1,12 +1,18 @@
 # Overview
 
-In this section, provide a high-level overview for technical staff, summarizing the key tasks and processes carried out here. Include the following elements:
+- **Overarching Research Question**: Analyze if the ongoing renovation project improved the reliability and performance of the MBTA system. Are there early indicators of significant improvement to the usage and performance of the MBTA system?
 
-- **Goals**: Clearly define the purpose of the tasks or analysis being conducted.
-- **Motivation**: Explain the reasoning behind the work, such as solving a specific problem, improving a system, or optimizing performance.
-- **Objectives**: Outline the specific outcomes you aim to achieve, whether it's implementing a solution, analyzing data, or building a model.
-
-This overview should give technical staff a clear understanding of the context and importance of the work, while guiding them on what to focus on in the details that follow.
+- **Goal**: Cleaning existing raw datasets to prep it for exploratory data analysis. This involves addressing data quality issues such as missing values, inconsisent formatting, and irrelevant features. We want to simplify the datasets while transforming them to fit our EDA. 
 
 
+- **Motivation**: 
+    - `Enable Data Analysis`: Cleaning is critical in ensuring accuracy of analysis and is an integral component of the pipeline. We want to avoid bias in results. 
+    - `Consistent Data Integration`: We want each dataset to be able to work well with each other. This will enable the comprehensive and robust analysis of MBTA performance. 
 
+- **Objectives**:
+    - `Handle Null values`
+    - `Standarize data formats`
+    - `Resolve duplicates or errors`
+    - `Data Transformating`
+    - `Relabel features for formatting`
+    - `Subset dataset to maintain relevant features`

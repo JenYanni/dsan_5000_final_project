@@ -9,13 +9,14 @@
     - `Centralize Data Access`: This is a huge project and a tough question to answer! Consolidating datasets to one source not only makes our analysis easier, but also helps Jen and I collaborate. 
     - `Contextual Insights`: We want to collect as much datasets to inform our question. The more, the better. We want to gain a holistic understanding of MBTA from its performance to public perceptions 
 
-- **Objectives**: Outline the specific outcomes you aim to achieve, whether it's implementing a solution, analyzing data, or building a model.
+- **Objectives**: 
     - `Identify and Gather Relevant and Reliable Datasts`
     - `Ensure Data Coverage (2020-2024)`
     - `Document data sources`
     - `Validate data accessibility so recreation is possible`
 
 - **Dataset Info**: 
+
     - `Datasource`: MBTA Bluebook Open Data Portal 
     - `Type`: Tabular (.csv)
     - `Years`: 2020-2024
@@ -26,6 +27,7 @@
         - Identify routes and stations prone to frequent alerts.
         - Measure severity and frequency of alerts over time.
 
+
     - `Datasource`: Serpapi: Google News Feed 
     - `Type`: Tabular (.json), API 
     - `Years`: 2024
@@ -33,6 +35,7 @@
     - `Purpose`: 
         - Understand current public perception through text analysis (sentimen analysis, topic modeling, keyword extraction)
         - Technical use of APIs 
+
 
     - `Datasource`: MBTA Bluebook Open Data Portal 
     - `Type`: Tabular (.csv)
@@ -50,6 +53,7 @@
     - `Purpose`:
         - Find differences between predicted and actual service performance
         - Evalute prediction accuracy trends   
+
 
     - `Datasource`: Financial Statements
     - `Type`: PDF (.json)

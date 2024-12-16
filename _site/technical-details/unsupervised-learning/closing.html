@@ -153,6 +153,8 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#summary" id="toc-summary" class="nav-link active" data-scroll-target="#summary">Summary</a>
   <ul class="collapse">
+  <li><a href="#challenges" id="toc-challenges" class="nav-link" data-scroll-target="#challenges">Challenges</a></li>
+  <li><a href="#benchmarks" id="toc-benchmarks" class="nav-link" data-scroll-target="#benchmarks">Benchmarks</a></li>
   <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion">Conclusion</a></li>
   </ul></li>
   </ul>
@@ -166,13 +168,32 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="summary" class="level1">
 <h1>Summary</h1>
-<p>This section will focus on the challenges, benchmarks, and conclusions drawn from our data cleaning portion. It provides a technical overview on obstacles and limiations with our current dataset. Then, it will provide a brief overview on our next step.</p>
-<p><strong>Cleaning Challenges</strong> - Financial data required additional preprocessing as they were available only in PDF format. Converting to structured formats produced difficulties. We initially used pdfplumber library to extract table from pdf file, but failed at integrating it. We then decided on camelot.</p>
+<p>This section will focus on the challenges, benchmarks, and conclusions drawn from our data collection portion. It provides a technical overview on obstacles and limiations with our current dataset. Then, it will provide a brief overview on our next step.</p>
+<section id="challenges" class="level2">
+<h2 class="anchored" data-anchor-id="challenges">Challenges</h2>
+<p><strong>Transparency</strong> - While the MBTA Open Data Portal provided substantial data in a fairly clean format, there is not transparency about how data is collected by the MBTA. Therefore, we cannot account for biased data (especially since the MBTA is self-reporting). We also do not know if earlier years have incomplete coverage.</p>
+<ul>
+<li>Financial data only provides aggregated transactional data. We are unable to track individual transactions.</li>
+</ul>
+<p><strong>Collection Method Difficulties</strong> - Financial data required additional preprocessing as they were available only in PDF format. Converting to structured formats produced difficulties. We initially used pdfplumber library to extract table from pdf file, but failed at integrating it. We then decided on camelot.</p>
+<ul>
+<li>SerpAPI has rate limits with their basic free plan. Careful management is required when collecting data.</li>
+</ul>
+</section>
+<section id="benchmarks" class="level2">
+<h2 class="anchored" data-anchor-id="benchmarks">Benchmarks</h2>
+<ul>
+<li>While reliability, ridership details, and accuracy have been datasets explored in the past. Public perception (text analysis on recent news) has rarely been a dataset collected.</li>
+</ul>
+</section>
 <section id="conclusion" class="level2">
 <h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
-<p><strong>Next Step</strong> - Our datasets are now prime for preliminary EDA. As we proceed to the exploratory data analysis (EDA) phase, let’s hope to uncover meaningful patterns and relationships within the data.</p>
-<p><strong>Potential Improvements</strong> - Optimize the code to create functions for converting pdfs into csvs and for general standarization / relabeling tasks.</p>
-<p><strong><a href="../../technical-details/eda/main.html">Click here to visit the next step: EDA</a></strong></p>
+<p><strong>Next Step</strong> - Following the collection, we will now clean the datasets to ensure it is prime for analysis.</p>
+<p><strong>Potential Improvements</strong> - Further analysis may cause pivoting in datasts involved. For instance, we may be able to find financial statements that are not aggregated and not in pdf format.</p>
+<ul>
+<li>It would also be preferrable to track public perceptions from 2020-2024 to track how public perception could have possibly changed through text analysis.</li>
+</ul>
+<p><strong><a href="../../technical-details/supervised-learning/main.html">Click here to visit the next step: supervised learning</a></strong></p>
 
 
 </section>

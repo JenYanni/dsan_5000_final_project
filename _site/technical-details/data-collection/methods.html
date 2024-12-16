@@ -146,8 +146,14 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#data-collection-methods" id="toc-data-collection-methods" class="nav-link active" data-scroll-target="#data-collection-methods"><strong>Data Collection Methods</strong></a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -155,13 +161,19 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<p><strong>Data Collection Methods</strong>: - <code>Google News Feed</code>: Accessed news feed through the SerpApi Google News API, which tracks real-time and historical collection of news data.</p>
+<section id="data-collection-methods" class="level3">
+<h3 class="anchored" data-anchor-id="data-collection-methods"><strong>Data Collection Methods</strong></h3>
 <ul>
-<li><p><code>MBTA Open Data Portal</code>: Datasets, such as service alerts, prediction accuracy, and reliability metrics, were downloaded in tabular formats (.csv and .json) from the MBTA Bluebook Open Data Portal.</p></li>
-<li><p><code>Financial Data</code>: Key financial performance indicators were collected from MBTA’s audited financial reports. They were originally in .pdf formats. Therefore, we used the <a href="https://camelot-py.readthedocs.io/en/master/">camelot</a> library to extract data automatically from pdfs and exported them into csv format.</p></li>
+<li><p><strong>Google News Feed</strong>:<br>
+Accessed news feed through the <a href="https://serpapi.com/google-news-api">SerpApi Google News API</a>, which tracks real-time and historical collection of news data.</p></li>
+<li><p><strong>MBTA Open Data Portal</strong>:<br>
+Datasets, such as service alerts, prediction accuracy, and reliability metrics, were downloaded in tabular formats (<strong>.csv</strong> and <strong>.json</strong>) from the <a href="https://mbta-massdot.opendata.arcgis.com/">MBTA Bluebook Open Data Portal</a>.</p></li>
+<li><p><strong>Financial Data</strong>:<br>
+Key financial performance indicators were collected from MBTA’s audited financial reports. They were originally in <strong>.pdf</strong> formats. Therefore, we used the <a href="https://camelot-py.readthedocs.io/en/master/">Camelot library</a> to extract data automatically from PDFs and exported them into <strong>.csv</strong> format.</p></li>
 </ul>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
