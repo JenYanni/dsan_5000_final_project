@@ -56,21 +56,21 @@ To ensure clarity and transparency throughout your project, your data collection
 0. **Include all code used for data collection** in the notebook below
 
 1. **Data Source Information**  
-   - Specify where the data comes from, whether public datasets, APIs, or original collection.
-   - Provide links to datasets or API documentation and explain their relevance to the project.
+   - [ ] Specify where the data comes from, whether public datasets, APIs, or original collection.
+   - [ ] Provide links to datasets or API documentation and explain their relevance to the project.
 
 2. **Data Collection Methods**  
-   - If you used an API or web scraping, explain the tools (e.g., `BeautifulSoup`, `Selenium`) and the process.
-   - Include links to your code for replicating data collection.
+   - [ ] If you used an API or web scraping, explain the tools (e.g., `BeautifulSoup`, `Selenium`) and the process.
+   - [ ] Include links to your code for replicating data collection.
 
 3. **Data Structure and Format**  
-   - Describe the structure of your raw data (e.g., rows, columns, data types) and its format (CSV, JSON, etc.).
+   - [ ] Describe the structure of your raw data (e.g., rows, columns, data types) and its format (CSV, JSON, etc.).
 
 4. **Linking to Data**  
-   - Include links to the **raw dataset**, ensuring transparency and allowing replication.
+   - [ ] Include links to the **raw dataset**, ensuring transparency and allowing replication.
 
 5. **Code and Reproducibility**  
-   - Link to all relevant code, including data collection , with clear documentation to enable replication.
+   - [ ] Link to all relevant code, including data collection , with clear documentation to enable replication.
 
 6. **Transparency and Replicability**  
-   - Ensure your entire workflow is transparent and reproducible by linking all data, code, and documentation. This allows others to follow your process from start to finish.
+   - [ ] Ensure your entire workflow is transparent and reproducible by linking all data, code, and documentation. This allows others to follow your process from start to finish.

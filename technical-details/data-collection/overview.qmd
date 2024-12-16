@@ -1,53 +1,60 @@
-# Overview
-
-In this section, provide a high-level overview for technical staff, summarizing the key tasks and processes carried out here. Include the following elements:
-
-- **Goals**: Clearly define the purpose of the tasks or analysis being conducted.
-- **Motivation**: Explain the reasoning behind the work, such as solving a specific problem, improving a system, or optimizing performance.
-- **Objectives**: Outline the specific outcomes you aim to achieve, whether it's implementing a solution, analyzing data, or building a model.
-
-This overview should give technical staff a clear understanding of the context and importance of the work, while guiding them on what to focus on in the details that follow.
-
-
 
 # Overview
 
-- **Goals**: Analyze if the ongoing renovation project improved the reliability and performance of the MBTA system. Are there early indicators of significant improvement to the usage and performance of the MBTA system?
+- **Overarching Research Question**: Analyze if the ongoing renovation project improved the reliability and performance of the MBTA system. Are there early indicators of significant improvement to the usage and performance of the MBTA system?
+
+- **Goal**: Gather and compile datasets relevant to our research question and its sub-questions. We identified reputable data sources and defined our collection methods by choosing an dataset accessed through an API, while finding datasets that have features which fit into requirements of future binary, multivariate, and regression analysis. 
 
 - **Motivation**: 
-    - `Improve system performance`: Transitors rely on consistent service when commuting. 
-    - `Prioritize certain infrastructure`: Historical patterns in alerts can identify the most problematic stations or routes, helping prioritize future investments.
-    - `Pivoting to a user-centric system`: Understand how delays and service changes might impact public perception and impact ridership patterns. 
+    - `Centralize Data Access`: This is a huge project and a tough question to answer! Consolidating datasets to one source not only makes our analysis easier, but also helps Jen and I collaborate. 
+    - `Contextual Insights`: We want to collect as much datasets to inform our question. The more, the better. We want to gain a holistic understanding of MBTA from its performance to public perceptions 
 
 - **Objectives**: Outline the specific outcomes you aim to achieve, whether it's implementing a solution, analyzing data, or building a model.
-    - `Prioritize certain infrastructure`: 
-    - `Prioritize certain infrastructure`
-    - `Prioritize certain infrastructure`
+    - `Identify and Gather Relevant and Reliable Datasts`
+    - `Ensure Data Coverage (2020-2024)`
+    - `Document data sources`
+    - `Validate data accessibility so recreation is possible`
 
 - **Dataset Info**: 
     - `Datasource`: MBTA Bluebook Open Data Portal 
     - `Type`: Tabular (.csv)
+    - `Years`: 2020-2024
         - [MBTA Service Alerts 2020-2023](https://mbta-massdot.opendata.arcgis.com/datasets/MassDOT::mbta-service-alerts-2020-2023/about)
         - [MBTA Service Alerts 2024](https://mbta-massdot.opendata.arcgis.com/datasets/f960d5089e164fb8b6c6936c70719d72/about)
-    - `Relevance`:
-        - Understand causes of disruptions with cause and cause_detail fields 
-        - Understand effects of disruptions with effect and effect_detail fields 
-        - Examine severity and frequency of disruptions with severity_level and year field
-        - Find routes or stops prone to alerts with route_id 
+    - `Purpose`:
+        - Analyze causes and effects of service disruptions.
+        - Identify routes and stations prone to frequent alerts.
+        - Measure severity and frequency of alerts over time.
 
     - `Datasource`: RSS Historical Feed
-    - `Type`: Tabular (.json), through API 
+    - `Type`: Tabular (.json), API 
+    - `Years`: Sporadically 2020-2024
         - [RSS Historical Feed](https://mbta-massdot.opendata.arcgis.com/datasets/MassDOT::mbta-service-alerts-2020-2023/about)
-    - `Relevance`: 
+    - `Purpose`: 
         - Understand public perception through text analysis 
-        - Use of API 
+        - Technical use of APIs 
 
-    - `Datasource`: RSS Historical Feed 
-    - `Type`: Tabular (.json)
-        - [MBTA Service Alerts 2020-2023](https://mbta-massdot.opendata.arcgis.com/datasets/MassDOT::mbta-service-alerts-2020-2023/about)
-    - `Relevance`: 
+    - `Datasource`: MBTA Bluebook Open Data Portal 
+    - `Type`: Tabular (.csv)
+    - `Years`: 2014-2024
+        - [MBTA The Ride Reliability](https://mbta-massdot.opendata.arcgis.com/datasets/cb4f4fb3cdf443e7a9d66c87ab1f5e17_0/explore)
+    - `Purpose`:
+        - Evlauate long-term trends in service reliability
+        - Identify improvements or challenges in accessibility services.
 
-    - `Datasource`: RSS Historical Feed 
+
+    - `Datasource`: MBTA Bluebook Open Data Portal 
     - `Type`: Tabular (.json)
-        - [MBTA Service Alerts 2020-2023](https://mbta-massdot.opendata.arcgis.com/datasets/MassDOT::mbta-service-alerts-2020-2023/about)
-    - `Relevance`: 
+    - `Years`: 2020-2024
+        - [Rapid Transit and Bus Prediction Accuracy Data](https://mbta-massdot.opendata.arcgis.com/datasets/MassDOT::rapid-transit-and-bus-prediction-accuracy-data/about)
+    - `Purpose`:
+        - Find differences between predicted and actual service performance
+        - Evalute prediction accuracy trends   
+
+    - `Datasource`: Financial Statements
+    - `Type`: PDF (.json)
+    - `Years`: 2020-2024
+        - [PLEASE INSERT]()
+    - `Purpose`:
+        - Understand macro-level trends in system performance
+

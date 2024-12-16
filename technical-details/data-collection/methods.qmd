@@ -4,7 +4,7 @@ In this section, provide an overview summary of the methods used on this page. T
 
 If you are developing a package, include a reference to the relevant documentation and provide a link here for easy access. Ensure that the package details are properly documented in its dedicated section, but mentioned and connected here for a complete understanding of the methods used in this project.
 
-**Data Collection**: 
-    - RSS Feed used wayfinder for historical news 
-    - 
-
+**Data Collection Methods**: 
+- `RSS Feed`: Historical MBTA service alerts were retrieved using the RSS feed via Wayfinder. This provided a consistent and automated pipeline for accessing both real-time and historical data. 
+- `MBTA Open Data Portal`: Datasets, such as service alerts, prediction accuracy, and reliability metrics, were downloaded in tabular formats (.csv and .json) from the MBTA Bluebook Open Data Portal. API integrations were used where applicable to fetch dynamic data.
+- `Financial Data`: Key financial performance indicators were collected from MBTA's financial reports. 
