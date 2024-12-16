@@ -1,44 +1,107 @@
 ---
-title: "Progress log"
+title: "Progress log: Jen Guo and Mandy Sun"
 ---
 
-Use this page to track your progress and keep a log of your contributions to the project, please update this each time you work on your project, it is generally a good habit to adopt.
+## **To-do**
 
-If you are working as a team, at the end, you can duplicate the project and add it to your individual portfolio websites. If you do, you **MUST** retain attribution to your teammates. Removing attribution would constitute plagiarism.
+-   [x] Explore and brainstorm topics for DSAN 5000 Final Portfolio Project
+-   [x] Put topic for final portfolio project on the class spreadsheet
+-   [x] Join same group on CANVA for group submission
+-   [x] Research and find literature reviews related to the MBTA system
+-   [x] Draft at least 5 research questions for the Final Portfolio Project
+-   [x] Finalize research questions for the Final Portfolio Project
+-   [x] Find datasets to help answer our research questions
+-   [x] Find methodology to extract economic/ financial data from pdf files to csv files/ dataframes
+-   [x] Clean datasets
+-   [x] Complete EDA for all datasets
+-   [x] Create data visuals
+-   [x] Complete power point for presentation
+-   [x] Complete supervised learning on datasets
+-   [x] Complete un-supervised learning on datasets
+-   [ ] Complete technical writing aspect of all the codes
+-   [x] Complete landing page
+-   [x] Complete progress-log
+-   [ ] Complete llm-usage
+-   [ ] Write report for non-technical audience
+-   [ ] Convert all files for website into pdf and stitch all pdf files together for submission
+-   [ ] quarto render the files to prepare for website
+-   [ ] rsync files to GU domain for website
 
-## To-do
-
--   [ ] Explore possible topics by brainstorming with GPT
--   [ ] write a technical methods sections for K-means
--   [ ] write a technical methods sections for PCA
-
-... etc
-
-## Member-1:
-
-Provide their name, a link to their "About Me" page.
-
-Also, describe a log of their project roles.
+## Jen Guo:
 
 **Weekly project contribution log:**
 
-**T: 10-15-2024**
+**Sunday: 11/10/2024**
 
--   [x] Coordinate with team member to set up weekly meeting time
+-   [x] Coordinate with Mandg to set up weekly meeting time for Sundays
+-   [x] Find literature reviews, data, and articles to help finalize research questions
+-   [x] Collect datasets regarding MBTA ride accuracy and reliability
+-   [x] Collect datasets regarding infrastructure of the MBTA system
 
-**M: 10-14-2024**
+Sunday: 11/17/2024
+
+-   [x] Collect datasets regarding economics and financial statements regarding the MBTA system
+-   [x] Work on cleaning datasets regarding MBTA ride accuracy and reliability
+-   [x] Explore datasets to prepare for EDA
+
+Sunday: 11/24/2024
+
+-   [x] Work on cleaning datasets regarding financial data of the MBTA system
+-   [x] Work on EDA and data visuals
+
+Sunday: 12/1/2024
+
+-   [x] Finish up EDA and data visuals
+-   [x] Make powerpoint slides for presentation
+
+Sunday: 12/8/2024
+
+-   [x] Complete supervised learning on datasets
+-   [x] Complete un-supervised learning on datasets
+-   [x] Write technical aspect for codes: data collection, data cleaning, eda, supervised learning, unsupervised learning
+
+Sunday: 12/15/2024
 
 -   [x] Do a first draft of the project landing page
+-   [x] Test with quarto render and rsync website
+-   [x] Write report for non-technical audience
+-   [x] Complete landing page
+-   [x] Complete progress-log
 
-## Member-2
-
-Provide their name, a link to their "About Me" page.
-
-Also, describe a log of their project roles.
+## Mandy Sun:
 
 **Weekly project contribution log:**
 
-**W: 10-16-2024**
+**Sunday: 11/10/2024**
 
--   [x] Attend first group meeting
--   [x] Mandy: data collection section
+-   [x] Find literature reviews, data, and articles to help finalize research questions
+-   [x] Collect datasets regarding alerts of the MBTA system
+-   [x] Collect datasets regarding infrastructure of the MBTA system
+
+Sunday: 11/17/2024
+
+-   [x] Collect datasets regarding news trend of the MBTA system
+-   [x] Work on cleaning datasets regarding infrastructure of the MBTA system
+-   [x] Explore datasets to prepare for EDA
+
+Sunday: 11/24/2024:
+
+-   [x] Work on EDA and data visuals
+-   [x] Work on cleaning datasets regarding news trend of the MBTA system
+
+Sunday: 12/1/2024:
+
+-   [x] Finish up EDA and data visuals
+-   [x] Make powerpoint slides for presentation
+
+Sunday: 12/8/2024
+
+-   [x] Complete supervised learning on datasets
+-   [x] Complete un-supervised learning on datasets
+-   [x] Write technical aspect for codes: data collection, data cleaning, eda, supervised learning, unsupervised learning
+
+Sunday: 12/15/2024
+
+-   [x] Test with quarto render and rsync website
+-   [x] Write report for non-technical audience
+-   [x] Complete llm-usage

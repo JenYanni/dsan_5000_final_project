@@ -1,79 +1,147 @@
 ---
-title: "Welcom to our MBTA Project."
+title: "Welcome to our MBTA Project"
+Authors: Jen Guo and Mandy Sun
+bibliography: reference.bib
 ---
 
-## Intruduction Summary:
+## **About Us:**
+
+Jen Guo:
+
+Jen Guo is a grad student in the Data Science and Analytics program at Georgetown University. She is a part-time grad student and work as a full-time analyst. She came from Granville, Ohio. Jen completed her undergrad at Denison University in Ohio with a BA in Data Analytics (concentration in biology) and a Minor in Mathematics. After graduating from undergrad, she worked full-time as an Analyst for a healthcare technology provider company. Jen has gained several technological skills throughout my undergrad and grad program, that includes Python, R, and SQL. In addition, my area of interest in Data Science/ Analytics is the biology/ public health field.
+
+Mandy Sun:
+
+Mandy Sun is currently in Georgetown University pursuing a masters in Data Science and Analytics and an undergraduate degree in computer science in film and media studies. Previous to DSAN, she worked in multiple data roles, including working with the Bureau of Justice Statistics working with criminal justice systems expenditure and employment data, as well as wrangling with Georgetown's student-run coffee shop's sales data. In her free time, she is binging a film or TV-show, attempting a random hobby, or *attempting* recipes as a newly adult.
+
+## Introduction Summary:
+
+The **Massachusetts Bay Transportation Authority (MBTA)** is a public transportation system in the Greater Boston area, Massachusetts. Services includes subway, bus, commuter rail, ferry, and paratransit.
+
+The MBTA is the fourth busiest public-transit system. Thousands of locals heavily rely on the MBTA system daily. The MBTA system is a necessity for Boston and several low-income people and communities rely on it.
+
+![](https://lh7-rt.googleusercontent.com/slidesz/AGV_vUfoWiLLU2kTu32WlcyD5rWYi3VmACz6euEqstyiKFzmOUq0y6uxNRHFgOkuDk2pJAxX3lm0b6TwEJoRE81yrCiVpYGnZnGefYcTYxhvt1GPpbKxxPtsa_yT1tM0B1MAzPA-ykdfpw=s2048?key=UOGZUELpblCwUxUHrZRThF49){width="70"}
+
+![](https://lh7-rt.googleusercontent.com/slidesz/AGV_vUdOZtLlVKLxfJdQNnleU_vT__UA6ab887RwxZe-RavjR6nEGSlpfVxGoGRPSeX1uqQQAJN_jRUWsGHDdya-gfJW7NbUVBi2ds7Ly15Z-4YF6kMpOFSr7YSv9oVPUk66hI4y2lIm=s2048?key=UOGZUELpblCwUxUHrZRThF49){width="300"}
+
+![](https://lh7-rt.googleusercontent.com/slidesz/AGV_vUfUC7WPyb9jb4bsS1xjAahP1VeYiye2VXBTu3-VWVyTNjNkAouqatYEjOxAEPKSOj8LJj3oRo9qwGq6h7oGAxXzdC1j-ktRlSjvFoExdY5bdgLDnMMKTE0YYpA5cOdYuSvk3JGlcQ=s2048?key=UOGZUELpblCwUxUHrZRThF49){width="300"}
+
+### Timeline:
+
+The MBTA history has had several mishaps:
+
+*2000: 5 billion in debt - MBTA was passed on debt from The Big Dig.*
+
+*2019: COVID-19 - MBTA ridership decreased immensely.*
+
+*July 2021: Green line collision 27 injured and sent to hospital.*
+
+*July 2022: Red Train Malfunction - Robert Lalin, 29, dies after arm stuck in the train, dragged him to death*
+
+*July 2022: Orange Line catches fire - Southbound train caught fire after a piece of metal came loose and contacted the electric rails, producing flame.*
+
+*Aug 2022: Bus Catches fire - Fire broke out in Arborway yard, two transit workers sent to hospital for smoke inhalation.*
+
+*September 2022: Green line station, overhead wire falls - Wire falls, causing a spark and a loud bang.*
+
+![](https://lh7-rt.googleusercontent.com/slidesz/AGV_vUcKQDzglWBoKr_SQdynUf2KXgvFbyjSKK3Z88mkhfj19WZsQJwKlt2h9vEgdV9yF9MnMDWgJ0tsfQJz9LnZoTCjeWH9UgKrkV_szAEQ2mUVq_qzQH_Cm78mKUXeqB_DK6v9hKHLEQ=s2048?key=UOGZUELpblCwUxUHrZRThF49){width="1000"}
+
+### Rennovation Program:
+
+Due to the dangers of the MBTA and the public dissatisfaction, The Massachusetts Bay Transportation Authority (MBTA) system began its renovation program in 2022.
+
+The purpose of the project was to build a safer, reliable, and more accessible transportation system.
+
+Project includes updating old infrastructures, stations, tracks, and power systems.
+
+![](https://lh7-rt.googleusercontent.com/slidesz/AGV_vUcN6isK-1s0Q_4PyF1Ms-_b9_-70X2lDmWAk4hTdtCB7qSF3wkbaBjvAkAndIRGBTWe55SFo4xhtFqh9ewO7rOMtuDPs0ZOrKenrGlMOJ_DpfONExdI75h-t5sUGuNdW3agFDefLg=s2048?key=UOGZUELpblCwUxUHrZRThF49){width="200"}
+
+![](https://lh7-rt.googleusercontent.com/slidesz/AGV_vUd2fucOBx4JfiSFf82Flsk5OlO0TQ-4GFvmaSvvEf0Gu8gsZ4cDr-Qd39eyME-y7vgEre8EJnr5GuVupFK-R2Cr4SDnrp7gxXOq6q20gcFOQdAOqbC3XIWMQ6DKdJGL08lM34NM_A=s2048?key=UOGZUELpblCwUxUHrZRThF49){width="200"}
+
+![](https://lh7-rt.googleusercontent.com/slidesz/AGV_vUeAEMne2zB0X9xrJ1IQHcuxXc3u3gW-8C5DXzR7Gicm_-o90T4oiFYk5YPyoKwwRDteIh9mGOCTQCufMQKBvScNk8qMPu6V_jtpUm7uuMMBytSPVj1_HDr1xBjKyGyfNsKG3uQu=s2048?key=UOGZUELpblCwUxUHrZRThF49){width="200"}
+
+![](https://lh7-rt.googleusercontent.com/slidesz/AGV_vUdPYDj-0zVqtuJbdNuJFpS2qUH-777IMeOBBSyItL-enGzNtx1cVbuW_C97zFcXeoL6vbXZSlrz8dl8C8ZmmoMbIz18epA93g1LZqmMvr7uA1I5VCGGBVTUVEXoTuJmUZu6IOsP=s2048?key=UOGZUELpblCwUxUHrZRThF49){width="200"}
+
+### 
+
+## Problem Statement:
+
+For this DSAN 5000 Final Portfolio Project, we want to analyze if the ongoing renovation project improved the reliability and performance of the MBTA system. Are there early indicators of significant improvement to the usage and performance of the MBTA system?
+
+## Key Focuses:
+
+-   Service Reliability and Ridership Patterns 
+
+-   Future Infrastructure Upgrades
+
+-   Economic Impact
+
+-   Root Causes of Infrastructure Decline 
+
+-   Safety and Environmental Concerns
 
 ## **Research Questions:**
 
-To begin the project, first read the instruction document ([click here](instructions/overview.qmd)). This document is also accessible from the navigation bar.
+1.  Service Reliability and Ridership Patterns
 
-Once you’ve completed that, you can proceed with the instructions found throughout the website.
+    1.  How does replacing aging MBTA trains affect service reliability and ridership trends?
 
-## What to Include on This Page
+    2.  Is there an increase in accurate predictions of the MBTA trains arriving on time before and after the start of the renovation program?
 
-This is the landing page for your project. Content from this page can be reused in sections of your final report.
+2.  Economic Impact
 
-### Create an "About You" Page
+    1.  What pattern can be extracted from the expenses, revenues, and debts from the MBTA system from the years 2019 to 2023?
 
--   Develop your "About You" page. You can reuse content from previous assignments.
--   You can include the content here or on a separate page.
-    -   It’s recommended to create one "About You" page for all DSAN projects, with links to your various class projects.
+    2.  Is there a correlation between the reliability of the MBTA system and the expenses spend on the MBTA system through 2019 to 2023?
 
-### Create a Landing Page for Your Project
+3.  Future Infrastructure Updates
 
--   Summarize your topic, its significance, related work, and the questions you plan to explore.
--   Draft an introduction with at least **5 research questions**. These may evolve as your project progresses, since data science is an iterative process.
--   Include your data science questions on this page.
+    1.  What historical patterns in delays and ridership can predict future infrastructure needs?
 
-### Literature review
+    2.  Which stations or routes should be prioritized for upgrades to maximize ridership growth and minimize disruptions?
 
-Once you decide on a topic, you should `ALWAYS START WITH A LITERATURE REVIEW`, this is particularly important for academic projects.
+4.  News Trends Regarding the MBTA system
 
-The literature review is the most important part of most projects.
+    1.  What is the trend in news medisa regarding the MBTA system? Is there largely dissatisfaction and negative connotation words and feedback from the public regarding the MBTA system?
 
-It allows you to;
+## Literature Review
 
--   
+1.  "Transforming the T: How MBTA Reform Can Right Our Broken Transportation System" : The MBTA structure needs to be renovated, there is a lack of financial stability, and the transportation system needs to be more reliable and efficient. <cite>\@chieppo2015transforming\<`/cite>`{=html}
 
-    1.  Determine what is already known and what has already been tried, so that you `don't re-invent the wheel`.
+    a\. Financial: MBTA has heavy debt. Recommends the MBTA system to outsource bus operations to reduce costs and attempt to save more money.
 
--   
+    b\. Must improve customer experience: Article suggest the MBTA system must improve customer satisfaction and comfort in order to improve ridership and revenue.
 
-    2.  It makes you more of a subject matter expert, allowing you to `ask the right questions`, `target impactful projects`, and `communicate with other professionals`.
+    c\. MBTA fare: Suggested to increase fare cost. Attempted to increase revenue while also making sure lower income riders are not at a complete disadvantage.
 
-> Doing a project that you think will change the world, only to find at the end that a very similar version of your project was already done in the 1980's, isn't a great use of time.
+2.  "MBTA: Privacy, SmartCards, and the MBTA: A Policy Analysis of the MBTA’s New Automated Fare Collection System": Discusses the challenges in collecting fares for the MBTA system.<cite>\@brelinskymbta</cite>
 
-In this section, please do a literature review and cite at least **3 academic publications** per group member, and include **internal academic citations**.
+    a\. The MBTA system pivots to using electronic forms of payments for fares to improve convenience for customers and operational efficiency.
 
-**Optional**: Consider using LLM tools to 10X your literature review, e.g. instead of focusing on 3 papers, aim for 30 or more
+    b\. Along with the transition to electronic form of payment, privacy concerns increase. There is concern for tracking customers, hackers, leaked and misused data by third parties. Attempted to collect minimal data on ridership to protect customer data.
 
-By following these steps, you can 10X the efficiency of your literature review process, gaining more insights while minimizing the time spent on manual reading.
+3.  "Improving high-frequency transit reliability: a case study of the **MBTA** Green Line through simulation and field experiments of real-time control strategies": Discussed ways to improve the reliability of the MBTA system, and the challenges to achieve this goal. <cite>\@fabian2017improving</cite>
 
-1.  **Expand Your Literature Search**\
-    Aim to gather a larger pool of papers. Use academic databases (Google Scholar, arXiv, etc.) to find relevant studies and ensure a broad scope.
+    a\. Improve Ride Reliability: Conducted study on the MBTA Green Line - controls at terminals decreased wait times for rides. Proved that "real-time intervention" can greatly improve ridership satisfaction.
 
-2.  **Skim the Abstracts**\
-    Read the abstracts of each paper to quickly understand their focus and identify those most relevant to your topic. Prioritize these papers for deeper analysis.
+    b\. Challenges: Limitations included poor station infrastructure, inspection, and operator performance.
 
-3.  **Use LLM Tools for Summarization**\
-    Upload the selected papers to an LLM tool capable of text summarization. Have it condense the main points of each paper into a concise, manageable summary (e.g., condense hundreds of pages into a 10-page summary). Carefully review this summary to absorb the key insights.
+    c\. Study recommended that improving infrastructure, more training for operators stationed at terminals, and adding more supervision would help improve the reliability of the MBTA system.
 
-4.  **Leverage Interactive LLM Tools**\
-    Use tools like NotebookLM or other AI-based text digesters to ask specific, targeted questions about the papers:
+4.  "Strategies for meeting future capacity needs on the light rail MBTA Green Line": Discusses the infrastructure improvements needed to improve the MBTA Green Line.<cite>\@sindel2017strategies</cite>
 
-    -   Example questions:
-        -   "In the papers uploaded, did any of them explore XYZ?"
-        -   "Which paper is most closely related to the following project idea: \[explain idea\]?" These tools will help you quickly extract relevant information without re-reading entire papers.
+    a\. Challenges for improvement: Best to address the run-down infrastructure of the MBTA Green Line in order to meet ridership capacity and satisfaction.
 
-## Additional Ideas for things to include
+    b\. Strategy: Analysis on changing schedules increased ride capacity and decreased wait time for passengers. Best to create linear optimization models to analyze performance of MBTA subway rides.
 
--   **Audience**: Who is this for? Data professionals, businesses, researchers, or curious readers.
--   **Headline**: A captivating title introducing the data science theme (e.g., "Unlocking Insights Through Data Stories").
--   **Introduction**: A brief, engaging overview of what the website offers (e.g., data-driven stories, insights, or case studies).
--   **Questions You Are Addressing**: What do you hope to learn?
--   **Motivation**: Explain why this topic matters, highlighting the importance of data in solving real-world problems.
--   **Key Topics**: List the main focus areas (e.g., machine learning, data visualization, predictive modeling).
--   **Use Cases/Examples**: A brief teaser of compelling stories or case studies you’ve worked on.
--   **Call to Action**: Invite visitors to explore the content, follow along, or contact you for more information.
--   **Visual/Infographic**: Add a simple graphic or visual element to make the page more dynamic.
+5.  "The Cost of Subway Delays: A Counterfactual Welfare Analysis of Boston’s T": The reliability issues and terrible economic status of the MBTA system are urgent cases that needs to be addressed.<cite>\@dean2022cost</cite>
+
+    a\. Reliability Issue: The MBTA system is unreliable which has economical impact. There is financial loss for common riders due to the delays and unreliability of the MBTA system.
+
+    b\. Old Infrastructure: The aging infrastructure of the MBTA system is a big liability. The COVID-19 pandemic had a huge impact on the progress of addressing the MBTA infrastructure, because the pandemic lowered the number of ridership and revenue. So the renovation program of the MBTA system was further delayed.
+
+6.  "Bus Operation Safety Business Intelligence Solution: Applying Analytics for Key Performance Indicator, Investigation, and Targeted Actions Analyses with a Centralized Data Warehouse": Discusses the application of data analytics to improve the safety and efficiency of the MBTA system. <cite>\@ding2024bus</cite>
+
+    a\. Safety: A Business Intelligence (BI) system was built by the MBTA to improve bus safety by having more data-driven decision making take place. In addition, there needs to be more safety inspections to increase safety of these buses.
+
+    b\. Analytics: MBTA system needs to utilize more application of data analysis like geospatial maps, charts, and data visualization to help with their analysis on improving the system safety and efficiency.
