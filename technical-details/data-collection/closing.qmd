@@ -5,7 +5,7 @@ This section will focus on the challenges, benchmarks, and conclusions drawn fro
 ## Challenges
 
 **Transparency**
-- While the MBTA Open Data Portal provided substantial data in a fairly clean format, there is not transparency about how data is collected by the MBTA. Therefore, we cannot account for biased data (especially since the MBTA is self-reporting). We also do not know if earlier years have incomplete coverage. 
+- While the MBTA Open Data Portal provided substantial data in a fairly clean format, there is no transparency about how data is collected by the MBTA. Therefore, we cannot account for biased data (it is alarming that MBTA is self-reporting). We also do not know if earlier years have incomplete coverage. 
 
 - Financial data only provides aggregated transactional data. We are unable to track individual transactions. 
 
@@ -16,7 +16,7 @@ This section will focus on the challenges, benchmarks, and conclusions drawn fro
 
 
 ## Benchmarks
-- While reliability, ridership details, and accuracy have been datasets explored in the past. Public perception (text analysis on recent news) has rarely been a dataset collected. 
+- While reliability, ridership details, and accuracy have been datasets explored in the past. Public perception (text analysis on recent news) has rarely been a dataset collected. Alerts have also rarely been explored as well. 
 
 ## Conclusion 
 
@@ -26,6 +26,6 @@ This section will focus on the challenges, benchmarks, and conclusions drawn fro
 **Potential Improvements** 
 - Further analysis may cause pivoting in datasts involved. For instance, we may be able to find financial statements that are not aggregated and not in pdf format. 
 
-- It would also be preferrable to track public perceptions from 2020-2024 to track how public perception could have possibly changed through text analysis. 
+- It would also be preferrable to track public perceptions from 2020-2024 to track how public perception could have possibly changed through text analysis. For now, we will only track 2024. 
 
 **[Click here to visit the next step: Data Cleaning](../data-cleaning/main.ipynb)**

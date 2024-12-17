@@ -5,7 +5,7 @@
   Accessed news feed through the [SerpApi Google News API](https://serpapi.com/google-news-api), which tracks real-time and historical collection of news data.
 
 - **MBTA Open Data Portal**:  
-  Datasets, such as service alerts, prediction accuracy, and reliability metrics, were downloaded in tabular formats (**.csv** and **.json**) from the [MBTA Bluebook Open Data Portal](https://mbta-massdot.opendata.arcgis.com/).
+  Datasets, such as service alerts, prediction accuracy, and reliability metrics, were downloaded in tabular formats (*.csv* and *.json*) from the [MBTA Bluebook Open Data Portal](https://mbta-massdot.opendata.arcgis.com/).
 
 - **Financial Data**:  
-  Key financial performance indicators were collected from MBTA's audited financial reports. They were originally in **.pdf** formats. Therefore, we used the [Camelot library](https://camelot-py.readthedocs.io/en/master/) to extract data automatically from PDFs and exported them into **.csv** format.
+  Key financial performance indicators were collected from MBTA's audited financial reports. They were originally in *.pdf* formats. Therefore, we used the [Camelot library](https://camelot-py.readthedocs.io/en/master/) to extract data automatically from PDFs and exported them into *.csv* format.

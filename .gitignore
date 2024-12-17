@@ -2,3 +2,4 @@
 data/raw-data
 data/processed-data
 report/jupyter_drafts
+.DS_Store

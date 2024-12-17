@@ -246,9 +246,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li><code>Validate data accessibility so recreation is possible</code></li>
 </ul></li>
 <li><p><strong>Dataset Info</strong>:</p>
+<p><em>Data source 1</em></p>
 <ul>
 <li><code>Datasource</code>: MBTA Bluebook Open Data Portal</li>
 <li><code>Type</code>: Tabular (.csv)</li>
+<li><code>Structure</code>: 2,736,828 rows, 28 features (combined)</li>
 <li><code>Years</code>: 2020-2024
 <ul>
 <li><a href="https://mbta-massdot.opendata.arcgis.com/datasets/MassDOT::mbta-service-alerts-2020-2023/about">MBTA Service Alerts 2020-2023</a></li>
@@ -260,8 +262,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>Identify routes and stations prone to frequent alerts.</li>
 <li>Measure severity and frequency of alerts over time.</li>
 </ul></li>
+</ul>
+<p><em>Data source 2</em></p>
+<ul>
 <li><code>Datasource</code>: Serpapi: Google News Feed</li>
 <li><code>Type</code>: Tabular (.json), API</li>
+<li><code>Structure</code>: 100 entries</li>
 <li><code>Years</code>: 2024
 <ul>
 <li><a href="https://serpapi.com/google-news-api">Google News Feed</a></li>
@@ -271,8 +277,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>Understand current public perception through text analysis (sentimen analysis, topic modeling, keyword extraction)</li>
 <li>Technical use of APIs</li>
 </ul></li>
+</ul>
+<p><em>Data source 3</em></p>
+<ul>
 <li><code>Datasource</code>: MBTA Bluebook Open Data Portal</li>
 <li><code>Type</code>: Tabular (.csv)</li>
+<li><code>Structure</code>: 3682 rows, 7 features</li>
 <li><code>Years</code>: 2014-2024
 <ul>
 <li><a href="https://mbta-massdot.opendata.arcgis.com/datasets/cb4f4fb3cdf443e7a9d66c87ab1f5e17_0/explore">MBTA The Ride Reliability</a></li>
@@ -282,8 +292,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>Evlauate long-term trends in service reliability</li>
 <li>Identify improvements or challenges in accessibility services.</li>
 </ul></li>
+</ul>
+<p><em>Data source 4</em></p>
+<ul>
 <li><code>Datasource</code>: MBTA Bluebook Open Data Portal</li>
 <li><code>Type</code>: Tabular (.json)</li>
+<li><code>Structure</code>: 7185 rows, 10 features</li>
 <li><code>Years</code>: 2020-2024
 <ul>
 <li><a href="https://mbta-massdot.opendata.arcgis.com/datasets/MassDOT::rapid-transit-and-bus-prediction-accuracy-data/about">Rapid Transit and Bus Prediction Accuracy Data</a></li>
@@ -293,15 +307,20 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>Find differences between predicted and actual service performance</li>
 <li>Evalute prediction accuracy trends</li>
 </ul></li>
+</ul>
+<p><em>Data source 5</em></p>
+<ul>
 <li><code>Datasource</code>: Financial Statements</li>
 <li><code>Type</code>: PDF (.json)</li>
+<li><code>Structure</code>: 5 pdfs (transformed to 8 rows, 5 features during cleaning)</li>
 <li><code>Years</code>: 2019-2024
 <ul>
 <li><a href="https://www.mbta.com/financials/audited-financials">Financial Statement FY 2019-2024</a></li>
 </ul></li>
 <li><code>Purpose</code>:
 <ul>
-<li>Understand macro-level trends in financial trends and whether it correlates with system performance</li>
+<li>Understand macro-level trends in financial trends and whether it correlates with system performance (i.e.&nbsp;reliability dataset)</li>
+<li>examine important money values such as the net positions, expenses, revenues, and debts throughout the years from 2019 to 2023</li>
 </ul></li>
 </ul></li>
 </ul>
@@ -311,9 +330,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li><p><strong>Google News Feed</strong>:<br>
 Accessed news feed through the <a href="https://serpapi.com/google-news-api">SerpApi Google News API</a>, which tracks real-time and historical collection of news data.</p></li>
 <li><p><strong>MBTA Open Data Portal</strong>:<br>
-Datasets, such as service alerts, prediction accuracy, and reliability metrics, were downloaded in tabular formats (<strong>.csv</strong> and <strong>.json</strong>) from the <a href="https://mbta-massdot.opendata.arcgis.com/">MBTA Bluebook Open Data Portal</a>.</p></li>
+Datasets, such as service alerts, prediction accuracy, and reliability metrics, were downloaded in tabular formats (<em>.csv</em> and <em>.json</em>) from the <a href="https://mbta-massdot.opendata.arcgis.com/">MBTA Bluebook Open Data Portal</a>.</p></li>
 <li><p><strong>Financial Data</strong>:<br>
-Key financial performance indicators were collected from MBTA’s audited financial reports. They were originally in <strong>.pdf</strong> formats. Therefore, we used the <a href="https://camelot-py.readthedocs.io/en/master/">Camelot library</a> to extract data automatically from PDFs and exported them into <strong>.csv</strong> format.</p></li>
+Key financial performance indicators were collected from MBTA’s audited financial reports. They were originally in <em>.pdf</em> formats. Therefore, we used the <a href="https://camelot-py.readthedocs.io/en/master/">Camelot library</a> to extract data automatically from PDFs and exported them into <em>.csv</em> format.</p></li>
 </ul>
 </section>
 </section>
@@ -322,10 +341,12 @@ Key financial performance indicators were collected from MBTA’s audited financ
 <section id="alerts" class="level2">
 <h2 class="anchored" data-anchor-id="alerts">Alerts</h2>
 <p>In the following code, we collected csv files from the MBTA open source data portal. From there, we explored the files manually to see if there are inconsistencies with features or formatting. Thankfully, formatting and information was consistent. Then, we merged the files and added a year column for easy reference in analysis and visualizations. Finally, we used pandas to store collected data as a dataframe.</p>
-<p>Why decide to merge all files instead of incrementally cleaning them? I personally found this method to produce less code, which is helpful in large project like this.</p>
-<p>What are the drawbacks of this method? Less familiarization with individual datasets.</p>
+<ul>
+<li><p>Why decide to merge all files instead of incrementally cleaning them? I personally found this method to produce less code, which is helpful in large project like this.</p></li>
+<li><p>What are the drawbacks of this method? Less familiarization with individual datasets.</p></li>
+</ul>
 <p><strong>Libraries</strong>:</p>
-<div id="cell-6" class="cell" data-execution_count="14">
+<div id="cell-6" class="cell" data-execution_count="5">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
@@ -491,69 +512,70 @@ True</code></pre>
 </div>
 </div>
 <p><strong>After Merging</strong>:</p>
-<div id="cell-12" class="cell">
-<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>file_path <span class="op">=</span> <span class="st">'../../../data/raw-data/merged_alerts.csv'</span> </span>
+<div id="cell-12" class="cell" data-execution_count="8">
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>file_path <span class="op">=</span> <span class="st">'../../data/raw-data/merged_alerts.csv'</span> </span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.read_csv(file_path)</span>
 <span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>shape <span class="op">=</span> df.shape</span>
-<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df.head(<span class="dv">5</span>))</span>
-<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(shape) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(shape) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>/var/folders/wx/8tzhq3ln59j92r3pl8v47rfw0000gn/T/ipykernel_75791/1535254680.py:3: DtypeWarning: Columns (16,25) have mixed types. Specify dtype option on import or set low_memory=False.
+  df = pd.read_csv(file_path)</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>(2736828, 28)</code></pre>
+</div>
 </div>
 </section>
 <section id="current-news-media" class="level2">
 <h2 class="anchored" data-anchor-id="current-news-media">Current News Media</h2>
 <p>This script references starter code from Homework 3 DSAN 5000. * Authored by James Hickman. * Modified and extended by Mandy Sun.</p>
-<div id="cell-14" class="cell" data-execution_count="18">
-<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Load API key from personal JSON file</span></span>
-<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="cf">with</span> <span class="bu">open</span>(<span class="st">'/Users/mandy.sun/Desktop/api_keys/.api-keys.json'</span>) <span class="im">as</span> f:</span>
-<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>    keys <span class="op">=</span> json.load(f)</span>
-<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>API_KEY <span class="op">=</span> keys[<span class="st">'serpapi'</span>]  <span class="co"># Load SerpApi key from your JSON file</span></span>
-<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Define output file for combined results</span></span>
-<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a>output_file <span class="op">=</span> <span class="st">'../../data/raw-data/google_news_results.json'</span></span>
-<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a><span class="co"># Define a list of search queries</span></span>
-<span id="cb9-10"><a href="#cb9-10" aria-hidden="true" tabindex="-1"></a>queries <span class="op">=</span> [<span class="st">"MBTA"</span>, <span class="st">"Massachusetts Bay Transportation Authority"</span>]</span>
-<span id="cb9-11"><a href="#cb9-11" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-12"><a href="#cb9-12" aria-hidden="true" tabindex="-1"></a><span class="co"># Store results from both queries</span></span>
-<span id="cb9-13"><a href="#cb9-13" aria-hidden="true" tabindex="-1"></a>combined_results <span class="op">=</span> []</span>
-<span id="cb9-14"><a href="#cb9-14" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-15"><a href="#cb9-15" aria-hidden="true" tabindex="-1"></a><span class="co"># Iterate through each query and fetch results from Google News</span></span>
-<span id="cb9-16"><a href="#cb9-16" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> query <span class="kw">in</span> queries:</span>
-<span id="cb9-17"><a href="#cb9-17" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"Performing Google News search for: </span><span class="sc">{</span>query<span class="sc">}</span><span class="ss">"</span>)</span>
-<span id="cb9-18"><a href="#cb9-18" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb9-19"><a href="#cb9-19" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Define search parameters for Google News</span></span>
-<span id="cb9-20"><a href="#cb9-20" aria-hidden="true" tabindex="-1"></a>    params <span class="op">=</span> {</span>
-<span id="cb9-21"><a href="#cb9-21" aria-hidden="true" tabindex="-1"></a>        <span class="st">"engine"</span>: <span class="st">"google_news"</span>,       <span class="co"># Use Google's News search engine</span></span>
-<span id="cb9-22"><a href="#cb9-22" aria-hidden="true" tabindex="-1"></a>        <span class="st">"q"</span>: query,                   <span class="co"># Search query</span></span>
-<span id="cb9-23"><a href="#cb9-23" aria-hidden="true" tabindex="-1"></a>        <span class="st">"hl"</span>: <span class="st">"en"</span>,                   <span class="co"># Language: English</span></span>
-<span id="cb9-24"><a href="#cb9-24" aria-hidden="true" tabindex="-1"></a>        <span class="st">"gl"</span>: <span class="st">"us"</span>,                   <span class="co"># Geolocation: United States</span></span>
-<span id="cb9-25"><a href="#cb9-25" aria-hidden="true" tabindex="-1"></a>        <span class="st">"num"</span>: <span class="dv">20</span>,                    <span class="co"># Number of results per page</span></span>
-<span id="cb9-26"><a href="#cb9-26" aria-hidden="true" tabindex="-1"></a>        <span class="st">"api_key"</span>: API_KEY            <span class="co"># SerpApi Key</span></span>
-<span id="cb9-27"><a href="#cb9-27" aria-hidden="true" tabindex="-1"></a>    }</span>
-<span id="cb9-28"><a href="#cb9-28" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb9-29"><a href="#cb9-29" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Fetch search results</span></span>
-<span id="cb9-30"><a href="#cb9-30" aria-hidden="true" tabindex="-1"></a>    search <span class="op">=</span> GoogleSearch(params)</span>
-<span id="cb9-31"><a href="#cb9-31" aria-hidden="true" tabindex="-1"></a>    result_dict <span class="op">=</span> search.get_dict()</span>
-<span id="cb9-32"><a href="#cb9-32" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-33"><a href="#cb9-33" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Append news results to the combined results list</span></span>
-<span id="cb9-34"><a href="#cb9-34" aria-hidden="true" tabindex="-1"></a>    combined_results.extend(result_dict.get(<span class="st">"news_results"</span>, []))</span>
-<span id="cb9-35"><a href="#cb9-35" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-36"><a href="#cb9-36" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Print the news articles to the console</span></span>
-<span id="cb9-37"><a href="#cb9-37" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> result <span class="kw">in</span> result_dict.get(<span class="st">"news_results"</span>, []):</span>
-<span id="cb9-38"><a href="#cb9-38" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="ss">f"Title: </span><span class="sc">{</span>result<span class="sc">.</span>get(<span class="st">'title'</span>)<span class="sc">}</span><span class="ss">"</span>)</span>
-<span id="cb9-39"><a href="#cb9-39" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="ss">f"Link: </span><span class="sc">{</span>result<span class="sc">.</span>get(<span class="st">'link'</span>)<span class="sc">}</span><span class="ss">"</span>)</span>
-<span id="cb9-40"><a href="#cb9-40" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="ss">f"Source: </span><span class="sc">{</span>result<span class="sc">.</span>get(<span class="st">'source'</span>)<span class="sc">}</span><span class="ss">"</span>)</span>
-<span id="cb9-41"><a href="#cb9-41" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="st">"-"</span> <span class="op">*</span> <span class="dv">50</span>)</span>
-<span id="cb9-42"><a href="#cb9-42" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-43"><a href="#cb9-43" aria-hidden="true" tabindex="-1"></a><span class="co"># Save combined results to a JSON file</span></span>
-<span id="cb9-44"><a href="#cb9-44" aria-hidden="true" tabindex="-1"></a><span class="cf">with</span> <span class="bu">open</span>(output_file, <span class="st">"w"</span>) <span class="im">as</span> json_file:</span>
-<span id="cb9-45"><a href="#cb9-45" aria-hidden="true" tabindex="-1"></a>    json.dump(combined_results, json_file, indent<span class="op">=</span><span class="dv">4</span>)</span>
-<span id="cb9-46"><a href="#cb9-46" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-47"><a href="#cb9-47" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Combined news data from both queries saved to </span><span class="sc">{</span>output_file<span class="sc">}</span><span class="ss">"</span>)</span>
-<span id="cb9-48"><a href="#cb9-48" aria-hidden="true" tabindex="-1"></a></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="cell-14" class="cell">
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Load API key from personal JSON file</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="cf">with</span> <span class="bu">open</span>(<span class="st">'/Users/mandy.sun/Desktop/api_keys/.api-keys.json'</span>) <span class="im">as</span> f:</span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>    keys <span class="op">=</span> json.load(f)</span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>API_KEY <span class="op">=</span> keys[<span class="st">'serpapi'</span>]  <span class="co"># Load SerpApi key from personal JSON file; named it serpapi</span></span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a><span class="co"># output file </span></span>
+<span id="cb11-7"><a href="#cb11-7" aria-hidden="true" tabindex="-1"></a>output_file <span class="op">=</span> <span class="st">'../../data/raw-data/google_news_results.json'</span></span>
+<span id="cb11-8"><a href="#cb11-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-9"><a href="#cb11-9" aria-hidden="true" tabindex="-1"></a><span class="co"># list of search queries</span></span>
+<span id="cb11-10"><a href="#cb11-10" aria-hidden="true" tabindex="-1"></a>queries <span class="op">=</span> [<span class="st">"MBTA"</span>, <span class="st">"Massachusetts Bay Transportation Authority"</span>]</span>
+<span id="cb11-11"><a href="#cb11-11" aria-hidden="true" tabindex="-1"></a>combined_results <span class="op">=</span> []   <span class="co"># Store results </span></span>
+<span id="cb11-12"><a href="#cb11-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-13"><a href="#cb11-13" aria-hidden="true" tabindex="-1"></a><span class="co"># Iterate through each query and fetch results from Google News</span></span>
+<span id="cb11-14"><a href="#cb11-14" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> query <span class="kw">in</span> queries:</span>
+<span id="cb11-15"><a href="#cb11-15" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"Performing Google News search for: </span><span class="sc">{</span>query<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb11-16"><a href="#cb11-16" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb11-17"><a href="#cb11-17" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Define search parameters for Google News</span></span>
+<span id="cb11-18"><a href="#cb11-18" aria-hidden="true" tabindex="-1"></a>    params <span class="op">=</span> {</span>
+<span id="cb11-19"><a href="#cb11-19" aria-hidden="true" tabindex="-1"></a>        <span class="st">"engine"</span>: <span class="st">"google_news"</span>,      <span class="co"># use google news engine on serpapi </span></span>
+<span id="cb11-20"><a href="#cb11-20" aria-hidden="true" tabindex="-1"></a>        <span class="st">"q"</span>: query,                   <span class="co"># Search query</span></span>
+<span id="cb11-21"><a href="#cb11-21" aria-hidden="true" tabindex="-1"></a>        <span class="st">"hl"</span>: <span class="st">"en"</span>,                   <span class="co"># Language: eng</span></span>
+<span id="cb11-22"><a href="#cb11-22" aria-hidden="true" tabindex="-1"></a>        <span class="st">"gl"</span>: <span class="st">"us"</span>,                   <span class="co"># location: US </span></span>
+<span id="cb11-23"><a href="#cb11-23" aria-hidden="true" tabindex="-1"></a>        <span class="st">"num"</span>: <span class="dv">20</span>,                    <span class="co"># results per page </span></span>
+<span id="cb11-24"><a href="#cb11-24" aria-hidden="true" tabindex="-1"></a>        <span class="st">"api_key"</span>: API_KEY            <span class="co"># Key</span></span>
+<span id="cb11-25"><a href="#cb11-25" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb11-26"><a href="#cb11-26" aria-hidden="true" tabindex="-1"></a>    search <span class="op">=</span> GoogleSearch(params)</span>
+<span id="cb11-27"><a href="#cb11-27" aria-hidden="true" tabindex="-1"></a>    result_dict <span class="op">=</span> search.get_dict()</span>
+<span id="cb11-28"><a href="#cb11-28" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-29"><a href="#cb11-29" aria-hidden="true" tabindex="-1"></a>    <span class="co"># append results to combined results list</span></span>
+<span id="cb11-30"><a href="#cb11-30" aria-hidden="true" tabindex="-1"></a>    combined_results.extend(result_dict.get(<span class="st">"news_results"</span>, []))</span>
+<span id="cb11-31"><a href="#cb11-31" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-32"><a href="#cb11-32" aria-hidden="true" tabindex="-1"></a>    <span class="co"># print the news articles to check </span></span>
+<span id="cb11-33"><a href="#cb11-33" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> result <span class="kw">in</span> result_dict.get(<span class="st">"news_results"</span>, []):</span>
+<span id="cb11-34"><a href="#cb11-34" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="ss">f"Title: </span><span class="sc">{</span>result<span class="sc">.</span>get(<span class="st">'title'</span>)<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb11-35"><a href="#cb11-35" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="ss">f"Link: </span><span class="sc">{</span>result<span class="sc">.</span>get(<span class="st">'link'</span>)<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb11-36"><a href="#cb11-36" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="ss">f"Source: </span><span class="sc">{</span>result<span class="sc">.</span>get(<span class="st">'source'</span>)<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb11-37"><a href="#cb11-37" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="st">"-"</span> <span class="op">*</span> <span class="dv">50</span>)</span>
+<span id="cb11-38"><a href="#cb11-38" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-39"><a href="#cb11-39" aria-hidden="true" tabindex="-1"></a><span class="co"># save to json </span></span>
+<span id="cb11-40"><a href="#cb11-40" aria-hidden="true" tabindex="-1"></a><span class="cf">with</span> <span class="bu">open</span>(output_file, <span class="st">"w"</span>) <span class="im">as</span> json_file:</span>
+<span id="cb11-41"><a href="#cb11-41" aria-hidden="true" tabindex="-1"></a>    json.dump(combined_results, json_file, indent<span class="op">=</span><span class="dv">4</span>)</span>
+<span id="cb11-42"><a href="#cb11-42" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-43"><a href="#cb11-43" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Combined news data from both queries saved to </span><span class="sc">{</span>output_file<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb11-44"><a href="#cb11-44" aria-hidden="true" tabindex="-1"></a></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>Performing Google News search for: MBTA
 Title: Slow zones to end across all MBTA lines for the first time in 22 years
@@ -1363,14 +1385,14 @@ Combined news data from both queries saved to ../../data/raw-data/google_news_re
 </section>
 <section id="reliability" class="level2">
 <h2 class="anchored" data-anchor-id="reliability">Reliability</h2>
-<p>For the sake of collection replication, we will show the first few lines of reliability dataset and its shape as reference</p>
+<p>For the sake of collection replication, we will show the first few lines of reliability dataset and its shape as reference. However, you can download the csv files yourself.</p>
 <div id="cell-16" class="cell" data-execution_count="20">
-<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>example_data_reliability <span class="op">=</span> <span class="st">"../../data/raw-data/MBTA_The_RIDE_Reliability.csv"</span></span>
-<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>df2 <span class="op">=</span> pd.read_csv(example_data_reliability)</span>
-<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>shape <span class="op">=</span> df2.shape</span>
-<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df2.head(<span class="dv">5</span>))</span>
-<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(shape) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>example_data_reliability <span class="op">=</span> <span class="st">"../../data/raw-data/MBTA_The_RIDE_Reliability.csv"</span></span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>df2 <span class="op">=</span> pd.read_csv(example_data_reliability)</span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>shape <span class="op">=</span> df2.shape</span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df2.head(<span class="dv">5</span>))</span>
+<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(shape) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>                trip_date  ontime_trip_count  trip_count  ObjectId
 0  2014/07/01 04:00:00+00               5479        5884         1
@@ -1384,14 +1406,14 @@ Combined news data from both queries saved to ../../data/raw-data/google_news_re
 </section>
 <section id="accuracy" class="level2">
 <h2 class="anchored" data-anchor-id="accuracy">Accuracy</h2>
-<p>For the sake of collection replication, we will show the first few lines of accurracy dataset and its shape as reference</p>
+<p>For the sake of collection replication, we will show the first few lines of accurracy dataset and its shape as reference. However, you can download the csv files yourself.</p>
 <div id="cell-18" class="cell" data-execution_count="21">
-<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>example_data_accuracy <span class="op">=</span> <span class="st">"../../data/raw-data/rapid_transit_and_bus_prediction_accuracy_data.csv"</span></span>
-<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>df3 <span class="op">=</span> pd.read_csv(example_data_accuracy)</span>
-<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>shape <span class="op">=</span> df3.shape</span>
-<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df3.head(<span class="dv">5</span>))</span>
-<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(shape) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>example_data_accuracy <span class="op">=</span> <span class="st">"../../data/raw-data/rapid_transit_and_bus_prediction_accuracy_data.csv"</span></span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>df3 <span class="op">=</span> pd.read_csv(example_data_accuracy)</span>
+<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a>shape <span class="op">=</span> df3.shape</span>
+<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df3.head(<span class="dv">5</span>))</span>
+<span id="cb15-6"><a href="#cb15-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(shape) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>       weekly mode route_id        bin arrival_departure  num_predictions  \
 0  2020-08-06  bus      NaN    0-3 min         departure           233967   
@@ -1423,7 +1445,7 @@ Combined news data from both queries saved to ../../data/raw-data/google_news_re
 <p>This section will focus on the challenges, benchmarks, and conclusions drawn from our data collection portion. It provides a technical overview on obstacles and limiations with our current dataset. Then, it will provide a brief overview on our next step.</p>
 <section id="challenges" class="level2">
 <h2 class="anchored" data-anchor-id="challenges">Challenges</h2>
-<p><strong>Transparency</strong> - While the MBTA Open Data Portal provided substantial data in a fairly clean format, there is not transparency about how data is collected by the MBTA. Therefore, we cannot account for biased data (especially since the MBTA is self-reporting). We also do not know if earlier years have incomplete coverage.</p>
+<p><strong>Transparency</strong> - While the MBTA Open Data Portal provided substantial data in a fairly clean format, there is no transparency about how data is collected by the MBTA. Therefore, we cannot account for biased data (it is alarming that MBTA is self-reporting). We also do not know if earlier years have incomplete coverage.</p>
 <ul>
 <li>Financial data only provides aggregated transactional data. We are unable to track individual transactions.</li>
 </ul>
@@ -1435,7 +1457,7 @@ Combined news data from both queries saved to ../../data/raw-data/google_news_re
 <section id="benchmarks" class="level2">
 <h2 class="anchored" data-anchor-id="benchmarks">Benchmarks</h2>
 <ul>
-<li>While reliability, ridership details, and accuracy have been datasets explored in the past. Public perception (text analysis on recent news) has rarely been a dataset collected.</li>
+<li>While reliability, ridership details, and accuracy have been datasets explored in the past. Public perception (text analysis on recent news) has rarely been a dataset collected. Alerts have also rarely been explored as well.</li>
 </ul>
 </section>
 <section id="conclusion" class="level2">
@@ -1443,7 +1465,7 @@ Combined news data from both queries saved to ../../data/raw-data/google_news_re
 <p><strong>Next Step</strong> - Following the collection, we will now clean the datasets to ensure it is prime for analysis.</p>
 <p><strong>Potential Improvements</strong> - Further analysis may cause pivoting in datasts involved. For instance, we may be able to find financial statements that are not aggregated and not in pdf format.</p>
 <ul>
-<li>It would also be preferrable to track public perceptions from 2020-2024 to track how public perception could have possibly changed through text analysis.</li>
+<li>It would also be preferrable to track public perceptions from 2020-2024 to track how public perception could have possibly changed through text analysis. For now, we will only track 2024.</li>
 </ul>
 <p><strong><a href="../../technical-details/data-cleaning/main.html">Click here to visit the next step: Data Cleaning</a></strong></p>
 

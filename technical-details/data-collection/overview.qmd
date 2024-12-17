@@ -17,8 +17,10 @@
 
 - **Dataset Info**: 
 
+    *Data source 1*
     - `Datasource`: MBTA Bluebook Open Data Portal 
     - `Type`: Tabular (.csv)
+    - `Structure`: 2,736,828 rows, 28 features (combined)
     - `Years`: 2020-2024
         - [MBTA Service Alerts 2020-2023](https://mbta-massdot.opendata.arcgis.com/datasets/MassDOT::mbta-service-alerts-2020-2023/about)
         - [MBTA Service Alerts 2024](https://mbta-massdot.opendata.arcgis.com/datasets/f960d5089e164fb8b6c6936c70719d72/about)
@@ -27,39 +29,44 @@
         - Identify routes and stations prone to frequent alerts.
         - Measure severity and frequency of alerts over time.
 
-
+    *Data source 2*
     - `Datasource`: Serpapi: Google News Feed 
     - `Type`: Tabular (.json), API 
+    - `Structure`: 100 entries 
     - `Years`: 2024
         - [Google News Feed](https://serpapi.com/google-news-api)
     - `Purpose`: 
         - Understand current public perception through text analysis (sentimen analysis, topic modeling, keyword extraction)
         - Technical use of APIs 
 
-
+    *Data source 3*
     - `Datasource`: MBTA Bluebook Open Data Portal 
     - `Type`: Tabular (.csv)
+    - `Structure`: 3682 rows, 7 features 
     - `Years`: 2014-2024
         - [MBTA The Ride Reliability](https://mbta-massdot.opendata.arcgis.com/datasets/cb4f4fb3cdf443e7a9d66c87ab1f5e17_0/explore)
     - `Purpose`:
         - Evlauate long-term trends in service reliability
         - Identify improvements or challenges in accessibility services.
 
-
+    *Data source 4*
     - `Datasource`: MBTA Bluebook Open Data Portal 
     - `Type`: Tabular (.json)
+    - `Structure`: 7185 rows, 10 features 
     - `Years`: 2020-2024
         - [Rapid Transit and Bus Prediction Accuracy Data](https://mbta-massdot.opendata.arcgis.com/datasets/MassDOT::rapid-transit-and-bus-prediction-accuracy-data/about)
     - `Purpose`:
         - Find differences between predicted and actual service performance
         - Evalute prediction accuracy trends   
 
-
+    *Data source 5*
     - `Datasource`: Financial Statements
     - `Type`: PDF (.json)
+    - `Structure`: 5 pdfs (transformed to 8 rows, 5 features during cleaning) 
     - `Years`: 2019-2024
         - [Financial Statement FY 2019-2024](https://www.mbta.com/financials/audited-financials)
 
     - `Purpose`:
-        - Understand macro-level trends in financial trends and whether it correlates with system performance
+        - Understand macro-level trends in financial trends and whether it correlates with system performance (i.e. reliability dataset)
+        -  examine important money values such as the net positions, expenses, revenues, and debts throughout the years from 2019 to 2023
 
