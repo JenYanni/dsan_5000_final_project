@@ -2,15 +2,16 @@
 
 This section will focus on the challenges, benchmarks, and conclusions drawn from our data cleaning portion. It provides a technical overview on obstacles and limiations with our current dataset. Then, it will provide a brief overview on our next step. 
 
-**Cleaning Challenges** 
+## Cleaning Challenges** 
 - Financial data required additional preprocessing as they were available only in PDF format. Converting to structured formats produced difficulties. We initially used  pdfplumber library to extract table from pdf file, but failed at integrating it. We then decided on camelot. 
+- However, camelot recently updated and some of the functions utilized does not work in the newest updated version of camelot. 
 
 ## Conclusion 
 
-**Next Step** 
+### Next Step
 - Our datasets are now prime for preliminary EDA. As we proceed to the exploratory data analysis (EDA) phase, let's hope to uncover meaningful patterns and relationships within the data.
 
-**Potential Improvements** 
+### Potential Improvements
 - Optimize the code to create functions for converting pdfs into csvs and for general standarization / relabeling tasks. 
 
 **[Click here to visit the next step: EDA](../eda/main.ipynb)**

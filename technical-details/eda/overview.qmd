@@ -1,0 +1,17 @@
+# Overview
+
+- **Overarching Research Question**: Analyze if the ongoing renovation project improved the reliability and performance of the MBTA system. Are there early indicators of significant improvement to the usage and performance of the MBTA system?
+
+- **Goal**: Perform exploratory data analysis to examine cleaned datasets, inching us closer to answering our overarching research. We uncover meaningful patterns, relationships, and trends about MBTA system performance prior and post 2022 renovations. 
+
+- **Motivation**: 
+    - `System Insights`: Find relationships in data, uncovering insights that may affirm existing MBTA context. Track project impact. 
+    - `Track performance improvement`: Analyze features to find early indicators of potential improvement. This helps gauge renovation success. 
+    - `Understand data for ML`: Understand what features might reveal useful for unsupervised and supervised learning (i.e. predicting) 
+
+- **Objectives**:
+    - `Understand data distribution`
+    - `Examine trends over 2020-2024`
+    - `Find relations between variables`
+    - `Detect outliers`
+    - `Visualize key metrics`

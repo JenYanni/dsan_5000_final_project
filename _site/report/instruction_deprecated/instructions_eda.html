@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>instructions – DSAN-5000: Project</title>
+<title>instructions_eda – DSAN-5000: Project</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -93,10 +93,6 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../instructions/overview.html"> 
-<span class="menu-text">Instructions</span></a>
-  </li>  
-  <li class="nav-item">
     <a class="nav-link" href="../../report/report.html"> 
 <span class="menu-text">Report</span></a>
   </li>  
@@ -154,11 +150,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#instructions" id="toc-instructions" class="nav-link active" data-scroll-target="#instructions">Instructions</a>
   <ul class="collapse">
   <li><a href="#suggested-page-structure" id="toc-suggested-page-structure" class="nav-link" data-scroll-target="#suggested-page-structure">Suggested page structure</a></li>
-  <li><a href="#what-to-address" id="toc-what-to-address" class="nav-link" data-scroll-target="#what-to-address">What to address</a>
-  <ul class="collapse">
-  <li><a href="#part-1-dimensionality-reduction" id="toc-part-1-dimensionality-reduction" class="nav-link" data-scroll-target="#part-1-dimensionality-reduction">Part 1: Dimensionality Reduction</a></li>
-  <li><a href="#part-2-clustering-methods" id="toc-part-2-clustering-methods" class="nav-link" data-scroll-target="#part-2-clustering-methods">Part 2: Clustering Methods</a></li>
-  </ul></li>
+  <li><a href="#what-to-address" id="toc-what-to-address" class="nav-link" data-scroll-target="#what-to-address">What to address</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -187,57 +179,74 @@ ul.task-list li input[type="checkbox"] {
 <section id="what-to-address" class="level2">
 <h2 class="anchored" data-anchor-id="what-to-address">What to address</h2>
 <p>The following is a list of some of the things you should address on this page. This list is not exhaustive, and you should use your judgment to decide what is most relevant to your project.</p>
-<p>This page is designed to give you hands-on experience with key unsupervised learning techniques, including clustering methods and dimensionality reduction, applied to real-world datasets. Please apply algorithms such as K-Means, DBSCAN, Hierarchical clustering, PCA, and t-SNE to your data. Through this process, you’ll deepen your understanding of how unsupervised learning can reveal hidden patterns and structure in data.</p>
-<section id="part-1-dimensionality-reduction" class="level3">
-<h3 class="anchored" data-anchor-id="part-1-dimensionality-reduction">Part 1: Dimensionality Reduction</h3>
-<p>The objective of this section is to explore and demonstrate the effectiveness of PCA and t-SNE in reducing the dimensionality of complex data while preserving essential information and improving visualization.</p>
-<ol type="1">
-<li><strong>PCA (Principal Component Analysis):</strong>
+<p>The <strong>EDA (Exploratory Data Analysis)</strong> tab in your portfolio serves as a crucial foundation for your project. It provides a thorough overview of the dataset, highlights patterns, identifies potential issues, and prepares the data for further analysis. Follow these instructions to document your EDA effectively:</p>
+<p>The goal of EDA is to gain a deeper understanding of the dataset and its relevance to your project’s objectives. It involves summarizing key data characteristics, identifying patterns, anomalies, and preparing for future analysis phases.</p>
+<p>Here are suggestions for things to include on this page</p>
+<p><strong>Univariate Analysis</strong>:</p>
 <ul>
-<li>Apply PCA to your dataset.</li>
-<li>Determine the optimal number of principal components.</li>
-<li>Visualize the reduced-dimensional data.</li>
-<li>Analyze and interpret the results.</li>
-</ul></li>
-<li><strong>t-SNE (t-distributed Stochastic Neighbor Embedding):</strong>
+<li><strong>Numerical Variables</strong>:
 <ul>
-<li>Implement t-SNE on the same dataset.</li>
-<li>Experiment with different perplexity values.</li>
-<li>Visualize the t-SNE output to reveal patterns and clusters.</li>
-<li>Compare the results of t-SNE with those from PCA.</li>
+<li>Provide summary statistics (mean, median, standard deviation).</li>
+<li>Visualize distributions using histograms or density plots.</li>
 </ul></li>
-<li><strong>Evaluation and Comparison:</strong>
+<li><strong>Categorical Variables</strong>:
 <ul>
-<li>Evaluate the effectiveness of PCA and t-SNE in preserving data structure.</li>
-<li>Compare the visualization capabilities of both techniques.</li>
-<li>Discuss the trade-offs and scenarios where one technique may perform better than the other.</li>
+<li>Present frequency counts and visualize distributions using bar charts or pie charts.</li>
 </ul></li>
-</ol>
-</section>
-<section id="part-2-clustering-methods" class="level3">
-<h3 class="anchored" data-anchor-id="part-2-clustering-methods">Part 2: Clustering Methods</h3>
-<p>Apply clustering techniques (K-Means, DBSCAN, and Hierarchical clustering) to a selected dataset. The goal is to understand how each method works, compare their performance, and interpret the results.</p>
-<ol type="1">
-<li><strong>Clustering Methods:</strong>
+<li><strong>Key Insights</strong>:
 <ul>
-<li>Apply <strong>K-Means</strong>, <strong>DBSCAN</strong>, and <strong>Hierarchical clustering</strong> to your dataset.</li>
-<li>Write a technical summary for each method (2–4 paragraphs per method) explaining how it works, its purpose, and any model selection methods used (e.g., Elbow, Silhouette).</li>
+<li>Highlight any notable trends or patterns observed.</li>
 </ul></li>
-<li><strong>Results Section:</strong>
+</ul>
+<p><strong>Bivariate and Multivariate Analysis</strong>:</p>
 <ul>
-<li>Discuss and visualize the results of each clustering analysis.</li>
-<li>Compare the performance of different clustering methods, noting any insights gained from the analysis.</li>
-<li>Visualize cluster patterns and how they relate (if at all) to existing labels in the dataset.</li>
-<li>Use professional, labeled, and clear visualizations that support your discussion.</li>
-</ul></li>
-<li><strong>Conclusion:</strong>
+<li><strong>Correlation Analysis</strong>:
 <ul>
-<li>Summarize the key findings and their real-world implications in a non-technical way. Focus on the most important results and how they could apply to practical situations.</li>
+<li>Analyze relationships between numerical variables using a correlation matrix.</li>
+<li>Visualize with heatmaps or pair plots and discuss any strong correlations.</li>
 </ul></li>
-</ol>
+<li><strong>Crosstabulations</strong>:
+<ul>
+<li>For categorical variables, use crosstabs to explore relationships and visualize them with grouped bar plots.</li>
+</ul></li>
+<li><strong>Feature Pairings</strong>:
+<ul>
+<li>Analyze relationships between key variables, particularly those related to your target.</li>
+<li>Visualize with scatter plots, box plots, or violin plots.</li>
+</ul></li>
+</ul>
+<p><strong>Data Distribution and Normalization</strong>:</p>
+<ul>
+<li><strong>Skewness and Kurtosis</strong>:</li>
+<li>Analyze and discuss the distribution of variables.</li>
+<li>Apply transformations (e.g., log transformation) if needed for skewed data.</li>
+<li><strong>Normalization</strong>:</li>
+<li>Apply normalization or scaling techniques (e.g., min-max scaling, z-score).</li>
+<li>Document and visualize the impact of normalization.</li>
+</ul>
+<p><strong>Statistical Insights</strong>:</p>
+<ul>
+<li>Conduct basic statistical tests (e.g., T-tests, ANOVA, chi-square) to explore relationships between variables.</li>
+<li>Summarize the statistical results and their implications for your analysis.</li>
+</ul>
+<p><strong>Data Visualization and Storytelling</strong>:</p>
+<ul>
+<li><strong>Visual Summary</strong>:</li>
+<li>Present key insights using charts and visualizations (e.g., Matplotlib, Seaborn, Plotly).</li>
+<li>Ensure all visualizations are well-labeled and easy to interpret.</li>
+<li><strong>Interactive Visualizations (Optional)</strong>:</li>
+<li>Include interactive elements (e.g., Plotly, Bokeh) to allow users to explore the data further.</li>
+</ul>
+<p><strong>Conclusions and Next Steps</strong>:</p>
+<ul>
+<li><strong>Summary of EDA Findings</strong>:</li>
+<li>Highlight the main takeaways from the EDA process (key trends, patterns, data quality issues).</li>
+<li><strong>Implications for Modeling</strong>:</li>
+<li>Discuss how your EDA informs the next steps in your project (e.g., feature selection, data transformations).</li>
+<li>Outline any further data cleaning or preparation required before moving into modeling.</li>
+</ul>
 
 
-</section>
 </section>
 </section>
 

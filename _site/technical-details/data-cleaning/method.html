@@ -93,10 +93,6 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../instructions/overview.html"> 
-<span class="menu-text">Instructions</span></a>
-  </li>  
-  <li class="nav-item">
     <a class="nav-link" href="../../report/report.html"> 
 <span class="menu-text">Report</span></a>
   </li>  
@@ -151,7 +147,14 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#our-process" id="toc-our-process" class="nav-link active" data-scroll-target="#our-process">Our Process</a></li>
+  <li><a href="#our-process" id="toc-our-process" class="nav-link active" data-scroll-target="#our-process">Our Process</a>
+  <ul class="collapse">
+  <li><a href="#accuracy-data" id="toc-accuracy-data" class="nav-link" data-scroll-target="#accuracy-data">Accuracy Data</a></li>
+  <li><a href="#reliability-data" id="toc-reliability-data" class="nav-link" data-scroll-target="#reliability-data">Reliability Data</a></li>
+  <li><a href="#news-feed" id="toc-news-feed" class="nav-link" data-scroll-target="#news-feed">News Feed</a></li>
+  <li><a href="#alerts-feed" id="toc-alerts-feed" class="nav-link" data-scroll-target="#alerts-feed">Alerts Feed</a></li>
+  <li><a href="#financial-data" id="toc-financial-data" class="nav-link" data-scroll-target="#financial-data">Financial Data</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -163,13 +166,57 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="our-process" class="level1">
 <h1>Our Process</h1>
-<p><strong>Accuracy and Reliability Data</strong> - Handled Missing Data: limited null values, so minimal imputation and omitted - Standarized formats: unified column names, reformatted numerical values or time - Outlier detection: Outliers were visualized and flagged or excluded based on relevance</p>
-<p><strong>News Feed</strong> - Standarized timestamp: removed the time and kept date - Transformation: transformed json files to csvs for ease of analysis - Text cleaning: removed punctation, special characters, extra spaces</p>
-<p><strong>Alerts Feed</strong> - Outlier detection: visualized outliers and flagged them<br>
-- Text cleaning: removed punctation, special characters, extra spaces - Subsetted the dataset: removed many columns by tracking null values and relevance - Handled missing information: imputed with unknowns for string data.</p>
-<p><strong>Financial Data</strong> - PDF to CSV Conversion: used camelot functiobns to do - Reformatting: removed blank columns or irrelevant information - Standardizing Formats: standarized columns for consistency</p>
+<ul>
+<li>Python was used to clean all the datasets.</li>
+<li>Key libraries used to clean, including pandas, numpy, seaborn, matplotlib, camelot and datetime, missingno, and re.</li>
+</ul>
+<section id="accuracy-data" class="level2">
+<h2 class="anchored" data-anchor-id="accuracy-data">Accuracy Data</h2>
+<ul>
+<li>Handled Missing Data: limited null values, so minimal imputation and omitted</li>
+<li>Standarized formats: clean up the dates data in the “weekly” column and the numberical minutes in the “bin” column
+<ul>
+<li>Why? we wanted to see if there were any patterns in the number of correct predictions before and after the renovation program 1/1/2022.<br>
+</li>
+<li>Outlier detection: Outliers were visualized and flagged or excluded based on relevance</li>
+</ul></li>
+</ul>
+</section>
+<section id="reliability-data" class="level2">
+<h2 class="anchored" data-anchor-id="reliability-data">Reliability Data</h2>
+<ul>
+<li>Cleaned up the dates and time values in the “trip_date” column</li>
+<li>Why? we wanted to merge the ride reliability datset with the financial audit datasets for the years 2023,2021, and 2019 to find trends between reliability and net position summary amounts</li>
+</ul>
+</section>
+<section id="news-feed" class="level2">
+<h2 class="anchored" data-anchor-id="news-feed">News Feed</h2>
+<ul>
+<li>Standarized timestamp: removed the time and kept date</li>
+<li>Transformation: transformed json files to csvs for ease of analysis</li>
+<li>Text cleaning: removed punctation, special characters, extra spaces</li>
+</ul>
+</section>
+<section id="alerts-feed" class="level2">
+<h2 class="anchored" data-anchor-id="alerts-feed">Alerts Feed</h2>
+<ul>
+<li>Outlier detection: visualized outliers and flagged them<br>
+</li>
+<li>Text cleaning: removed punctation, special characters, extra spaces</li>
+<li>Subsetted the dataset: removed many columns by tracking null values and relevance</li>
+<li>Handled missing information: imputed with unknowns for string data.</li>
+</ul>
+</section>
+<section id="financial-data" class="level2">
+<h2 class="anchored" data-anchor-id="financial-data">Financial Data</h2>
+<ul>
+<li>PDF to CSV Conversion: used camelot library</li>
+<li>Reformatting: removed blank columns or irrelevant information</li>
+<li>Standardizing Formats: standarized columns for consistency</li>
+</ul>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->

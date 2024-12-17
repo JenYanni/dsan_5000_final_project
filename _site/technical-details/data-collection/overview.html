@@ -93,10 +93,6 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../instructions/overview.html"> 
-<span class="menu-text">Instructions</span></a>
-  </li>  
-  <li class="nav-item">
     <a class="nav-link" href="../../report/report.html"> 
 <span class="menu-text">Report</span></a>
   </li>  
@@ -179,9 +175,11 @@ ul.task-list li input[type="checkbox"] {
 <li><code>Validate data accessibility so recreation is possible</code></li>
 </ul></li>
 <li><p><strong>Dataset Info</strong>:</p>
+<p><em>Data source 1</em></p>
 <ul>
 <li><code>Datasource</code>: MBTA Bluebook Open Data Portal</li>
 <li><code>Type</code>: Tabular (.csv)</li>
+<li><code>Structure</code>: 2,736,828 rows, 28 features (combined)</li>
 <li><code>Years</code>: 2020-2024
 <ul>
 <li><a href="https://mbta-massdot.opendata.arcgis.com/datasets/MassDOT::mbta-service-alerts-2020-2023/about">MBTA Service Alerts 2020-2023</a></li>
@@ -193,8 +191,12 @@ ul.task-list li input[type="checkbox"] {
 <li>Identify routes and stations prone to frequent alerts.</li>
 <li>Measure severity and frequency of alerts over time.</li>
 </ul></li>
+</ul>
+<p><em>Data source 2</em></p>
+<ul>
 <li><code>Datasource</code>: Serpapi: Google News Feed</li>
 <li><code>Type</code>: Tabular (.json), API</li>
+<li><code>Structure</code>: 100 entries</li>
 <li><code>Years</code>: 2024
 <ul>
 <li><a href="https://serpapi.com/google-news-api">Google News Feed</a></li>
@@ -204,8 +206,12 @@ ul.task-list li input[type="checkbox"] {
 <li>Understand current public perception through text analysis (sentimen analysis, topic modeling, keyword extraction)</li>
 <li>Technical use of APIs</li>
 </ul></li>
+</ul>
+<p><em>Data source 3</em></p>
+<ul>
 <li><code>Datasource</code>: MBTA Bluebook Open Data Portal</li>
 <li><code>Type</code>: Tabular (.csv)</li>
+<li><code>Structure</code>: 3682 rows, 7 features</li>
 <li><code>Years</code>: 2014-2024
 <ul>
 <li><a href="https://mbta-massdot.opendata.arcgis.com/datasets/cb4f4fb3cdf443e7a9d66c87ab1f5e17_0/explore">MBTA The Ride Reliability</a></li>
@@ -215,8 +221,12 @@ ul.task-list li input[type="checkbox"] {
 <li>Evlauate long-term trends in service reliability</li>
 <li>Identify improvements or challenges in accessibility services.</li>
 </ul></li>
+</ul>
+<p><em>Data source 4</em></p>
+<ul>
 <li><code>Datasource</code>: MBTA Bluebook Open Data Portal</li>
 <li><code>Type</code>: Tabular (.json)</li>
+<li><code>Structure</code>: 7185 rows, 10 features</li>
 <li><code>Years</code>: 2020-2024
 <ul>
 <li><a href="https://mbta-massdot.opendata.arcgis.com/datasets/MassDOT::rapid-transit-and-bus-prediction-accuracy-data/about">Rapid Transit and Bus Prediction Accuracy Data</a></li>
@@ -226,15 +236,20 @@ ul.task-list li input[type="checkbox"] {
 <li>Find differences between predicted and actual service performance</li>
 <li>Evalute prediction accuracy trends</li>
 </ul></li>
+</ul>
+<p><em>Data source 5</em></p>
+<ul>
 <li><code>Datasource</code>: Financial Statements</li>
 <li><code>Type</code>: PDF (.json)</li>
+<li><code>Structure</code>: 5 pdfs (transformed to 8 rows, 5 features during cleaning)</li>
 <li><code>Years</code>: 2019-2024
 <ul>
 <li><a href="https://www.mbta.com/financials/audited-financials">Financial Statement FY 2019-2024</a></li>
 </ul></li>
 <li><code>Purpose</code>:
 <ul>
-<li>Understand macro-level trends in financial trends and whether it correlates with system performance</li>
+<li>Understand macro-level trends in financial trends and whether it correlates with system performance (i.e.&nbsp;reliability dataset)</li>
+<li>examine important money values such as the net positions, expenses, revenues, and debts throughout the years from 2019 to 2023</li>
 </ul></li>
 </ul></li>
 </ul>

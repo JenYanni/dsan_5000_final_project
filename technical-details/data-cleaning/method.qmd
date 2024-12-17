@@ -3,30 +3,30 @@
 * Python was used to clean all the datasets.
 * Key libraries used to clean, including pandas, numpy, seaborn, matplotlib, camelot and datetime, missingno, and re. 
 
-**Accuracy Data** 
-    - Handled Missing Data: limited null values, so minimal imputation and omitted 
-    - Standarized formats: clean up the dates data in the "weekly" column and the numberical minutes in the "bin" column
-        - Why? we wanted to see if there were any patterns in the number of correct predictions before and after the renovation program 1/1/2022.  
+## Accuracy Data
+* Handled Missing Data: limited null values, so minimal imputation and omitted 
+* Standarized formats: clean up the dates data in the "weekly" column and the numberical minutes in the "bin" column
+    - Why? we wanted to see if there were any patterns in the number of correct predictions before and after the renovation program 1/1/2022.  
     - Outlier detection: Outliers were visualized and flagged or excluded based on relevance 
 
-**Reliability Data** 
-    - cleaned up the dates and time values in the "trip_date" column
-        - Why? we wanted to merge the ride reliability datset with the financial audit datasets for the years 2023,2021, and 2019 to find trends between reliability and net position summary amounts 
+## Reliability Data 
+* Cleaned up the dates and time values in the "trip_date" column
+- Why? we wanted to merge the ride reliability datset with the financial audit datasets for the years 2023,2021, and 2019 to find trends between reliability and net position summary amounts 
 
-**News Feed** 
-    - Standarized timestamp: removed the time and kept date
-    - Transformation: transformed json files to csvs for ease of analysis 
-    - Text cleaning: removed punctation, special characters, extra spaces
+## News Feed
+* Standarized timestamp: removed the time and kept date
+* Transformation: transformed json files to csvs for ease of analysis 
+* Text cleaning: removed punctation, special characters, extra spaces
 
-**Alerts Feed** 
-    - Outlier detection: visualized outliers and flagged them  
-    - Text cleaning: removed punctation, special characters, extra spaces
-    - Subsetted the dataset: removed many columns by tracking null values and relevance
-    - Handled missing information: imputed with unknowns for string data. 
+## Alerts Feed
+* Outlier detection: visualized outliers and flagged them  
+* Text cleaning: removed punctation, special characters, extra spaces
+* Subsetted the dataset: removed many columns by tracking null values and relevance
+* Handled missing information: imputed with unknowns for string data. 
 
-**Financial Data**
-    - PDF to CSV Conversion: used camelot library 
-    - Reformatting: removed blank columns or irrelevant information 
-    - Standardizing Formats: standarized columns for consistency 
+## Financial Data
+* PDF to CSV Conversion: used camelot library 
+* Reformatting: removed blank columns or irrelevant information 
+* Standardizing Formats: standarized columns for consistency 
 
 

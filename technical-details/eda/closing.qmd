@@ -1,31 +1,26 @@
 # Summary
 
-This section will focus on the challenges, benchmarks, and conclusions drawn from our data collection portion. It provides a technical overview on obstacles and limiations with our current dataset. Then, it will provide a brief overview on our next step. 
+This section will focus on the challenges, benchmarks, and conclusions drawn from our exploratory data analysis portion. It provides a technical overview on obstacles and limiations with our EDA. Then, it will provide a brief overview on our next step. 
 
 ## Challenges
 
-**Transparency**
-- While the MBTA Open Data Portal provided substantial data in a fairly clean format, there is not transparency about how data is collected by the MBTA. Therefore, we cannot account for biased data (especially since the MBTA is self-reporting). We also do not know if earlier years have incomplete coverage. 
+### EDA Method Difficulties
+- Performing EDA required finetuning the cleaning code iteratively 
 
-- Financial data only provides aggregated transactional data. We are unable to track individual transactions. 
-
-**Collection Method Difficulties** 
-- Financial data required additional preprocessing as they were available only in PDF format. Converting to structured formats produced difficulties. We initially used  pdfplumber library to extract table from pdf file, but failed at integrating it. We then decided on camelot. 
-
-- SerpAPI has rate limits with their basic free plan. Careful management is required when collecting data. 
-
-
-## Benchmarks
-- While reliability, ridership details, and accuracy have been datasets explored in the past. Public perception (text analysis on recent news) has rarely been a dataset collected. 
 
 ## Conclusion 
 
-**Next Step** 
-- Following the collection, we will now clean the datasets to ensure it is prime for analysis. 
+### Primary Thoughts 
+- Histograms showed right-skewed distributions for "num_predictions" and "num_accurate_predictions", indicating a smaller frequency of very high prediction values.
+- Themes around "speed restrictions", "shutdowns", and "approvals" emerged, highlighting both challenges and improvements in the MBTA system. This is indication of MBTA staying true to their progress in renovation and improving transparency. 
+    - Positive sentiment correlated with terms like "approves", "launches", and "improvement", while negative sentiment centered around "shutdown" and "restrictions".
+- The logistic regression model, anova models, and majority of t-tests conducted showed no significance. The event of trips made on time happening did not have signigicant relationship between the amounts in the net postion, expenses, revenues, and debts regarding the MBTA system from 2019 to 2023. Only the t-test results of the debts dataset showed potential of a significant relationship, so taking the debts dataset for further analysis in supervised and un-supervised learning would be ideal.
+- Data present in alert notifications align with our historical and contextual understanding of the MBTA (i.e. construction rise in 2024 with accidents highest in 2022) 
 
-**Potential Improvements** 
-- Further analysis may cause pivoting in datasts involved. For instance, we may be able to find financial statements that are not aggregated and not in pdf format. 
+### Next Steps 
+- Following the collection, we will now perform unsupervised learning given the lack of significant relationships from our statistical tests. 
 
-- It would also be preferrable to track public perceptions from 2020-2024 to track how public perception could have possibly changed through text analysis. 
+### Potential Improvements
+- Further work on this project will involve finetunng the EDA, improving our existing models and reinterpreting our results. 
 
 **[Click here to visit the next step: unsupervised learning](../unsupervised-learning/main.ipynb)**

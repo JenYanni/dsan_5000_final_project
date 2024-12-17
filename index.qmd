@@ -2,6 +2,10 @@
 title: "Welcome to our MBTA Project"
 Authors: Jen Guo and Mandy Sun
 bibliography: reference.bib
+format:
+    html: 
+        code-fold: false
+        embed-resources: true
 ---
 
 ## **About Us:**
@@ -20,11 +24,6 @@ The **Massachusetts Bay Transportation Authority (MBTA)** is a public transporta
 
 The MBTA is the fourth busiest public-transit system. Thousands of locals heavily rely on the MBTA system daily. The MBTA system is a necessity for Boston and several low-income people and communities rely on it.
 
-![](https://lh7-rt.googleusercontent.com/slidesz/AGV_vUfoWiLLU2kTu32WlcyD5rWYi3VmACz6euEqstyiKFzmOUq0y6uxNRHFgOkuDk2pJAxX3lm0b6TwEJoRE81yrCiVpYGnZnGefYcTYxhvt1GPpbKxxPtsa_yT1tM0B1MAzPA-ykdfpw=s2048?key=UOGZUELpblCwUxUHrZRThF49){width="70"}
-
-![](https://lh7-rt.googleusercontent.com/slidesz/AGV_vUdOZtLlVKLxfJdQNnleU_vT__UA6ab887RwxZe-RavjR6nEGSlpfVxGoGRPSeX1uqQQAJN_jRUWsGHDdya-gfJW7NbUVBi2ds7Ly15Z-4YF6kMpOFSr7YSv9oVPUk66hI4y2lIm=s2048?key=UOGZUELpblCwUxUHrZRThF49){width="300"}
-
-![](https://lh7-rt.googleusercontent.com/slidesz/AGV_vUfUC7WPyb9jb4bsS1xjAahP1VeYiye2VXBTu3-VWVyTNjNkAouqatYEjOxAEPKSOj8LJj3oRo9qwGq6h7oGAxXzdC1j-ktRlSjvFoExdY5bdgLDnMMKTE0YYpA5cOdYuSvk3JGlcQ=s2048?key=UOGZUELpblCwUxUHrZRThF49){width="300"}
 
 ### Timeline:
 
@@ -44,7 +43,7 @@ The MBTA history has had several mishaps:
 
 *September 2022: Green line station, overhead wire falls - Wire falls, causing a spark and a loud bang.*
 
-![](https://lh7-rt.googleusercontent.com/slidesz/AGV_vUcKQDzglWBoKr_SQdynUf2KXgvFbyjSKK3Z88mkhfj19WZsQJwKlt2h9vEgdV9yF9MnMDWgJ0tsfQJz9LnZoTCjeWH9UgKrkV_szAEQ2mUVq_qzQH_Cm78mKUXeqB_DK6v9hKHLEQ=s2048?key=UOGZUELpblCwUxUHrZRThF49){width="1000"}
+
 
 ### Rennovation Program:
 
@@ -54,15 +53,6 @@ The purpose of the project was to build a safer, reliable, and more accessible t
 
 Project includes updating old infrastructures, stations, tracks, and power systems.
 
-![](https://lh7-rt.googleusercontent.com/slidesz/AGV_vUcN6isK-1s0Q_4PyF1Ms-_b9_-70X2lDmWAk4hTdtCB7qSF3wkbaBjvAkAndIRGBTWe55SFo4xhtFqh9ewO7rOMtuDPs0ZOrKenrGlMOJ_DpfONExdI75h-t5sUGuNdW3agFDefLg=s2048?key=UOGZUELpblCwUxUHrZRThF49){width="200"}
-
-![](https://lh7-rt.googleusercontent.com/slidesz/AGV_vUd2fucOBx4JfiSFf82Flsk5OlO0TQ-4GFvmaSvvEf0Gu8gsZ4cDr-Qd39eyME-y7vgEre8EJnr5GuVupFK-R2Cr4SDnrp7gxXOq6q20gcFOQdAOqbC3XIWMQ6DKdJGL08lM34NM_A=s2048?key=UOGZUELpblCwUxUHrZRThF49){width="200"}
-
-![](https://lh7-rt.googleusercontent.com/slidesz/AGV_vUeAEMne2zB0X9xrJ1IQHcuxXc3u3gW-8C5DXzR7Gicm_-o90T4oiFYk5YPyoKwwRDteIh9mGOCTQCufMQKBvScNk8qMPu6V_jtpUm7uuMMBytSPVj1_HDr1xBjKyGyfNsKG3uQu=s2048?key=UOGZUELpblCwUxUHrZRThF49){width="200"}
-
-![](https://lh7-rt.googleusercontent.com/slidesz/AGV_vUdPYDj-0zVqtuJbdNuJFpS2qUH-777IMeOBBSyItL-enGzNtx1cVbuW_C97zFcXeoL6vbXZSlrz8dl8C8ZmmoMbIz18epA93g1LZqmMvr7uA1I5VCGGBVTUVEXoTuJmUZu6IOsP=s2048?key=UOGZUELpblCwUxUHrZRThF49){width="200"}
-
-### 
 
 ## Problem Statement:
 

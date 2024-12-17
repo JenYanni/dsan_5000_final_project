@@ -93,10 +93,6 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../instructions/overview.html"> 
-<span class="menu-text">Instructions</span></a>
-  </li>  
-  <li class="nav-item">
     <a class="nav-link" href="../../report/report.html"> 
 <span class="menu-text">Report</span></a>
   </li>  
@@ -146,8 +142,21 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#our-process" id="toc-our-process" class="nav-link active" data-scroll-target="#our-process">Our Process</a>
+  <ul class="collapse">
+  <li><a href="#accuracy-data" id="toc-accuracy-data" class="nav-link" data-scroll-target="#accuracy-data">Accuracy Data</a></li>
+  <li><a href="#reliability-data" id="toc-reliability-data" class="nav-link" data-scroll-target="#reliability-data">Reliability Data</a></li>
+  <li><a href="#news-feed" id="toc-news-feed" class="nav-link" data-scroll-target="#news-feed">News Feed</a></li>
+  <li><a href="#alerts-feed" id="toc-alerts-feed" class="nav-link" data-scroll-target="#alerts-feed">Alerts Feed</a></li>
+  <li><a href="#financial-data" id="toc-financial-data" class="nav-link" data-scroll-target="#financial-data">Financial Data</a></li>
+  </ul></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -155,8 +164,92 @@ ul.task-list li input[type="checkbox"] {
 
 
 
+<section id="our-process" class="level1">
+<h1>Our Process</h1>
+<ul>
+<li>Python was used to clean all the datasets.</li>
+<li>Key libraries used to clean, including pandas, numpy, seaborn, matplotlib, camelot and datetime, missingno, and re.</li>
+</ul>
+<section id="accuracy-data" class="level2">
+<h2 class="anchored" data-anchor-id="accuracy-data">Accuracy Data</h2>
+<ul>
+<li>Univariate Analysis: Explore data distributions and identify potential outliers
+<ul>
+<li>Produced histograms for num_predictions and accurate_predictions</li>
+<li>Outputed descriptive stats</li>
+<li>Used boxplots to visualize spread for numerical features</li>
+</ul></li>
+<li>Categorical Analysis: Analyze frequency and trends for categorical variables.
+<ul>
+<li>Produced bar plot for subway route frequency and time bins</li>
+<li>Created crosstabs between subway and route_id, as well as pre and post-2021 with route_id, bin, and arrival departure</li>
+</ul></li>
+<li>Bivariate and Multivariate analysis: explore relationship betweeen variables and explore multicollinearity
+<ul>
+<li>Produced correlation matrix, heatmap, and scatterplot (num_predictions and num_accurate predictions)</li>
+</ul></li>
+<li>Statistical Testing: determine statistical significance of differences in num_predictions and num_accurate predictions
+<ul>
+<li>Performed t-tests</li>
+</ul></li>
+<li>Logistic Regression
+<ul>
+<li>Created two logistic regressions for fit to predict whether a trip occured pre- or post- 2021 based on features.</li>
+</ul></li>
+<li>Applied normalization
+<ul>
+<li>Applied z-score to both the prediction and the accurate prediction and compared scatterplot visualization</li>
+</ul></li>
+</ul>
+</section>
+<section id="reliability-data" class="level2">
+<h2 class="anchored" data-anchor-id="reliability-data">Reliability Data</h2>
+<ul>
+<li>Line Graph: produced a line graph to track the number of on-time subway arrivals over time</li>
+</ul>
+</section>
+<section id="news-feed" class="level2">
+<h2 class="anchored" data-anchor-id="news-feed">News Feed</h2>
+<ul>
+<li>Word Cloud:
+<ul>
+<li>Integrated stopwords from ntlk pack to omit commonly used words</li>
+<li>Visualize the most commonly used words in google news headlines</li>
+</ul></li>
+<li>Sentiment Analysis:
+<ul>
+<li>Used Vader to perform sentiment analysis on the news headlines</li>
+</ul></li>
+</ul>
+</section>
+<section id="alerts-feed" class="level2">
+<h2 class="anchored" data-anchor-id="alerts-feed">Alerts Feed</h2>
+<ul>
+<li>Univariate Analysis:
+<ul>
+<li>Created bar graphs on causes and effects of alerts</li>
+<li>Created line graph to track causes (accidents, construction, and maintenance) over the years 2020-2024 (i.e.&nbsp;post- abd pre- renovation)</li>
+<li>Created a line graph to track effects of alerts over time</li>
+<li>Created a stack bar graph to find distribution of alerts by severity level over the years</li>
+<li>Created a heatmap to track severity level by years</li>
+<li>Produced another stacked bar graph and heatmap to track severity levels by routes
+<ul>
+<li>Outputed a list of highly alerted spots</li>
+</ul></li>
+</ul></li>
+</ul>
+</section>
+<section id="financial-data" class="level2">
+<h2 class="anchored" data-anchor-id="financial-data">Financial Data</h2>
+<ul>
+<li>PDF to CSV Conversion: used camelot library</li>
+<li>Reformatting: removed blank columns or irrelevant information</li>
+<li>Standardizing Formats: standarized columns for consistency</li>
+</ul>
 
 
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

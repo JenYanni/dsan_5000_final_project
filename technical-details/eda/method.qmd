@@ -1,0 +1,48 @@
+# Our Process
+
+* Python was used to clean all the datasets.
+* Key libraries used to clean, including pandas, numpy, seaborn, matplotlib, camelot and datetime, missingno, and re. 
+
+## Accuracy Data
+* Univariate Analysis: Explore data distributions and identify potential outliers
+    - Produced histograms for num_predictions and accurate_predictions
+    - Outputed descriptive stats
+    - Used boxplots to visualize spread for numerical features 
+* Categorical Analysis: Analyze frequency and trends for categorical variables. 
+    - Produced bar plot for subway route frequency and time bins 
+    - Created crosstabs between subway and route_id, as well as pre and post-2021 with route_id, bin, and arrival departure 
+* Bivariate and Multivariate analysis: explore relationship betweeen variables and explore multicollinearity
+    - Produced correlation matrix, heatmap, and scatterplot (num_predictions and num_accurate predictions)
+* Statistical Testing: determine statistical significance of differences in num_predictions and num_accurate predictions
+    - Performed t-tests
+* Logistic Regression 
+    - Created two logistic regressions for fit to predict whether a trip occured pre- or post- 2021 based on features. 
+* Applied normalization
+    - Applied z-score to both the prediction and the accurate prediction and compared scatterplot visualization 
+
+## Reliability Data 
+* Line Graph: produced a line graph to track the number of on-time subway arrivals over time
+
+## News Feed
+* Word Cloud: 
+    - Integrated stopwords from ntlk pack to omit commonly used words
+    - Visualize the most commonly used words in google news headlines 
+* Sentiment Analysis: 
+    - Used Vader to perform sentiment analysis on the news headlines 
+
+## Alerts Feed
+* Univariate Analysis: 
+    - Created bar graphs on causes and effects of alerts 
+    - Created line graph to track causes (accidents, construction, and maintenance) over the years 2020-2024 (i.e. post- abd pre- renovation)
+    - Created a line graph to track effects of alerts over time 
+    - Created a stack bar graph to find distribution of alerts by severity level over the years 
+    - Created a heatmap to track severity level by years 
+    - Produced another stacked bar graph and heatmap to track severity levels by routes
+        - Outputed a list of highly alerted spots
+
+## Financial Data
+* PDF to CSV Conversion: used camelot library 
+* Reformatting: removed blank columns or irrelevant information 
+* Standardizing Formats: standarized columns for consistency 
+
+

@@ -21,9 +21,11 @@ This section will focus on the challenges, benchmarks, and conclusions drawn fro
 ## Conclusion 
 
 **Next Step** 
+
 - Following the collection, we will now clean the datasets to ensure it is prime for analysis. 
 
 **Potential Improvements** 
+
 - Further analysis may cause pivoting in datasts involved. For instance, we may be able to find financial statements that are not aggregated and not in pdf format. 
 
 - It would also be preferrable to track public perceptions from 2020-2024 to track how public perception could have possibly changed through text analysis. For now, we will only track 2024. 

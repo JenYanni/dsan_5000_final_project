@@ -21,7 +21,7 @@ title: "Progress log: Jen Guo and Mandy Sun"
 -   [ ] Complete technical writing aspect of all the codes
 -   [x] Complete landing page
 -   [x] Complete progress-log
--   [ ] Complete llm-usage
+-   [x] Complete llm-usage
 -   [ ] Write report for non-technical audience
 -   [ ] Convert all files for website into pdf and stitch all pdf files together for submission
 -   [ ] quarto render the files to prepare for website
