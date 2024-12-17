@@ -24,7 +24,6 @@ The **Massachusetts Bay Transportation Authority (MBTA)** is a public transporta
 
 The MBTA is the fourth busiest public-transit system. Thousands of locals heavily rely on the MBTA system daily. The MBTA system is a necessity for Boston and several low-income people and communities rely on it.
 
-
 ### Timeline:
 
 The MBTA history has had several mishaps:
@@ -43,8 +42,6 @@ The MBTA history has had several mishaps:
 
 *September 2022: Green line station, overhead wire falls - Wire falls, causing a spark and a loud bang.*
 
-
-
 ### Rennovation Program:
 
 Due to the dangers of the MBTA and the public dissatisfaction, The Massachusetts Bay Transportation Authority (MBTA) system began its renovation program in 2022.
@@ -52,7 +49,6 @@ Due to the dangers of the MBTA and the public dissatisfaction, The Massachusetts
 The purpose of the project was to build a safer, reliable, and more accessible transportation system.
 
 Project includes updating old infrastructures, stations, tracks, and power systems.
-
 
 ## Problem Statement:
 

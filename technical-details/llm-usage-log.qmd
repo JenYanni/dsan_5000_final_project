@@ -5,13 +5,15 @@ title: "LLM usage log"
 LLM tools were used in the following way for the tasks below
 
 ## Brainstorming
-* Inserting a word salad of thoughts and asking to format structure of thoughts
 
-## Writing: 
+-   Inserting a word salad of thoughts and asking to format structure of thoughts
 
-* Editing text for grammar 
-* LLMs were used to refin and organize our research questions by proofreading and offering suggestions 
-* Proofreading 
+## Writing:
 
-## Code: 
-* Debugging errors
+-   Editing text for grammar
+-   LLMs were used to refine and organize our research questions by proofreading and offering suggestions
+-   Proofreading
+
+## Code:
+
+-   Debugging errors

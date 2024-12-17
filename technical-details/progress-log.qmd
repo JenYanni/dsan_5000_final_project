@@ -18,14 +18,14 @@ title: "Progress log: Jen Guo and Mandy Sun"
 -   [x] Complete power point for presentation
 -   [x] Complete supervised learning on datasets
 -   [x] Complete un-supervised learning on datasets
--   [ ] Complete technical writing aspect of all the codes
+-   [x] Complete technical writing aspect of all the codes
 -   [x] Complete landing page
 -   [x] Complete progress-log
 -   [x] Complete llm-usage
--   [ ] Write report for non-technical audience
--   [ ] Convert all files for website into pdf and stitch all pdf files together for submission
--   [ ] quarto render the files to prepare for website
--   [ ] rsync files to GU domain for website
+-   [x] Write report for non-technical audience
+-   [x] Convert all files for website into pdf and stitch all pdf files together for submission
+-   [x] quarto render the files to prepare for website
+-   [x] rsync files to GU domain for website
 
 ## Jen Guo:
 
