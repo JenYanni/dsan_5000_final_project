@@ -1,5 +1,7 @@
 # 2024-dsan-5000-project
 
+DSAN 5000 final project portfolio hosted at this website link: https://jenyanniguo.georgetown.domains/_site/index/ 
+
 ### Project Overview
 This project aims to analyze the impact of the ongoing MBTA renovation project on the reliability and performance of the transportation system. The analysis evaluates ride accuracy, alerts, reliability, financial data, and news sentiment to identify trends, challenges, and improvements in the MBTA system.
 
